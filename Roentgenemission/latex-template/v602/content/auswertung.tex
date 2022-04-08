@@ -6,8 +6,8 @@
 \subsection{Überprüfung der Bragg-Bedingung}
 \label{subsec:bragg}
 Nach der Bragg-Bedingung ist das gemessene Intensitätsmaximum beim Glanzwinkel von ---- zu erwarten. \\
-Dieser liegt bei dem verwendeten KBr-Kristall bei ---- und wird durch die in Tabelle aufgeführten -- Werte der Messung 
-verifiziert ???. \\
+Dieser liegt bei dem verwendeten KBr-Kristall bei ---- und wird durch die in Tabelle aufgeführten -- Werte 
+der Messung verifiziert ???. \\
 
 ------- tabelle --------
 
@@ -24,8 +24,11 @@ Mit zunehmendem Winkel erkennt man den Grenzwinkel bei  $K_{\alpha}$ und $K_{\be
 Aus dem Grenzwinkel \begin{equation*}
   \theta_{min} = 
 \end{equation*}
-lassen sich die maximale Energie und die minimale Wellenlänge \begin{equation*}
-  E_{max} = \\\\
+lassen sich die maximale Energie und die minimale Wellenlänge 
+\begin{equation*}
+  E_{max} = 
+\end{equation*}
+\begin{equation*}
   \lambda_{min} =
 \end{equation*} 
 berechnen.
@@ -41,11 +44,11 @@ nach ----- zu $A = $ ergibt.
 
 \subsubsection*{Abschirmkonstanten}
 
-Aus den berechneten Energien $E_{K \alpha}$ und $E_{K \beta}$ und dem Literaturwert $E_{K,\;abs} = $ können die Abschirmkonstanten $\sigma_1$, $\sigma_2$ 
-und $\sigma_3$ wie folgt bestimmt werden. \\
+Aus den berechneten Energien $E_{K \alpha}$ und $E_{K \beta}$ und dem Literaturwert $E_{K,\;abs} = 8980.476 \; \mathrm{eV}$ können die 
+Abschirmkonstanten $\sigma_1$, $\sigma_2$ und $\sigma_3$ von Kupfer wie folgt bestimmt werden. Die Ordnungszahl lautet $Z = 29$, $n=1$, $m=2$ und $l=3$. \\
 Aus 
 \begin{equation*}
-  \sigma_1=Z-\sqrt{\frac{E_{Kabs}}{R_y}}
+  \sigma_1=Z-\sqrt{\frac{E_{Kabs}}{R_\infty}}
   \end{equation*}
   
   \begin{equation*}
@@ -55,11 +58,65 @@ Aus
   \begin{equation*}
       \sigma_3=Z-\sqrt{ \frac{l^2}{n^2}(Z-\sigma_1)^2 - \frac{l^2}{R_\infty} E_{K\beta}}
   \end{equation*}
-ergeben sie sich zu $\sigma_1 = $, $\sigma_2 = $ 
-und $\sigma_3 = $.
+ergeben sie sich zu $\sigma_1 = 3,30°$, $\sigma_2 = 13,57°$ 
+und $\sigma_3 = ??$. ------ gibt imaginäres ergebnis
 
-\subsection{Absorptionsspektrum}
+
+
+
+\subsection{Absorptionsspektren}
 \label{subsec:absorptionsspektrum}
+
+
+\subsubsection*{Absorptionsspektrum von Zink}
+In \autoref{fig:zink} ist das gemessene Absorptionsspektrum von Zink abgebildet.\\
+Darin ist die K-Kante bei $\theta = 11,9°$ zu sehen. \\
+Nach Gl. --- ist die ergibt sich die Absorptionsenergie $E_{Zn, \; K} = 9,138 \mathrm{ keV}$.\\
+Daraus lässt sich die Abschirmkonstante $\sigma_{Zn, \; K} = 4,08°$ errechnen.
+\begin{figure}
+  \centering
+  \includegraphics{zink.pdf}
+  \caption{Absorptionsspektrum der Röntgenstrahlung von Zink.}
+  \label{fig:zink}
+\end{figure}
+
+
+\subsubsection*{Absorptionsspektrum von Gallium}
+Im Absorptionsspektrum von Gallium ist die K-Kante bei $\theta = 10,5°$ zu sehen. \\
+Nach Gl. --- ist die ergibt sich die Absorptionsenergie $E_{Ga, \; K} = 10,34 \mathrm{ keV}$.\\
+Daraus lässt sich die Abschirmkonstante $\sigma_{Ga, \; K} = 3,43°$ errechnen.
+
+\subsubsection*{Absorptionsspektrum von Brom}
+Im Absorptionsspektrum von Brom ist die K-Kante bei $\theta = 8,3°$ zu sehen. \\
+Nach Gl. --- ist die ergibt sich die Absorptionsenergie $E_{Br, \; K} = 13,54 \mathrm{ keV}$.\\
+Daraus lässt sich die Abschirmkonstante $\sigma_{Br, \; K} = 3,45°$ errechnen.
+
+\subsubsection*{Absorptionsspektrum von Strontium}
+Im Absorptionsspektrum von Strontium ist die K-Kante bei $\theta = 6,8°$ zu sehen. \\
+Nach Gl. --- ist die ergibt sich die Absorptionsenergie $E_{Sr,\; K} = 15,9  \mathrm{ keV}$.\\
+Daraus lässt sich die Abschirmkonstante $\sigma_{Sr, \; K} = 3,81°$ errechnen.
+
+\subsubsection*{Absorptionsspektrum von Zirkonium}
+Im Absorptionsspektrum von Zirkonium ist die K-Kante bei $\theta = 6,4°$ zu sehen. \\
+Nach Gl. --- ist die ergibt sich die Absorptionsenergie $E_{Zr, \; K} = 16,9  \mathrm{ keV}$.\\
+Daraus lässt sich die Abschirmkonstante $\sigma_{Zr, \; K} = 4,75°$ errechnen.
+
+
+
+
+
+\subsubsection*{Moseleysches Gesetz}
+
+Die lineare Ausgleichsrechnung ergibt für die Ausgleichsgerade $y = ax + b$ die Parameter $a = 3,443 \pm 0,2283$ keV und $b = -5,864 \pm 7,9946$ keV.\\
+So ergibt sich für die experimentiell bestimmte Rydbergkonstante $R_{exp} = 9,56 \cdot 10^6 \mathrm{\frac{1}{m}}$. 
+
+\begin{figure}
+  \centering
+  \includegraphics{plot_moseley.pdf}
+  \caption{Die Quadratwurzel der Absorptionsenergie in Abhängigkeit von der Ordnungszahl Z mit Ausgleichsgeraden.}
+  \label{fig:moseley}
+\end{figure}
+
 
 
 
