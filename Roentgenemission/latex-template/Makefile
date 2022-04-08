@@ -1,7 +1,7 @@
 all:
-	make -C vXXX
+	make -C v602
 
 clean:
-	make -C vXXX clean
+	make -C v602 clean
 
 .PHONY: all clean
