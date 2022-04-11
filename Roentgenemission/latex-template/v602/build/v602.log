@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2021.5.3)  11 APR 2022 11:30
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2021.5.3)  11 APR 2022 16:47
  restricted system commands enabled.
 **v602.tex
 (./v602.tex
@@ -1449,57 +1449,67 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 \openout4 = v602.toc
  [2
 
-] (./content/theorie.tex) (./content/durchfuehrung.tex) (./content/auswertung.tex
+] (./content/theorie.tex [3]
+<content/1.png, id=56, 488.57532pt x 286.82156pt>
+File: content/1.png Graphic file (type png)
+<use content/1.png>
+Package luatex.def Info: content/1.png  used on input line 49.
+(luatex.def)             Requested size: 256.0748pt x 150.32973pt.
+ [4<./content/1.png>]) (./content/durchfuehrung.tex) (./content/auswertung.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-<build/plot_cu.pdf, id=39, 417.7206pt x 258.0049pt>
+[5]
+<build/plot_cu.pdf, id=79, 417.7206pt x 258.0049pt>
 File: build/plot_cu.pdf Graphic file (type pdf)
 <use build/plot_cu.pdf>
 Package luatex.def Info: build/plot_cu.pdf  used on input line 56.
 (luatex.def)             Requested size: 417.71957pt x 258.00426pt.
-[3]
+ [6]
 Overfull \hbox (4.95952pt too wide) in paragraph at lines 87--90
 \TU/lmr/m/n/10.95 Aus den be-rech-ne-ten En-er-gien $\TU/LatinModernMath(1)/m/n/10.95 𝐸[]$ \TU/lmr/m/n/10.95 und $\TU/LatinModernMath(1)/m/n/10.95 𝐸[]$ \TU/lmr/m/n/10.95 und dem Li-te-ra-tur-wert $\TU/LatinModernMath(1)/m/n/10.95 𝐸[] = 8980.476 []$
  []
 
-[4<./build/plot_cu.pdf>]
-<zink.pdf, id=84, 344.0052pt x 212.4738pt>
+<zink.pdf, id=91, 344.0052pt x 212.4738pt>
 File: zink.pdf Graphic file (type pdf)
 <use zink.pdf>
 Package luatex.def Info: zink.pdf  used on input line 118.
 (luatex.def)             Requested size: 344.00435pt x 212.47327pt.
- [5<build/zink.pdf>]
-<plot_moseley.pdf, id=117, 417.7206pt x 258.0049pt>
+[7<./build/plot_cu.pdf>] [8<build/zink.pdf>]
+<plot_moseley.pdf, id=156, 417.7206pt x 258.0049pt>
 File: plot_moseley.pdf Graphic file (type pdf)
 <use plot_moseley.pdf>
 Package luatex.def Info: plot_moseley.pdf  used on input line 155.
 (luatex.def)             Requested size: 417.71957pt x 258.00426pt.
-) (./content/diskussion.tex [6]) [7<build/plot_moseley.pdf>] (./build/v602.aux)
+) (./content/diskussion.tex)
+
+LaTeX Warning: Empty bibliography on input line 23.
+
+[9<build/plot_moseley.pdf>] (./build/v602.aux)
 Package rerunfilecheck Info: File `v602.aux' has not changed.
-(rerunfilecheck)             Checksum: 715F72CA82D66DD1857CF4685DCA89C2;7347.
+(rerunfilecheck)             Checksum: A3C0AF6B709FA1FD437FC10B0B6C68FF;10358.
 Package rerunfilecheck Info: File `v602.toc' has not changed.
-(rerunfilecheck)             Checksum: BFDBD506BE51EC0618CD3B7A7AD610C3;1104.
+(rerunfilecheck)             Checksum: 940A65333148F898353B005C3E1464B9;1598.
 Package logreq Info: Writing requests to 'v602.run.xml'.
 
 \openout1 = v602.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 36288 strings out of 478531
+ 36132 strings out of 478531
  100000,1977958 words of node,token memory allocated
- 701 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 24 attribute, 78 glue_spec, 14 attribute_list, 1 write nodes
-   avail lists: 1:2,2:720,3:186,4:66,5:197,6:30,7:2738,8:22,9:302,10:10,11:248
- 55059 multiletter control sequences out of 65536+600000
- 94 fonts using 34926255 bytes
+ 775 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 52 attribute, 76 glue_spec, 28 attribute_list, 1 write nodes
+   avail lists: 1:2,2:770,3:206,4:86,5:448,6:38,7:6444,8:70,9:365,10:14,11:720
+ 54884 multiletter control sequences out of 65536+600000
+ 95 fonts using 35057799 bytes
  116i,11n,119p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on v602.pdf (7 pages, 86579 bytes).
+</usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman8-bold.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on v602.pdf (9 pages, 1217177 bytes).
 
-PDF statistics: 242 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 131072)
- 65 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 293 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 131072)
+ 97 words of extra memory for PDF output out of 10000 (max. 100000000)
 

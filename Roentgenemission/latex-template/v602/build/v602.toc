@@ -1,20 +1,28 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Theorie}{3}{section.1}%
+\contentsline {section}{\numberline {1}Ziel}{3}{section.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Durchführung}{3}{section.2}%
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Auswertung}{3}{section.3}%
+\contentsline {section}{\numberline {3}Versuchsaufbau}{4}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Überprüfung der Bragg-Bedingung}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Überprüfung der Bragg-Bedingung}{5}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Emissionsspektrum}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Emissionsspektrum einer Cu-Röntgenröhre}{5}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Absorptionsspektren}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Absorptionsspektrum}{5}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Diskussion}{7}{section.4}%
+\contentsline {section}{\numberline {4}Vorbereitung}{5}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\nonumberline Literatur}{7}{section*.16}%
+\contentsline {section}{\numberline {5}Auswertung}{5}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Überprüfung der Bragg-Bedingung}{5}{subsection.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Emissionsspektrum}{6}{subsection.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3}Absorptionsspektren}{8}{subsection.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Diskussion}{9}{section.6}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
