@@ -6,10 +6,42 @@
 \subsection{Überprüfung der Bragg-Bedingung}
 \label{subsec:bragg}
 Nach der Bragg-Bedingung ist das gemessene Intensitätsmaximum beim Glanzwinkel von ---- zu erwarten. \\
-Dieser liegt bei dem verwendeten KBr-Kristall bei ---- und wird durch die in Tabelle aufgeführten -- Werte 
-der Messung verifiziert ???. \\
+Der experimentiell bestimmte Glanzwinkel liegt bei dem verwendeten KBr-Kristall bei ---- , so wird durch die in Tabelle aufgeführten -- Werte 
+der Sollwinkel (nicht??) verifiziert. \\
 
-------- tabelle --------
+\begin{table}[H]
+  \centering
+  \caption{Die Werte für die Messung zur Verifikation der Bragg-Bedingung }
+  \begin{tabular}{cc}
+    \toprule
+    {$ 2 \cdot \theta \mathbin{/} \unit{\degree}$} &
+    {$ N \mathbin{/} Imp / \unit{\second}$} \\
+    \midrule
+    21,8 &	219,0 \\
+    21,9 &	233,0 \\
+    22,0 &	249,0 \\
+    22,1 &	247,0 \\
+    22,2 &	258,0 \\
+    22,3 &	259,0 \\
+    22,4 &	275,0 \\
+    22,5 &	295,0 \\
+    22,6 &	289,0 \\
+    22,7 &	282,0 \\
+    22,8 &	288,0 \\
+    22,9 &	287,0 \\
+    23,0 &	266,0 \\
+    23,1 &	257,0 \\
+    23,2 &	266,0 \\
+    23,3 &	267,0 \\
+    23,4 &	258,0 \\
+    23,5 &	244,0 \\
+
+
+    \bottomrule
+  \end{tabular}
+  \label{tab:Tab_bragg}
+\end{table}
+
 
 
 
@@ -19,8 +51,16 @@ der Messung verifiziert ???. \\
 
 \subsubsection*{Maximale Energie und minimale Wellenlänge}
 
-Das charakteristische Spektrum der Kupfer-Röntgenröhre ist in Abbildung --- zu sehen.\\
-Mit zunehmendem Winkel erkennt man den Grenzwinkel bei  $K_{\alpha}$ und $K_{\beta}$ 
+\begin{figure}
+  \centering
+  \includegraphics{build/plot_cu.pdf}
+  \caption{Emissionsspektrum der Kupfer-Röntgenröhre.}
+  \label{fig:cu}
+\end{figure}
+
+
+Das charakteristische Spektrum der Kupfer-Röntgenröhre ist in \autoref{fig:cu} zu sehen.\\
+Mit zunehmendem Winkel erkennt man den Grenzwinkel bei  $K_{\alpha}$ und $K_{\beta}$. \\ 
 Aus dem Grenzwinkel \begin{equation*}
   \theta_{min} = 
 \end{equation*}
@@ -37,8 +77,8 @@ berechnen.
 \subsubsection*{Auflösungsvermögen der Apparatur}
 
 Mit Hilfe der Halbwertsbreite lässt sich auch das Auflösungsvermögen der Apparatur bestimmen. \\
-Die Halbwertsbreite berechnet sich aus den Winkeln $\theta_1 = $ und $\theta_2 = $.\\
-So ergeben sich die Energien zu $E_1$ und $E_2$, aus deren Differenz $\Delta E = $ keV sich das Auflösungsvermögen
+Die Halbwertsbreite berechnet sich aus den Winkeln $\theta_\beta = 11,9°$ und $\theta_\alpha = 13,2°$.\\
+So ergeben sich die Energien zu $E_\alpha = 9,145$ keV und $E_\beta = 8,255$ keV, aus deren Differenz $\Delta E = $ keV sich das Auflösungsvermögen
 nach ----- zu $A = $ ergibt.
 
 
@@ -58,8 +98,8 @@ Aus
   \begin{equation*}
       \sigma_3=Z-\sqrt{ \frac{l^2}{n^2}(Z-\sigma_1)^2 - \frac{l^2}{R_\infty} E_{K\beta}}
   \end{equation*}
-ergeben sie sich zu $\sigma_1 = 3,30°$, $\sigma_2 = 13,57°$ 
-und $\sigma_3 = ??$. ------ gibt imaginäres ergebnis
+ergeben sie sich zu $\sigma_1 = 3,30°$, $\sigma_2 = 13,57°$. 
+$\sigma_3$ kann nicht korrekt bestimmt werden, da sich ein komplexer Wert ergibt.
 
 
 

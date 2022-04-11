@@ -50,7 +50,7 @@ plt.ylabel(r'$\sqrt{E_k} \: / \: \sqrt{eV}$')
 plt.legend(loc='best')
 
 plt.tight_layout()
-plt.savefig('plot_moseley.pdf')
+plt.savefig('build/plot_moseley.pdf')
 plt.close()
 
 
@@ -73,3 +73,23 @@ plt.ylabel(r'Rate / $\si{\per\second}$')
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig('build/zink.pdf')
 plt.close()
+
+
+w_Cu, R_Cu = np.genfromtxt('content/emissionsspektrum.txt', unpack=True)
+w1 = w_Cu[76:84]
+R1 = R_Cu[76:84]
+w2 = w_Cu[88:98]
+R2 = R_Cu[88:98]
+
+plt.plot(w_Cu, R_Cu, 'b-', label='Bremsberg')
+plt.plot(w2, R2, 'g-', label=r'$K_\alpha$')
+plt.plot(w1, R1, 'r-', label=r'$K_\beta$')
+plt.grid()
+plt.ylim(0, 6500)
+plt.legend()
+plt.xlabel('Kristallwinkel $ \Theta$ in $^\circ$')
+plt.ylabel(r'Zählrate in Impulse/$s$')
+plt.savefig('build/plot_cu.pdf')
+plt.close()
+
+

@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'build/v602.blg'
-[135] biber-darwin:340> INFO - === Fr Apr  8, 2022, 21:27:07
-[156] Biber.pm:415> INFO - Reading 'build/v602.bcf'
-[300] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
-[327] Biber.pm:4340> INFO - Processing section 0
-[352] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[565] bibtex.pm:1689> INFO - LaTeX decoding ...
-[570] bibtex.pm:1494> INFO - Found BibTeX data source '../lit.bib'
-[582] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[582] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[582] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[583] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
-[585] bbl.pm:654> INFO - Writing 'build/v602.bbl' with encoding 'UTF-8'
-[585] bbl.pm:757> INFO - Output to build/v602.bbl
+[146] biber-darwin:340> INFO - === Mo Apr 11, 2022, 10:09:58
+[176] Biber.pm:415> INFO - Reading 'build/v602.bcf'
+[363] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
+[385] Biber.pm:4340> INFO - Processing section 0
+[406] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[614] bibtex.pm:1689> INFO - LaTeX decoding ...
+[618] bibtex.pm:1494> INFO - Found BibTeX data source '../lit.bib'
+[629] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[629] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[629] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[630] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[633] bbl.pm:654> INFO - Writing 'build/v602.bbl' with encoding 'UTF-8'
+[634] bbl.pm:757> INFO - Output to build/v602.bbl
