@@ -84,6 +84,8 @@ R2 = R_Cu[88:98]
 plt.plot(w_Cu, R_Cu, 'b-', label='Bremsberg')
 plt.plot(w2, R2, 'g-', label=r'$K_\alpha$')
 plt.plot(w1, R1, 'r-', label=r'$K_\beta$')
+#plt.axvline(x = 11.9, color="r-",label='$K_\beta$ -Linie')
+#plt.axvline(max, color="g-",label="$K_\alpha-Linie$")
 plt.grid()
 plt.ylim(0, 6500)
 plt.legend()

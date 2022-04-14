@@ -1,9 +1,5 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'build/v602.blg'
-[115] biber-darwin:340> INFO - === Mo Apr 11, 2022, 16:45:18
-[137] Biber.pm:415> INFO - Reading 'build/v602.bcf'
-[285] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[294] Utils.pm:395> WARN - The file 'build/v602.bcf' does not contain any citations!
-[308] bbl.pm:654> INFO - Writing 'build/v602.bbl' with encoding 'UTF-8'
-[308] bbl.pm:757> INFO - Output to build/v602.bbl
-[309] Biber.pm:128> INFO - WARNINGS: 1
+[160] biber-darwin:340> INFO - === Di Apr 12, 2022, 22:59:38
+[181] Utils.pm:411> ERROR - build/v602.bcf is malformed, last biblatex run probably failed. Deleted build/v602.bbl
+[181] Biber.pm:132> INFO - ERRORS: 1
