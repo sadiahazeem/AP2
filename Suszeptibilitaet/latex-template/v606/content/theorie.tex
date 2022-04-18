@@ -48,7 +48,61 @@ lässt sich die Beziehung
 \end{equation}
 herleiten und zu 
 \begin{equation}
-    |\vec{\mu_J}| \approx \vec{\mu_B}\cdot g_J \sqrt{J(J+1)}
+    |\vec{\mu_J}| \approx \mu_B \cdot g_J \sqrt{J(J+1)}
 \end{equation}
 approximieren.\\
-Hier sind 
+Hier sind $\mu_B$ das Bohrsche Magneton, $g_S$ das gyromagnetische 
+Verhältnis, $g_J$ der Lande-Faktor
+\begin{equation}
+    g_J = \frac{3J(J+1) + S(S+1) - L(L+1)}{2J(J+1)}
+\end{equation}
+und $\alpha$ und $\beta$ Winkel aus der folgenden geometrischen Betrachtung des Gesamtimpulses
+des Atoms.\\
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{content/vec_theo.png}
+    \caption{Vektorielle Darstellung der Drehimpulsvektoren einer Elektronenhülle und deren magnetischer Momente. \cite{sample}}
+    \label{fig:vektoriell}
+\end{figure}
+
+Der Winkel zwischen dem externen und internen Magnetfeld $\vec{\mu_J}$ ist nach der Beziehung
+\begin{equation}
+    \mu_{J_Z} = - \mu_B \cdot g_J \cdot m
+\end{equation}
+gequantelt. Es sind $2J+1$ Konfigurationen einnehmbar.\\
+$\mu_{J_Z}$ ist die z-Komponente des magnetischen Moments mit der ganzzahligen Orientierungsquantenzahl
+$m$.\\
+Über alle Konfigurationen mit den dazugehörigen Wahrscheinlichkeiten summiert
+ergibt sich für die Suszeptibilität 
+\begin{equation}
+    \chi = \frac{\mu_0 \cdot \mu_{\text{B}}^2 \cdot g_{\text{J}}^2 \cdot N \cdot  J (J+1)}{3 \cdot k_{\text{B}} \cdot T},
+\end{equation} 
+worin $k_B$ die Boltzmannkosntante, $N$ die Anzahl der Momente je Volumeneinheit,
+und $T$ die Temperatur ist.\\
+
+
+\subsection{Messverfahren zur Berechnung der Suszeptibilität}
+
+Bestimmt wird die Differenz $\Delta L$ der Induktivitäten
+der luftgefüllten und der mit einem paramagnetischen Stoff befüllten Spule.\\
+Die Spule ist in eine Brückenschaltung verbaut, sodass aufgrund der  für hohe Frequenzen $\omega^2 L^2 >> R^2$
+\begin{equation}
+    \chi (\omega \to \infty) = \frac{4 F U_\text{Br}}{Q U_\text{err}}
+\end{equation}
+die Suszeptibilität durch
+\begin{equation}
+    \chi = \frac{2 \cdot \Delta R \cdot F}{R_3\cdot Q}
+    \label{eqn:alternativ}
+\end{equation}
+bestimmt werden kann. Hier ist $F$ der Spulenquerschnitt, $Q$ der 
+Probenquerschnitt, $U_{err}$ die Erregerspannung. $\Delta R$ ist die Differenz der Potentiometereinstellungen.\\
+
+\subsection{Selektivverstärker}
+
+Die Güte $Q$ eines Selektivverstärkers gibt Auskunft über seine Filtereigenschaften und kann durch 
+\begin{equation*}
+    Q = \frac{\nu_0}{\nu_+ - \nu_-}
+\end{equation*}
+bestimmt werden.
+Hier beschreibt $\nu_0$ die Durchlassfrequenz des Selektivverstärkers und $\nu_+$ und $\nu_-$ die Frequenzen, 
+zu denen das Verhältnis $\frac{U_\text{A}}{U_\text{E}}$ den Wert $\frac{1}{\sqrt{2}}$ erreicht.\\
