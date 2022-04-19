@@ -1,68 +1,68 @@
-\documentclass[a4paper]{scrartcl}
-
-% input encoding
-\usepackage[utf8]{inputenc}
-
-% new german spelling
-\usepackage[ngerman]{babel}
-
-% choose font
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{dsfont}
-
-% KOMA-Script options
-\KOMAoptions{%
-  parskip=full,%
-  fontsize=12pt,%
-  DIV=calc}
-
-% color and images
-\usepackage{xcolor}
-\usepackage{graphicx}
-\usepackage{wrapfig}
-\usepackage{subcaption}
-\captionsetup{compatibility=false}
-
-% SI units 
-\usepackage{siunitx} 
-
-% quotes
-\usepackage[german=guillemets]{csquotes}
-
-% math
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsfonts} 
-
-% set special behaviour for hyperlinks in pdfs
-\usepackage[breaklinks=true]{hyperref}
-
-% tables don't appear anywhere
-\usepackage{float}
-
-
-% other useful packages 
-\usepackage{enumitem} 
-\usepackage{cancel} 
-\usepackage{wrapfig}
-\usepackage{ booktabs} 
-\usepackage{blindtext}
-
-
-\begin{document}
-\title{V606: Messung der Suszeptibilität paramagnetischer Substanzen}
-\author{Tim Alexewicz (tim.alexewicz@udo.edu), \and Sadiah Azeem (sadiah.azeem@udo.edu)}
-\date{Versuchsdurchführung: 12.04.2022}
-
-\maketitle
-\thispagestyle{empty}
-\newpage
-\thispagestyle{empty}
-\tableofcontents
-\newpage
-\setcounter{page}{1}
-
+%\documentclass[a4paper]{scrartcl}
+%
+%% input encoding
+%\usepackage[utf8]{inputenc}
+%
+%% new german spelling
+%\usepackage[ngerman]{babel}
+%
+%% choose font
+%\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
+%\usepackage{dsfont}
+%
+%% KOMA-Script options
+%\KOMAoptions{%
+%  parskip=full,%
+%  fontsize=12pt,%
+%  DIV=calc}
+%
+%% color and images
+%\usepackage{xcolor}
+%\usepackage{graphicx}
+%\usepackage{wrapfig}
+%\usepackage{subcaption}
+%\captionsetup{compatibility=false}
+%
+%% SI units 
+%\usepackage{siunitx} 
+%
+%% quotes
+%\usepackage[german=guillemets]{csquotes}
+%
+%% math
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{amsfonts} 
+%
+%% set special behaviour for hyperlinks in pdfs
+%\usepackage[breaklinks=true]{hyperref}
+%
+%% tables don't appear anywhere
+%\usepackage{float}
+%
+%
+%% other useful packages 
+%\usepackage{enumitem} 
+%\usepackage{cancel} 
+%\usepackage{wrapfig}
+%\usepackage{ booktabs} 
+%\usepackage{blindtext}
+%
+%
+%\begin{document}
+%\title{V606: Messung der Suszeptibilität paramagnetischer Substanzen}
+%\author{Tim Alexewicz (tim.alexewicz@udo.edu), \and Sadiah Azeem (sadiah.azeem@udo.edu)}
+%\date{Versuchsdurchführung: 12.04.2022}
+%
+%\maketitle
+%\thispagestyle{empty}
+%\newpage
+%\thispagestyle{empty}
+%\tableofcontents
+%\newpage
+%\setcounter{page}{1}
+%
 
 
 \section{Auswertung}
@@ -76,25 +76,30 @@ In der folgenden Tabelle befinden sich die gemessenen Spannungen $\frac{U_{A}}{U
  $\nu$ [kHz]& $\frac{U_{A}}{U_{E}}$ [mV] & $\nu$ [kHz]& $\frac{U_{A}}{U_{E}}$ [mV]\\  \midrule
  20.6 & 190 & 33.6 & 2000\\ 
  21.4 & 210 & 34.1 & 2500\\ 
- 22 & 220 & 35 & 6900\\
+ 22   & 220 & 35   & 6900\\
  23.3 & 250 & 36.5 & 4000\\
  24.1 & 280 & 37.2 & 1500\\
  25.6 & 300 & 38.1 & 1200\\
  26.2 & 350 & 39.4 & 900\\
- 27 & 430 & 40.2 & 700\\
- 28 & 500 & 41.1 & 670\\
- 29.4 & 630 & 42 & 600\\
+ 27   & 430 & 40.2 & 700\\
+ 28   & 500 & 41.1 & 670\\
+ 29.4 & 630 & 42   & 600\\
  30.3 & 680 & 43.5 & 490\\
  31.1 & 940 & 44.1 & 430\\
  32.3 & 1100 & 45.2 & 400\\ \bottomrule
  \end{tabular} 
- \label{tab}
+ \label{tab:filterkurve}
 \end{table} 
-Die Werte aus \autoref{tab} können in eine Gaußfunktion $U(\nu)=a\cdot exp(-(\frac{\nu-b}{c})^2)$ gefittet werden. Unter der Benutzung von Matlab ergeben sich für die Parameter $a=7152\ \si{\V}$, $b=35.42$ kHz und $c=1.467$ kHz, mit der maximalen Spannung von $U_{max}=7152\ \si{\V}=a$ bei der Frequenz $\nu_{0}=35.42\ \si{\kHz}=b$. Die Frequenzen $\nu_{+}$ und $\nu_{-}$ können durch die Beziehung $U(\nu)=\frac{1}{\sqrt{2}}$ berechnet werden. Somit ergibt sich für $\nu_{+}=39.875$ und für $\nu_{-}=30.965$. Aus $\nu_{0}$, $\nu_{+}$ und $\nu_{-}$ lässt sich die Güte mithilfe von \eqref{11}
+Die Werte aus \autoref{tab:filterkurve} können in eine Gaußfunktion $U(\nu)=a\cdot exp(-(\frac{\nu-b}{c})^2)$ gefittet werden. 
+Unter der Benutzung von Matlab ergeben sich für die Parameter $a=7152\ \si{\V}$, $b=35.42$ kHz und $c=1.467$ kHz, 
+mit der maximalen Spannung von $U_{max}=7152\ \si{\V}=a$ bei der Frequenz $\nu_{0}=35.42\ \si{\kHz}=b$. 
+Die Frequenzen $\nu_{+}$ und $\nu_{-}$ können durch die Beziehung $U(\nu)=\frac{1}{\sqrt{2}}$ berechnet werden. 
+Somit ergibt sich für $\nu_{+}=39.875$ und für $\nu_{-}=30.965$. 
+Aus $\nu_{0}$, $\nu_{+}$ und $\nu_{-}$ lässt sich die Güte mithilfe von \autoref{eq:guetekuh}
 berechnen. Es ergibt sich eine Güte von $Q=3.975$.
 \begin{figure}[H]
   \centering
-  \includegraphics[width=12cm]{fit.png}
+  \includegraphics[width=12cm]{content/fit.png}
   \caption{Fit der Messdaten auf eine Gaußfunktion.}
 \end{figure}
 
@@ -146,7 +151,7 @@ aus den Formeln
   \label{fehler}
 \end{align*}
 wobei A eine beliebige Größe ist, dessen Mittelwert und Fehler ausgerechnet werden soll und n die Anzahl an Messungen dieser Größe.\\
-Aus diesen Mittelwerten ergeben sich mit \eqref{10} und 
+Aus diesen Mittelwerten ergeben sich mit \autoref{eq:alternativ} und    
 \begin{equation}
   \Delta f(A)=\sqrt{\left(\frac{\partial f(A)}{\partial A}\right)^2 (\Delta A)^2}
   \label{gauß}
@@ -169,34 +174,35 @@ Die theoretischen Werte können durch die Hundschen Regeln berechnet werden. Daz
    $Gd_2 O_3$ & $\frac{7}{2}$ & $\frac{7}{2}$ & 0 & 2\\ \hline
    \end{tabular}
 \end{table}
-wobei sich der gyromagnetische Faktor aus \eqref{6} berechnet. Wird alles in \eqref{8} eingesetzt, ergibt sich für die theoretischen Suszeptibilitäten
+wobei sich das gyromagnetische Verhältnis aus \autoref{eq:gyromyro} berechnet. 
+Wird alles in \autoref{eq:sus} eingesetzt, ergibt sich für die theoretischen Suszeptibilitäten
 \begin{align*}
   \chi_{th_{Nd_2 O_3}}&=0.00149\\
   \chi_{th_{Dy_2 O_3}}&=0.0126\\
   \chi_{th_{Gd_2 O_3}}&=0.0069
 \end{align*}
-wenn für N aus \eqref{8}
+wenn für N % aus \eqref{8} --- ist gar nicht in der theorie ---
 \begin{equation*}
   N=\frac{\rho}{M}\cdot N_{A}
 \end{equation*}
 genutzt wird, wobei M die molare Masse des Stoffes, $\rho$ die Dichte des Stoffes und $N_A$ die Avogadro-Zahl ist.
 
-\section{Diskussion}
-Es wurde mit einer Güte von $Q=20$ gemessen. Die ausgerechnete Güte beträgt allerdings $Q=3.975$. Es lässt sich leicht erkennen, dass das eine große Abweichung ist. 
-Beim Vergleich der Suszeptibilitäten 
-\begin{align*}
-  |\frac{\chi_{th_{N}}-\chi_{exp_{N}}}{\chi_{exp_{N}}}|&=27\ \%\\
-  |\frac{\chi_{th_{D}}-\chi_{exp_{D}}}{\chi_{exp_{D}}}|&=15\ \%\\
-  |\frac{\chi_{th_{G}}-\chi_{exp_{G}}}{\chi_{exp_{G}}}|&=3\ \%
-\end{align*}
-wird bemerkbar, dass die ersten beiden Stoffe zu extrem abweichen und die Auswertung keine reliable Zustimmung der Theorie ist und dementsprechend beim Messvorgang etwas falsch abgelesen wurde, zum Beispiel die 10 mV Skala mit der 30 mV Skala verwechselt wurde, oder die Rundungen für die starken Abweichungen gesorgt haben. Beim dritten Molekül ergibt sich alles wunderbar und die Abweichung ist noch im Signifikanzintervall, bestätigt also als Einziges die Theorie. 
+%\section{Diskussion}
+%Es wurde mit einer Güte von $Q=20$ gemessen. Die ausgerechnete Güte beträgt allerdings $Q=3.975$. Es lässt sich leicht erkennen, dass das eine große Abweichung ist. 
+%Beim Vergleich der Suszeptibilitäten 
+%\begin{align*}
+%  |\frac{\chi_{th_{N}}-\chi_{exp_{N}}}{\chi_{exp_{N}}}|&=27\ \%\\
+%  |\frac{\chi_{th_{D}}-\chi_{exp_{D}}}{\chi_{exp_{D}}}|&=15\ \%\\
+%  |\frac{\chi_{th_{G}}-\chi_{exp_{G}}}{\chi_{exp_{G}}}|&=3\ \%
+%\end{align*}
+%wird bemerkbar, dass die ersten beiden Stoffe zu extrem abweichen und die Auswertung keine reliable Zustimmung der Theorie ist und dementsprechend beim Messvorgang etwas falsch abgelesen wurde, zum Beispiel die 10 mV Skala mit der 30 mV Skala verwechselt wurde, oder die Rundungen für die starken Abweichungen gesorgt haben. Beim dritten Molekül ergibt sich alles wunderbar und die Abweichung ist noch im Signifikanzintervall, bestätigt also als Einziges die Theorie. 
 
-\section{Literaturverzeichnis}
-
-[1] Technische Universität Dortmund, \textit{V606: Messung der Suszeptibilität paramagnetischer
-Substanzen}
-
-
-
-\end{document}
-
+%\section{Literaturverzeichnis}
+%
+%[1] Technische Universität Dortmund, \textit{V606: Messung der Suszeptibilität paramagnetischer
+%Substanzen}
+%
+%
+%
+%\end{document}
+%
