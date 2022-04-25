@@ -68,7 +68,7 @@
 \section{Auswertung}
 
 \subsection{Filterkurve des Selektivverstärkers}
-In der folgenden Tabelle befinden sich die gemessenen Spannungen $\frac{U_{A}}{U_{E}}$ in Abhängigkeit zur Frequenz $\nu$:
+In \autoref{tab:filterkurve} befinden sich die gemessenen Spannungen $\frac{U_{A}}{U_{E}}$ in Abhängigkeit zur Frequenz $\nu$.
 \begin{table}[H]
  \centering 
  \captionabove{Spannungen in Abhängigkeit zur Frequenz}
@@ -104,7 +104,7 @@ berechnen. Es ergibt sich eine Güte von $Q=3.975$.
 \end{figure}
 
 \subsection{Suszeptibilitäten seltener Erden}
-Für den Versuch wurden die Suszeptibilitäten der drei Stoffe $Nd_2 O_3$, $Dy_2 O_3$ und $Gd_2 O_3$ überprüft. Dazu wurde einer Spannung von $1$ V eingespeist. In der folgenden Tabelle befinden sich die niedrigsten Brückenspannungen und Widerstände mit und ohne seltener Erde:
+Für den Versuch wurden die Suszeptibilitäten der drei Stoffe $Nd_2 O_3$, $Dy_2 O_3$ und $Gd_2 O_3$ überprüft. Dazu wurde einer Spannung von $1$ V eingespeist. In \autoref{tab:2} befinden sich die niedrigsten Brückenspannungen und Widerstände mit und ohne seltener Erde.
 \begin{table}[H]
   \centering
   \caption{Gemessene Spannungen und Widerstände.}
@@ -121,8 +121,9 @@ Für den Versuch wurden die Suszeptibilitäten der drei Stoffe $Nd_2 O_3$, $Dy_2
   & 990 & 980 & 687 & 475\\
   & 980 & 970 & 675 & 596\\ \hline
   \end{tabular}
-\end{table}
-Die wichtigsten Größen der Stoffe sind
+  \label{tab:2}
+\end{table}\\
+Die wichtigsten Größen der Stoffe sind \autoref{tab:3} zu entnehmen,
 \begin{table}[H]
   \centering
   \caption{Die wichtigsten Größen der drei Stoffe.}
@@ -132,7 +133,8 @@ Die wichtigsten Größen der Stoffe sind
   $Dy_2 O_3$ & 15.10 & 373 & 7.8 & 15.2 & 1.27$\cdot$10$^{-5}$ \\ \hline
   $Gd_2 O_3$ & 14.68 & 363 & 7.4 & 15.3 & 1.30$\cdot$10$^{-5}$ \\ \hline
   \end{tabular}
-\end{table}
+  \label{tab:3}
+\end{table}\\
 wobei sich der Querschnitt Q der Probe aus 
 \begin{equation*}
   Q=\frac{m}{L\rho}
@@ -140,8 +142,8 @@ wobei sich der Querschnitt Q der Probe aus
 berechnen lässt, m die Masse, M die molare Masse, $\rho$ die Dichte und L die Länge der Probe ist.
 Aus den gemessenen Werten ergeben sich die folgenden aufgelisteten mittleren Widerstandsdifferenzen
 \begin{align*}
-  \bar R_{Nd_2 O_3}&=(0.197 \pm 0.009) \si{\ohm}\\
-  \bar R_{Dy_2 O_3}&=(1.083 \pm 0.076) \si{\ohm}\\
+  \bar R_{Nd_2 O_3}&=(0.197 \pm 0.009) \si{\ohm},\\
+  \bar R_{Dy_2 O_3}&=(1.083 \pm 0.076) \si{\ohm}\ \textrm{und}\\
   \bar R_{Gd_2 O_3}&=(0.502 \pm 0.055) \si{\ohm}
 \end{align*}
 aus den Formeln
@@ -158,34 +160,44 @@ Aus diesen Mittelwerten ergeben sich mit \autoref{eq:alternativ} und
 \end{equation}
 die Suszeptibilitäten 
 \begin{align*}
-  \bar \chi_{Nd_2 O_3}&=(0.00204 \pm 0.00009)\\
-  \bar \chi_{Dy_2 O_3}&=(0.0148 \pm 0.0010)\\
+  \bar \chi_{Nd_2 O_3}&=(0.00204 \pm 0.00009),\\
+  \bar \chi_{Dy_2 O_3}&=(0.0148 \pm 0.0010)\ \textrm{und}\\
   \bar \chi_{Gd_2 O_3}&=(0.0067 \pm 0.0007)
 \end{align*}
 der seltenen Erden.\\
-Die theoretischen Werte können durch die Hundschen Regeln berechnet werden. Dazu werden der Gesamtdrehimpuls J, der Spin S, der Bahndrehimpuls L und der gyromagnetische Faktor $g_j$ des Moleküls benötigt. Diese sind für die drei Stoffe
+Über 
+
+ergibt sich 
+\begin{align*}
+  \bar \chi_{Nd_2 O_3}&=(21.04 \pm 13.51),\\
+  \bar \chi_{Dy_2 O_3}&=(27.55 \pm 0)\ \textrm{und}\\
+  \bar \chi_{Gd_2 O_3}&=(26.74 \pm 0)
+\end{align*}
+für die Suszeptibilitäten.
+Die theoretischen Werte können durch die Hundschen Regeln berechnet werden. Dazu werden der Gesamtdrehimpuls J, der Spin S, der Bahndrehimpuls L und der gyromagnetische Faktor $g_j$ des Moleküls benötigt. Diese sind für die drei Stoffe in \autoref{tab:4} gelistet.
 \begin{table}[H]
   \centering
   \caption{Drehimpulse und gyromagnetischer Faktor der einzelnen Stoffe.}
   \begin{tabular}{l|l|l|l|l}
    & J & S & L & $g_j$\\ \hline
-   $Nd_2 O_3$ & $\frac{9}{2}$ & $\frac{3}{2}$ & 6 & 0.72\\ \hline
-   $Dy_2 O_3$ & $\frac{15}{2}$ & $\frac{5}{2}$ & 5 & 1.33\\ \hline
-   $Gd_2 O_3$ & $\frac{7}{2}$ & $\frac{7}{2}$ & 0 & 2\\ \hline
+   $Nd_2 O_3$ & 9/2 & 3/2 & 6 & 0.72\\ \hline
+   $Dy_2 O_3$ & 15/2 & 5/2 & 5 & 1.33\\ \hline
+   $Gd_2 O_3$ & 7/2 & 7/2 & 0 & 2\\ \hline
    \end{tabular}
+   \label{tab:4}
 \end{table}
 wobei sich das gyromagnetische Verhältnis aus \autoref{eq:gyromyro} berechnet. 
 Wird alles in \autoref{eq:sus} eingesetzt, ergibt sich für die theoretischen Suszeptibilitäten
 \begin{align*}
-  \chi_{th_{Nd_2 O_3}}&=0.00149\\
-  \chi_{th_{Dy_2 O_3}}&=0.0126\\
-  \chi_{th_{Gd_2 O_3}}&=0.0069
+  \chi_{th_{Nd_2 O_3}}&=0.00296\\
+  \chi_{th_{Dy_2 O_3}}&=0.02530\\
+  \chi_{th_{Gd_2 O_3}}&=0.01377
 \end{align*}
 wenn für N % aus \eqref{8} --- ist gar nicht in der theorie ---
 \begin{equation*}
-  N=\frac{\rho}{M}\cdot N_{A}
+  N=\frac{Z\rho}{M}\cdot N_{A}
 \end{equation*}
-genutzt wird, wobei M die molare Masse des Stoffes, $\rho$ die Dichte des Stoffes und $N_A$ die Avogadro-Zahl ist.
+genutzt wird, wobei M die molare Masse des Stoffes, $\rho$ die Dichte des Stoffes, $N_A$ die Avogadro-Zahl ist. Für alle Stoffe gilt $Z=2$.
 
 %\section{Diskussion}
 %Es wurde mit einer Güte von $Q=20$ gemessen. Die ausgerechnete Güte beträgt allerdings $Q=3.975$. Es lässt sich leicht erkennen, dass das eine große Abweichung ist. 
