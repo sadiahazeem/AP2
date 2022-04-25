@@ -15,14 +15,15 @@ Dazu wird eine Brückenschaltung verwendet.\\
 Die magnetische Suszeptibilität $\chi$ gibt Auskunft darüber, wie sehr sich 
 die Magnetisierung $\vec{M}$ des Stoffes in einem äußeren Magnetfeld ändert.\\
 $\chi$ ist dimensionslos und hängt von verschiedenen Parametern, wie der magnetischen Feldstärke
-$\vec{H} = \frac{1}{\mu_0} \vec{B}$ und der Temperatur $T$ ab. \\
+$\vec{H} = \frac{1}{\mu_0} \vec{B}$ und der Temperatur $T$ ab. Die Magnetisierung lässt sich durch
 \begin{equation*}
     \vec{M} = \mu_0 \chi \vec{H}
 \end{equation*}
+berechnen.\\
 Bei Raumtemperatur und in einem kleinen Magnetfeld $\vec{B} < 1 \mathrm{T}$ sind die Suszeptibilitäten
 näherungsweise konstant. \\
 Stoffe, deren Suszeptibilität unter Null liegt, sind diamagnetisch. Unter Einwirkung eines äußeren Magnetfeldes
-magnetisiert sich ihr inneres entgegengesetzt zum äußeren Feld, sodass 
+magnetisiert sich ihr intrinsisches entgegengesetzt zum äußeren Feld, sodass 
 das Magnetfeld im Inneren des Volumens schwächer ist als außen. \\
 Wenn die Suszeptibilität eines Stoffes über Null liegt, ist er paramagnetisch. 
 Das innere Magnetfeld ist bei einem extern anliegenden Magnetfeld stärker als das externe, anregende Magnetfeld.\\
@@ -32,12 +33,12 @@ Das innere Magnetfeld ist bei einem extern anliegenden Magnetfeld stärker als d
 \subsection{Suszeptibilität paramagnetischer Stoffe}
 
 Paramagnetische Stoffe haben einen nicht verschwindenen Drehimpuls.\\
-Der Gesamtdrehimpuls $\vec{J}$ setzt sich aus dem Gesamtspin $\vec{S}$ und der Summe $\vec{L}$ der Bahndrehimpulse zusammen.\\
+Der Gesamtdrehimpuls $\vec{J}$ setzt sich aus dem Gesamtspin $\vec{S}$ und der Summe $\vec{L}$ der Bahndrehimpulse sowie dem Kerndrehimpuls zusammen. Der Kerndrehimpuls kann in diesem Versuch für den Paramagnetismus vernachlässigt werden.\\
 Ist die Elektronenschale mehr als halbvoll besetzt, gilt $\vec{J} = \vec{L} - \vec{S}$, sonst $\vec{J} = \vec{L} + \vec{S}$.\\
 
 Mit den Beträgen der magnetischen Momente 
 \begin{equation*}
-    |\vec{\mu_L}| = -\mu_B \sqrt{L(L+1)}
+    |\vec{\mu_L}| = -\mu_B \sqrt{L(L+1)}\ \textrm{und}
 \end{equation*}
 \begin{equation*}
     |\vec{\mu_S}| = - g_s \cdot \mu_B \sqrt{S(S+1)}
@@ -58,11 +59,11 @@ Verhältnis, $g_J$ der Lande-Faktor
     \label{eq:gyromyro}
 \end{equation}
 und $\alpha$ und $\beta$ Winkel aus der folgenden geometrischen Betrachtung des Gesamtimpulses
-des Atoms.\\
+des Atoms in \autoref{fig:vektoriell}.\\
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{content/vec_theo.png}
-    \caption{Vektorielle Darstellung der Drehimpulsvektoren einer Elektronenhülle und deren magnetischer Momente. \cite{sample}}
+    \caption{Vektorielle Darstellung der Drehimpulsvektoren einer Elektronenhülle und deren magnetischer Momente \cite{sample}.}
     \label{fig:vektoriell}
 \end{figure}
 
@@ -81,6 +82,10 @@ ergibt sich für die Suszeptibilität
 \end{equation} 
 worin $k_B$ die Boltzmannkosntante, $N$ die Anzahl der Momente je Volumeneinheit,
 und $T$ die Temperatur ist.\\
+Die Gesamtdrehimpulskomponenten $L, S, \textrm{und} J$ können durch die Hundschen Regeln bestimmt werden. Diese sind:\\
+1. Der Gesamtspin entsteht durch die Kombination der einzelnen Spins $\vec s_{i}$ unter Einhaltung des Pauli-Prinzips.\\
+2. Der Gesamtbahndrehimpuls $\vec L =\sum \vec l_{i}$, mit den einzelnen Bahndrehimpulsen $\vec l_{i}$ setzt sich so zusammen, dass er nicht mit dem Pauli Prinzip und Regel 1 bricht. \\
+3. Der Gesamtdrehimpuls $J$ bildet sich bei einer weniger als halbvollen Schale durch $\vec J=\vec L - \vec S$ und bei mehr als halbvoller Schale durch $\vec J =\vec L + \vec S$.
 
 
 \subsection{Messverfahren zur Berechnung der Suszeptibilität}
