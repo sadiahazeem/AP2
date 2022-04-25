@@ -71,36 +71,55 @@ Es wird mit den Konstanten
   \rho_{Öl} = 886 \mathrm{\frac{kg}{m^3}}\\
   \rho_{Luft} = 1,16 \mathrm{\frac{kg}{m^3}}\\
   g = 9,81 \mathrm{\frac{m}{s}} \\
-  d = (7,6250 \pm 0,0051) \mathrm{mm}
+  d = (7,63 \pm 0,01) \mathrm{mm}
 \end{eqnarray}
 gerechnet, die bei Durchführung des Versuchs gegeben waren. \\
 
 Nach xxxxx wird aus den berechneten Geschwindigkeiten der Radius
 der Tröpchen bestimmt. Aus dem Radius wird durch xxxx die Ladung der Tröpchen berechnet und nach Cunningham korrigiert. \\
-So ergeben sich die Werte in xxxx.\\
+So ergeben sich die Werte in \autoref{tab:ladung}, die in \autoref{fig:lad_unk} und \autoref{fig:lad_korr} graphisch dargestellt sind.\\
 
 \begin{table}[H]
   \centering
   \caption{Die berechneten Radien, unkorrigierten und korrigierten Ladungen der Öltröpfchen.}
   \begin{tabular}{ccccccc}
     \toprule
-    {$T  \mathbin{/} \; ° \unit{\celsius}$} &
-    {$\mathbin{Spannung} \; \; U  \mathbin{/} \unit{\volt}$} &
-    {$2 \cdot v_0 \mathbin{/} \mathbin{div / s}$} &
+    %{$T  \mathbin{/} \; ° \unit{\celsius}$} &
+    {$U  \mathbin{/} \unit{\volt}$} &
+   % {$2 \cdot v_0 \mathbin{/} \mathbin{div / s}$} &
     {$v_{auf} - v_{ab} \mathbin{/} \mathbin{div / s}$} &
-    {Radius $r \mathbin{/} \unit{\metre} \cdot 10^{-7}$} &
-    {unkorrigierte Ladung $q \mathbin{/} \unit{\coulomb}}$} &
-    {korrigierte Ladung $q \mathbin{/} \unit{\coulomb}}$} \\
+    {Radius $r \mathbin{/} \unit{\metre} $} & %\cdot 10^{-7} doch hier oben rein?
+    {unkorrigierte Ladung $q \mathbin{/} \unit{\coulomb}$} &
+    {korrigierte Ladung $q \mathbin{/} \unit{\coulomb}$} \\
     \midrule
-    21 & 4,57 &   0,12   & 0,21  &  42,86  &  x & x  \\
-    22 & 3,04 &   0,13   & 0,23  &  43,48  &  x & x  \\
-    23 & 4,91 &   0,15   & 0,11  &  36,36  &  x & x  \\
-    23 & 2,20 &   0,07   & 0,09  &  22,22  &  x & x  \\
-    23 & 2,20 &   0,07   & 0,13  &  44,00  &  x & x  \\
+    4,57  & 0,21  &  1,17 $\cdot 10^{-06}$  &  (-1,43 $\pm$ 0,01) $\cdot 10^{-17}$  & (-1,59e-17 $\pm$ 0,01) $\cdot 10^{-17}$  \\
+    3,04  & 0,23  &  1,43 $\cdot 10^{-06}$  &  (-2,75 $\pm$ 0,02) $\cdot 10^{-17}$ & (-2,98e-17 $\pm$ 0,02) $\cdot 10^{-17}$  \\
+    4,91  & 0,11  &  2,14 $\cdot 10^{-06}$  &  (-3,03  $\pm$ 0,02) $\cdot 10^{-17}$   & (-3,21e-17  $\pm$ 0,02) $\cdot 10^{-17}$  \\
+    2,20  & 0,09  &  1,76 $\cdot 10^{-06}$  &  (-2,49 $\pm$ 0,02) $\cdot 10^{-17}$  & (-2,66e-17  $\pm$ 0,02) $\cdot 10^{-17}$  \\
+    2,20  & 0,13  &  0,91 $\cdot 10^{-06}$  &  (-1,41  $\pm$ 0,01) $\cdot 10^{-17}$    & (-1,60e-17  $\pm$ 0,01) $\cdot 10^{-17}$  \\
     \bottomrule
   \end{tabular}
-  \label{tab:geschw}
+  \label{tab:ladung}
 \end{table}
 
+Zur Berechnung der Elementarladung wird der euklidische Algorithmus verwendet.\\
+
+\begin{figure}
+  \centering
+  \includegraphics{ladungen_unkorrigiert.pdf}
+  \caption{Die Ladungen vor der Korrektur mit Fehlerbalken aufgetragen.}
+  \label{fig:lad_unk}
+\end{figure}
+
+Durch die berechneten unkorrigierten Ladungen aus \autoref{fig:lad_unk} wird die experimentiell ermittelte Elementarladung $e_{0, \; unkorr} = -1,0 \cdot 10^{-19}$ C als der größte gemeinsame Teiler 
+bestimmt. \\
 
 
+\begin{figure}
+  \centering
+  \includegraphics{ladungen_neu.pdf}
+  \caption{Die nach Cunningham korrigierten Ladungen mit Fehlerbalken aufgetragen.}
+  \label{fig:lad_korr}
+\end{figure}
+Aus den zuvor nach Cunningham korrigierten Ladungen \autoref{fig:lad_korr} wird die experimentiell ermittelte Elementarladung zu einem Wert von $e_{0, \; korr} = -1,0 \cdot 10^{-19}$ C bestimmt. \\
+Es wird analog zu $e_{0, \; unkorr}$ der größte gemeinsame Teiler berechnet.\\ 
