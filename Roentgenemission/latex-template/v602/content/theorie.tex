@@ -2,7 +2,7 @@
 Das Ziel des Versuches ist es, die Bragg Bedingung zu überprüfen, das Emissionsspektrum einer Cu-Röntgenröhre sowie das Absorptionsspektrum, bzw. die K-Kante und Abschirmungskonstante von fünf verschiedenen Materialien zu ermitteln.
 
 \section{Theorie}
-Röntgenstrahlung entsteht, wenn ein freies Elektron auf eine Anode einschlägt. Die Röntgenstrahlung eines Anodenmaterials ist durch ihre charakteristische Röntgenstrahlung sowie dem kontinuierlichen Bremsspektrum dessen charakterisiert. Bremsstrahlung entsteht durch die Wechselwirkung zwischen dem Elektron und dem Atomkern. Dabei wird ein Photon, auch Röntgenquant genannt, vom Elektron emittiert. Da das Elektron seine ganze Energie abgeben kann, ist das Bremsspektrum kontinuierlich. Wenn das Elektron vollständig gebremst wird, wandelt sich die kinetische Energie $E_{Kin}=eU$ in Strahlungsenergie $E=h\nu$ um. Die maximale Energie des Elektrons ergibt sich dann aus 
+Röntgenstrahlung entsteht, wenn ein freies Elektron auf eine Anode einschlägt. Ein freies Elektron entsteht durch das Erhitzen einer Glühkathode. Die Röntgenstrahlung eines Anodenmaterials ist durch ihre charakteristische Röntgenstrahlung sowie dem kontinuierlichen Bremsspektrum dessen charakterisiert. Bremsstrahlung entsteht durch das Beschleunigen eines Elektrons. Diese Beschleunigung kann durch die elektromagnetische Wechselwirkung zwischen Elektron und Atom verursacht werden. Dabei wird ein Photon, auch Röntgenquant genannt, vom Elektron emittiert. Da das Elektron seine ganze Energie abgeben kann, ist das Bremsspektrum kontinuierlich. Wenn das Elektron vollständig gebremst wird, wandelt sich die kinetische Energie $E_{\textrm{Kin}}=eU$ in Strahlungsenergie $E=h\nu$ um. Die maximale Energie des Elektrons ergibt sich dann aus 
 \begin{equation}
   \lambda_{min}=\frac{h\cdot c}{E},
   \label{1}
@@ -13,7 +13,7 @@ Das charakteristische Spektrum ergibt sich daraus, dass das Anodenmaterial ionis
   h\nu=E_{m}-E_{n}
   \label{2}
 \end{equation}
-der beiden Energieniveaus ermitteln lässt. Diese signifikanten Sprünge ergeben das charakteristische Spektrum des Anodenmaterials, die als scharfe Linien dargestellt werden können. Diese Linien werden mit $K_{\alpha}, K_{\beta}, L_{\alpha}, ...$ bezeichnet, wobei $K,L,M,...$ für die jeweilige Schale steht. Dabei stehen griechische Buchstaben für die Herkunft des äußeren Elektrons, dass in die innere Schale wechselt. In einem Mehrelektronenatom schirmen die Hüllenelektronen die Elektronen der unteren Schalen ab. Dadurch wechselwirkt das äußere Elektron schwächer mit dem Kern und die Bindungsenergie, also die Energie, die benötigt wird, um das Elektron von der n-ten Schale des Atoms zu lösen beträgt
+der beiden Energieniveaus ermitteln lässt. Diese signifikanten Sprünge ergeben das charakteristische Spektrum des Anodenmaterials, die als scharfe Linien dargestellt werden können. Diese Linien werden mit $K_{\alpha}, K_{\beta}, L_{\alpha}, ...$ bezeichnet, wobei $K,L,M,...$ für die jeweilige Schale steht. Dabei stehen griechische Buchstaben für die Herkunft des äußeren Elektrons, dass in die innere Schale wechselt. In einem Mehrelektronenatom schirmen die Hüllenelektronen die Elektronen der unteren Schalen ab. Dadurch wechselwirkt das äußere Elektron schwächer mit dem Kern und die Bindungsenergie, also die Energie, die überwunden werden muss, um das Elektron von der $n$-ten Schale des Atoms zu lösen beträgt
 \begin{equation}
   E_{n}=-R_{\infty}z_{eff}^2\cdot\frac{1}{n^2},
   \label{3}
@@ -25,7 +25,7 @@ Zusätzlich können noch der Bahndrehimpuls und der Spin der äußeren Elektrone
   \label{4}
 \end{equation}
 berechnet werden, mit der Rydbergenergie $R_{\infty}$, der Feinstrukturkonstante $\alpha$, der effektiven Kernladungszahl $z_{eff}$, der Energiequantenzahl $n$ und dem Gesamtdrehimpuls $j$ des Elektrons.
-Bei einer Röntgenstrahlung unter $1\ \si{\MeV}$ sind bei der Absorption der Comptoneffekt und der Photoeffekt relevant. Der Absorptionskoeffizient nimmt mit steigender Energie ab und springt, wenn die Photonenergie größer als die Bindungsenergie des Elektrons der nächsten inneren Schale ist. Die Energien der Elektronen 
+Bei einer Röntgenstrahlung unter $1\ \si{\MeV}$ sind bei der Absorption der Comptoneffekt und der Photoeffekt relevant. Der Absorptionskoeffizient nimmt mit steigender Energie ab und springt, wenn die Photonenergie größer als die Bindungsenergie des Elektrons der nächsten inneren Schale ist. Das wird auch als Kante bezeichnet. Die Energien der Elektronen 
 \begin{equation}
   h\nu_{abs}=E_{n}-E_{\infty},
   \label{5}
@@ -38,7 +38,7 @@ die aus den Schalen $K,L,M,...$ stammen, werden Absorptionskanten genannt. Bei d
 berechnen.\\
 Zuletzt lässt sich auch die Wellenlänge der Röntgenstrahlung aus der Bragg-Bedingung
 \begin{equation}
-  2dsin\theta=n\lambda
+  2d\textrm{sin}\theta=n\lambda
   \label{7}
 \end{equation}
 bestimmen, mit dem Glanzwinkel $\theta$, der gebeugten Wellenlänge $\lambda$ und der Beugungsordnung $n$. Das funktioniert, weil das Röntgenlicht an der Netzebene des Kristalls beugt, aber nur mit dem selben Wellenvektor $\vec k$ austreten kann, wenn es konstruktiv interferieren soll, heißt $\vec p=\hbar\vec k=\hbar\vec k'=\vec p'$, mit $\vec p$ Impuls der einlaufenden Welle und $\vec p'$ Impuls der auslaufenden Welle. 
@@ -50,7 +50,7 @@ bestimmen, mit dem Glanzwinkel $\theta$, der gebeugten Wellenlänge $\lambda$ un
   \caption{Das Messgerät}
   \label{fig:1}
 \end{figure}
-Für das Experiment wird lediglich eine Kuper-Röntgenröhre, ein KBr-Kristall und ein Geiger-Müller-Zählrohr benötigt. Das alles ist in dem Gerät aus \autoref{fig:1} geschaltet und kann über einen Rechner gesteuert werden. Die Beschleunigungsspannung wird auf $U=35\ \si{\keV}$ und der Emissionsstrom auf $I=1\ \si{\mA}$ gestellt.
+Für das Experiment wird lediglich eine Kuper-Röntgenröhre, ein KBr-Kristall und ein Geiger-Müller-Zählrohr benötigt. Das alles ist in dem Gerät aus \autoref{fig:1} geschaltet und kann über einen Rechner gesteuert werden. Das Gerät funktioniert mit dem Drehkristallverfahren, bei dem die Wellenlänge gleich bleibt, aber die Bragg-Bedingung für unterschiedliche $\theta$ erfüllt wird. Die Beschleunigungsspannung wird auf $U=35\ \si{\keV}$ und der Emissionsstrom auf $I=1\ \si{\mA}$ gestellt.
 
 \subsection{Überprüfung der Bragg-Bedingung}
 Der KBr-Kristall wird auf einen festen Winkel von $\theta=14^{\circ}$ gestellt. Dann soll das Geiger-Müller-Zählrohr den Winkelbereich zwischen $\alpha_{1}=26^{\circ}$ und $\alpha_{2}=30^{\circ}$ in $\Delta\alpha=0.1^{\circ}$-Schritten mit einer Integrationszeit von $\Delta t=5\ \si{\s}$ pro Winkel die Intensität messen.
