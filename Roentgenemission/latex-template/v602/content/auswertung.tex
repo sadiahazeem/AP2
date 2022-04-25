@@ -129,39 +129,62 @@ $\sigma_3$ kann nicht korrekt bestimmt werden, da sich ein komplexer Wert ergibt
 \label{subsec:absorptionsspektrum}
 
 
+\subsubsection*{Absorptionsspektrum von Brom}
+\label{brom}
+
+In \autoref{fig:brom} ist das gemessene Absorptionsspektrum von Brom abgebildet.\\
+Sei das niedrige Plateau bei $7.6^\circ$ und das hohe Plateau bei $8.2^\circ$ erreicht. Dann ergibt sich mittels 
+\begin{equation*}
+  f(\theta_{\frac{1}{2}})=\frac{y_1 +y_2}{2}
+\end{equation*}
+die Intensität des Glanzwinkels. Durch lienare Regression mit der Formel
+\begin{equation}
+  f(\theta)=a\cdot\theta + b
+  \label{reg}
+\end{equation}
+kann dann der Glanzwinkel bestimmt werden. Dieser ergibt sich zu $\theta_{\frac{1}{2}}=7.86^\circ$ mit $a=30 \textrm{Imp/°s}$ und $b=-213.3 \textrm{Imp/s}$.
+Jetzt kann aus dem Glanzwinkel mit Hilfe der Bragg Bedingung die Wellenlänge $\lambda$ und daraus die Absorptionskante $E_{Br}=13.789 \textrm{keV}$ berechnet werden.
+Setzt man die Absorptionskante in \eqref{muss ich noch rausfinden} ein, ergibt sich für die Abschirmkonstante 
+\begin{equation*}
+  \sigma_{Br}=3.47
+ \end{equation}
+
+
+
+\subsubsection*{Absorptionsspektrum von Gallium}
+Das berechnen der Werte für Gallium funktioniert wie bei \autoref{zink}. Das untere Plateau liegt bei $10.1^\circ$, das Obere bei $11^\circ$. Damit ergibt sich $f(\theta_{\frac{1}{2})=68 \textrm{Imp/s}$. Des weiteren ist $a=29.88 \textrm{Imp/s}$ und $b=-213.7$ und damit der Glanzwinkel $\theta_{frac{1}{2}}=9.4^\circ$. Damit lässt sich die Absorptionskante bei $E_{Ga}=11.6 \textrm{keV}$ bestimmen. Mit Hilfe von \eqref{immernoch nicht} ergibt sich 
+\begin{equation*}
+  \sigma_{Ga}=2.01,
+\end{equation*}
+die Absorptionskonstante von Gallium.
+
+\subsubsection*{Absorptionsspektrum von Strontium}
+Das untere Plateau wird bei $\theta=6.4^\circ$ und das Obere bei $\theta=7.1^\circ$ gewählt. Damit ergibt sich $f(\theta_{frac{1}{2}})=57 \textrm{Imp/s}$ und der Glanzwinkel lässt sich mit $a=57.86 \textrm{Imp/°s}$ und $b=-321 \textrm{Imp/s}$ zu $\theta_{frac{1}{2}}=6.53^\circ$ bestimmen. Daraus ergibt sich die Absorptionskante $E_{Sr}=16.58 \textrm{keV}$ und damit die Absorptionskonstante
+\begin{equation*}
+  \sigma_{Sr}=3.48
+\end{equation*}
+von Strontium.
+  
+
 \subsubsection*{Absorptionsspektrum von Zink}
-In \autoref{fig:zink} ist das gemessene Absorptionsspektrum von Zink abgebildet.\\
-Darin ist die K-Kante bei $\theta = 11,9°$ zu sehen. \\
-Nach \autoref{eq:6} ist die ergibt sich die Absorptionsenergie $E_{Zn, \; K} = 9,138 \mathrm{ keV}$.\\
-Daraus lässt sich die Abschirmkonstante $\sigma_{Zn, \; K} = 4,08$ errechnen.
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics{zink.pdf}
   \caption{Absorptionsspektrum der Röntgenstrahlung von Zink.}
   \label{fig:zink}
 \end{figure}
-
-
-\subsubsection*{Absorptionsspektrum von Gallium}
-Im Absorptionsspektrum von Gallium ist die K-Kante bei $\theta = 10,5°$ zu sehen. \\
-Nach \autoref{eq:6} ist die ergibt sich die Absorptionsenergie $E_{Ga, \; K} = 10,34 \mathrm{ keV}$.\\
-Daraus lässt sich die Abschirmkonstante $\sigma_{Ga, \; K} = 3,43$ errechnen.
-
-\subsubsection*{Absorptionsspektrum von Brom}
-Im Absorptionsspektrum von Brom ist die K-Kante bei $\theta = 8,3°$ zu sehen. \\
-Nach \autoref{eq:6} ist die ergibt sich die Absorptionsenergie $E_{Br, \; K} = 13,54 \mathrm{ keV}$.\\
-Daraus lässt sich die Abschirmkonstante $\sigma_{Br, \; K} = 3,45$ errechnen.
-
-\subsubsection*{Absorptionsspektrum von Strontium}
-Im Absorptionsspektrum von Strontium ist die K-Kante bei $\theta = 6,8°$ zu sehen. \\
-Nach \autoref{eq:6} ist die ergibt sich die Absorptionsenergie $E_{Sr,\; K} = 15,9  \mathrm{ keV}$.\\
-Daraus lässt sich die Abschirmkonstante $\sigma_{Sr, \; K} = 3,81$ errechnen.
+Das untere Plateau sitzt bei $\theta=10.8^\circ$, das Obere bei $\theta=11.8^\circ$. Dadurch wird $f(\theta_{frac{1}{2}})=682.5 \textrm{Imp/s}$ und durch $a=695.8 \textrm{Imp/°s}$ und $b=-7573 \textrm{Imp/s}$ ergibt sich der Glanzwinkel $\theta_{frac{1}{2}}=11.86^\circ$ und damit die Absorptionskante $E_{Zn}=9.175 \textrm{keV}$. Aus der Absorptionskante bestimmt sich die Absorptionskonstante
+\begin{equation*}
+  \sigma_{Zn}=4.23
+\end{equation*}
+ von Zink.
 
 \subsubsection*{Absorptionsspektrum von Zirkonium}
-Im Absorptionsspektrum von Zirkonium ist die K-Kante bei $\theta = 6,4°$ zu sehen. \\
-Nach \autoref{eq:6} ist die ergibt sich die Absorptionsenergie $E_{Zr, \; K} = 16,9  \mathrm{ keV}$.\\
-Daraus lässt sich die Abschirmkonstante $\sigma_{Zr, \; K} = 4,75$ errechnen.
-
+Das untere Plateau liegt bei $\theta=5.8^\circ$, das Obere bei $\theta=6.2^\circ$. Es ergibt sich $f(\theta_{frac{1}{2}})=102.5 \textrm{Imp/s}$ und mit $a=107 \textrm{Imp/°s}$ und $b=-532.4 \textrm{Imp/s}$ der Glanzwinkel $\theta_{frac{1}{2}}=5.93^\circ$ und mit diesem die Absorptionskante $E_{Zr}=18.25 \textrm{keV}$. Aus der Absorptionskante bestimmt sich die Absorptionskonstante
+\begin{equation*}
+  \sigma_{Zr}=3.84
+\end{equation*}
+von Zirkonium.
 
 
 
