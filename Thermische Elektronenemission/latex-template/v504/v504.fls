@@ -1,0 +1,6 @@
+PWD /Users/sadi/Desktop/AP2.git/Thermische Elektronenemission/latex-template/v504
+INPUT /usr/local/texlive/2021/texmf.cnf
+INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/sadi/Desktop/AP2.git/Thermische Elektronenemission/latex-template/v504/v504.tex
+OUTPUT /Users/sadi/Desktop/AP2.git/Thermische Elektronenemission/latex-template/v504/v504.log
