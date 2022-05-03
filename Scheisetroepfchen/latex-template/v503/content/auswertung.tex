@@ -1,12 +1,6 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-%\begin{figure}
-%  \centering
-%  \includegraphics{plot.pdf}
-%  \caption{Plot.}
-%  \label{fig:plot}
-%\end{figure}
 
 
 Zuerst wird die Erfüllung der Bedingung $2 \cdot v_0 = v_{auf} - v_{ab}$ geprüft, um Werte, bei denen die Randbedingungen
@@ -92,28 +86,33 @@ So ergeben sich die Werte in \autoref{tab:ladung}, die in \autoref{fig:lad_unk} 
     {unkorrigierte Ladung $q \mathbin{/} \unit{\coulomb}$} &
     {korrigierte Ladung $q \mathbin{/} \unit{\coulomb}$} \\
     \midrule
-    4,57  & 0,21  &  1,17 $\cdot 10^{-06}$  &  (-1,43 $\pm$ 0,01) $\cdot 10^{-17}$  & (-1,59e-17 $\pm$ 0,01) $\cdot 10^{-17}$  \\
-    3,04  & 0,23  &  1,43 $\cdot 10^{-06}$  &  (-2,75 $\pm$ 0,02) $\cdot 10^{-17}$ & (-2,98e-17 $\pm$ 0,02) $\cdot 10^{-17}$  \\
-    4,91  & 0,11  &  2,14 $\cdot 10^{-06}$  &  (-3,03  $\pm$ 0,02) $\cdot 10^{-17}$   & (-3,21e-17  $\pm$ 0,02) $\cdot 10^{-17}$  \\
-    2,20  & 0,09  &  1,76 $\cdot 10^{-06}$  &  (-2,49 $\pm$ 0,02) $\cdot 10^{-17}$  & (-2,66e-17  $\pm$ 0,02) $\cdot 10^{-17}$  \\
-    2,20  & 0,13  &  0,91 $\cdot 10^{-06}$  &  (-1,41  $\pm$ 0,01) $\cdot 10^{-17}$    & (-1,60e-17  $\pm$ 0,01) $\cdot 10^{-17}$  \\
+    4,57  & 0,21  &  1,17 $\cdot 10^{-06}$  &  (-1,43 $\pm$ 0,01) $\cdot 10^{-19}$  & (-1,59 $\pm$ 0,01) $\cdot 10^{-19}$  \\
+    3,04  & 0,23  &  1,43 $\cdot 10^{-06}$  &  (-2,75 $\pm$ 0,02) $\cdot 10^{-19}$ & (-2,98 $\pm$ 0,02) $\cdot 10^{-19}$  \\
+    4,91  & 0,11  &  2,14 $\cdot 10^{-06}$  &  (-3,03  $\pm$ 0,02) $\cdot 10^{-19}$   & (-3,21  $\pm$ 0,02) $\cdot 10^{-19}$  \\
+    2,20  & 0,09  &  1,76 $\cdot 10^{-06}$  &  (-2,49 $\pm$ 0,02) $\cdot 10^{-19}$  & (-2,66  $\pm$ 0,02) $\cdot 10^{-19}$  \\
+    2,20  & 0,13  &  0,91 $\cdot 10^{-06}$  &  (-1,41  $\pm$ 0,01) $\cdot 10^{-19}$    & (-1,60  $\pm$ 0,01) $\cdot 10^{-19}$  \\
     \bottomrule
   \end{tabular}
   \label{tab:ladung}
 \end{table}
 
-Zur Berechnung der Elementarladung wird der euklidische Algorithmus verwendet.\\
 
-\begin{figure}
+\begin{figure}[h]
   \centering
   \includegraphics{ladungen_unkorrigiert.pdf}
   \caption{Die Ladungen vor der Korrektur mit Fehlerbalken aufgetragen.}
   \label{fig:lad_unk}
 \end{figure}
 
-Durch die berechneten unkorrigierten Ladungen aus \autoref{fig:lad_unk} wird die experimentiell ermittelte Elementarladung $e_{0, \; unkorr} = -1,0 \cdot 10^{-19}$ C als der größte gemeinsame Teiler 
-bestimmt. \\
-
+Die Fehlerrechnung wird mittels python durchgeführt \cite{uncertainties}, \cite{numpy} .\\
+In \autoref{fig:lad_unk} ist zu sehen, dass sich die Messwerte um $-1,5 \cdot 10^{-19}$ C und $-2,75 \cdot 10^{-19}$ C häufen. 
+Von der Quantisierung der Ladung ausgegangen, weist es darauf hin, dass es sich um Öltröpfchen mit einem bzw. zwei angehefteten Elektronen handelt.\\
+Durch Mittelung mit 
+\begin{equation}
+  \bar{x}=\frac{1}{n}\sum_{i=1}^n x_i
+  \label{eq:mittelwert}
+\end{equation}
+ergibt sich $e_{exp, \; unk} = 1,39 \cdot 10^{-19}$ C.
 
 \begin{figure}
   \centering
@@ -121,5 +120,6 @@ bestimmt. \\
   \caption{Die nach Cunningham korrigierten Ladungen mit Fehlerbalken aufgetragen.}
   \label{fig:lad_korr}
 \end{figure}
-Aus den zuvor nach Cunningham korrigierten Ladungen \autoref{fig:lad_korr} wird die experimentiell ermittelte Elementarladung zu einem Wert von $e_{0, \; korr} = -1,0 \cdot 10^{-19}$ C bestimmt. \\
-Es wird analog zu $e_{0, \; unkorr}$ der größte gemeinsame Teiler berechnet.\\ 
+Aus den zuvor nach Cunningham korrigierten Ladungen \autoref{fig:lad_korr} werden analog die Häufungspunkte
+bei $-1,6 \cdot 10^{-19}$ C bzw. $-3,0 \cdot 10^{-19}$ C bestimmt. \\
+Mit \autoref{eq:mittelwert} bestimmt sich die Elementarladung zu $e_{exp, \; unk} = 1,50 \cdot 10^{-19}$ C.

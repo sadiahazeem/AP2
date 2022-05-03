@@ -46,7 +46,7 @@ p = 101325              # Luftdruck durchschnittlich in pascal
 
 eta21 = eta21_unk 
 eta22 = eta22_unk   
-eta23_220 = eta23_unk # wird nicht benötigt
+eta23_220 = eta23_unk # wird nicht benoetigt
 eta23_491 = eta23_unk
 eta23 = eta23_unk
 
@@ -138,13 +138,13 @@ r3 = 1.42732270e-06
 r4 = 1.16827163e-06
 r5 = 2.14067074e-06
 r = np.array([r1,r2,r3,r4,r5])
-print("----------- die radien der gültigen messungen: ", r)
+print("----------- die radien der gueltigen messungen: ", r)
 
 
 
 
 
-######################## werte für den plot zusammenstellen ########################
+######################## werte fuer den plot zusammenstellen ########################
 
 
 q1 = ufloat(-2.4871766907999152e-17, 1.6635542456497793e-19)
@@ -153,7 +153,7 @@ q3 = ufloat(-2.7455790551459065e-17, 1.8363873024582456e-19)
 q4 = ufloat(-1.4349288690233048e-17, 9.597557025598495e-20)
 q5 = ufloat(-3.033877442048127e-17, 2.029216387468256e-19)
 q = np.array([q1,q2,q3,q4,q5])
-print("----------- die unkorrigierten ladungen der gültigen messungen: ", q)
+print("----------- die unkorrigierten ladungen der gueltigen messungen: ", q)
 
 n = np.array([1,2,3,4,5])
 
@@ -161,18 +161,18 @@ n = np.array([1,2,3,4,5])
 ######################## ladungen korrigieren ########################
 
 q_neu = q*(1+(b/(p*r)))**(3/2)
-print("----------- die korrigierten ladungen der gültigen messungen: ", q_neu)
+print("----------- die korrigierten ladungen der gueltigen messungen: ", q_neu)
 
 
 
-# die korrigierten ladungen                     -> dieser block ist gar nicht mehr nötig
+# die korrigierten ladungen                     -> dieser block ist gar nicht mehr noetig
 #q1_k = ufloat(-2.4871766907999152e-17, 1.6635542456497793e-19)
 #q2_k = ufloat(-1.406902415661818e-17, 9.410101403115112e-20)
 #q3_k = ufloat(-2.7455790551459065e-17, 1.8363873024582456e-19)
 #q4_k = ufloat(-1.4349288690233048e-17, 9.597557025598495e-20)
 #q5_k = ufloat(-3.033877442048127e-17, 2.029216387468256e-19)
 #q_k = np.array([q1_k,q2_k,q3_k,q4_k,q5_k])
-#print("----------- die korrigierten ladungen der gültigen messungen: ", q_k)
+#print("----------- die korrigierten ladungen der gueltigen messungen: ", q_k)
 
 
 
@@ -182,7 +182,7 @@ plt.xlim(0.5, 5.5)
 #plt.plot(n, unp.nominal_values(q)*10**(19), 'rx', label='Messdaten')
 plt.errorbar(n, unp.nominal_values(q)*10**17, fmt='rx', yerr=unp.std_devs(q)*10**17, label='unkorrigierte Messdaten')
 plt.xlabel(r'$\text{Messung}$')
-plt.ylabel(r'$q \:/\: 10^{-17}\si{\coulomb}$')
+plt.ylabel(r'$q \:/\: 10^{-19}\si{\coulomb}$')
 plt.legend(loc='best')
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig('build/ladungen_unkorrigiert.pdf')
@@ -194,7 +194,7 @@ plt.clf()
 plt.xlim(0.5, 5.5)
 plt.errorbar(n, unp.nominal_values(q_neu)*10**17, fmt='rx', yerr=unp.std_devs(q_neu)*10**17, label='korrigierte Messdaten')
 plt.xlabel(r'$\text{Messung}$')
-plt.ylabel(r'$q \:/\: 10^{-17}\si{\coulomb}$')
+plt.ylabel(r'$q \:/\: 10^{-19}\si{\coulomb}$')
 plt.legend(loc='best')
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig('build/ladungen_neu.pdf')

@@ -1,0 +1,4 @@
+- noch über beide häufungspunkte einzeln mitteln?
+- fehlerformel ipython -> funktion benennen? 
+- 
+- 
