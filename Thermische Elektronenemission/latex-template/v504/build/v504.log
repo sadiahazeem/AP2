@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2021.5.3)  2 MAY 2022 20:01
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2021.5.3)  13 MAY 2022 15:53
  restricted system commands enabled.
 **v504.tex
 (./v504.tex
@@ -1455,23 +1455,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--28
  []
 
 [3]
-<content/potential.png, id=51, 568.1225pt x 255.95625pt>
+<content/hochvdiode.png, id=66, 531.9875pt x 260.975pt>
+File: content/hochvdiode.png Graphic file (type png)
+<use content/hochvdiode.png>
+Package luatex.def Info: content/hochvdiode.png  used on input line 63.
+(luatex.def)             Requested size: 142.26378pt x 69.78722pt.
+<content/kenn.png, id=70, 525.965pt x 313.17pt>
+File: content/kenn.png Graphic file (type png)
+<use content/kenn.png>
+Package luatex.def Info: content/kenn.png  used on input line 72.
+(luatex.def)             Requested size: 142.26378pt x 84.70515pt.
+<content/potential.png, id=73, 568.1225pt x 255.95625pt>
 File: content/potential.png Graphic file (type png)
 <use content/potential.png>
-Package luatex.def Info: content/potential.png  used on input line 70.
+Package luatex.def Info: content/potential.png  used on input line 83.
 (luatex.def)             Requested size: 418.25555pt x 188.44388pt.
-) (./content/durchfuehrung.tex
+ [4<./content/hochvdiode.png><./content/kenn.png>]) (./content/durchfuehrung.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-[4<./content/potential.png>]
-<content/Aufbau1.png, id=67, 665.48625pt x 486.81876pt>
+<content/Aufbau1.png, id=92, 665.48625pt x 486.81876pt>
 File: content/Aufbau1.png Graphic file (type png)
 <use content/Aufbau1.png>
 Package luatex.def Info: content/Aufbau1.png  used on input line 11.
 (luatex.def)             Requested size: 418.25555pt x 305.96947pt.
-<content/Aufbau2.png, id=70, 629.35126pt x 308.15125pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<content/Aufbau2.png, id=95, 629.35126pt x 308.15125pt>
 File: content/Aufbau2.png Graphic file (type png)
 <use content/Aufbau2.png>
 Package luatex.def Info: content/Aufbau2.png  used on input line 19.
@@ -1484,30 +1496,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--1
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5<./content/Aufbau1.png>]) (./content/diskussion.tex) [6<./content/Aufbau2.png>] (./build/v504.aux)
+[5<./content/potential.png>] [6<./content/Aufbau1.png><./content/Aufbau2.png>]
+<content/s.png, id=116, 843.15pt x 632.3625pt>
+File: content/s.png Graphic file (type png)
+<use content/s.png>
+Package luatex.def Info: content/s.png  used on input line 7.
+(luatex.def)             Requested size: 227.62204pt x 170.71121pt.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 14.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 14.
+ [7
+
+<./content/s.png>]
+<content/linfit.png, id=128, 1031.35312pt x 828.09375pt>
+File: content/linfit.png Graphic file (type png)
+<use content/linfit.png>
+Package luatex.def Info: content/linfit.png  used on input line 74.
+(luatex.def)             Requested size: 227.62204pt x 182.76242pt.
+ [8] [9<./content/linfit.png>]) (./content/diskussion.tex [10]
+<content/a1.png, id=150, 399.74344pt x 312.04079pt>
+File: content/a1.png Graphic file (type png)
+<use content/a1.png>
+Package luatex.def Info: content/a1.png  used on input line 18.
+(luatex.def)             Requested size: 227.62204pt x 177.68416pt.
+<content/a2.png, id=151, 421.575pt x 322.20375pt>
+File: content/a2.png Graphic file (type png)
+<use content/a2.png>
+Package luatex.def Info: content/a2.png  used on input line 23.
+(luatex.def)             Requested size: 227.62204pt x 173.97267pt.
+<content/a3.png, id=152, 379.04109pt x 290.58563pt>
+File: content/a3.png Graphic file (type png)
+<use content/a3.png>
+Package luatex.def Info: content/a3.png  used on input line 28.
+(luatex.def)             Requested size: 227.62204pt x 174.50346pt.
+<content/a4.png, id=153, 385.8164pt x 304.13625pt>
+File: content/a4.png Graphic file (type png)
+<use content/a4.png>
+Package luatex.def Info: content/a4.png  used on input line 33.
+(luatex.def)             Requested size: 227.62204pt x 179.42953pt.
+ [11<./content/a1.png><./content/a2.png>]
+<content/a5.png, id=163, 335.75438pt x 292.09125pt>
+File: content/a5.png Graphic file (type png)
+<use content/a5.png>
+Package luatex.def Info: content/a5.png  used on input line 38.
+(luatex.def)             Requested size: 227.62204pt x 198.02217pt.
+) [12<./content/a3.png><./content/a4.png>] [13<./content/a5.png>] (./build/v504.aux)
 Package rerunfilecheck Info: File `v504.aux' has not changed.
-(rerunfilecheck)             Checksum: 8FC446C3B8A74E5146DFEC8412E46245;8457.
+(rerunfilecheck)             Checksum: E502EE79101385488896871BF0657125;17052.
 Package rerunfilecheck Info: File `v504.toc' has not changed.
-(rerunfilecheck)             Checksum: 90BAF5CB7A40C7A6FFA893259B521222;1342.
+(rerunfilecheck)             Checksum: 98CAED749ECE7340F4996AD6017476EC;2362.
 Package logreq Info: Writing requests to 'v504.run.xml'.
 
 \openout1 = v504.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 36289 strings out of 478531
+ 36465 strings out of 478531
  100000,1977958 words of node,token memory allocated
- 714 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 30 attribute, 77 glue_spec, 17 attribute_list, 1 write nodes
-   avail lists: 1:3,2:518,3:160,4:78,5:290,6:32,7:4069,8:46,9:365,10:5,11:448
- 55053 multiletter control sequences out of 65536+600000
- 94 fonts using 34926255 bytes
- 116i,8n,119p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on v504.pdf (6 pages, 200181 bytes).
+ 781 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 5 dir, 2 glue, 4 kern, 1 glyph, 53 attribute, 77 glue_spec, 28 attribute_list, 1 write nodes
+   avail lists: 1:3,2:865,3:274,4:122,5:313,6:56,7:4415,8:53,9:507,10:8,11:481
+ 55142 multiletter control sequences out of 65536+600000
+ 104 fonts using 39144275 bytes
+ 116i,12n,119p,10617b,2933s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on v504.pdf (13 pages, 5384720 bytes).
 
-PDF statistics: 179 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 131072)
- 81 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 302 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 131072)
+ 145 words of extra memory for PDF output out of 10000 (max. 100000000)
 

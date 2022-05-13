@@ -11,14 +11,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Langmuir-Schottkysche Raumladungsgleichung}{3}{subsection.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Anlaufstromgebiet}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.4}Hochvakuumdiode}{4}{subsection.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5}Anlaufstromgebiet}{5}{subsection.2.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Aufbau und Durchführung}{5}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Auswertung}{6}{section.4}%
+\contentsline {section}{\numberline {4}Auswertung}{7}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Diskussion}{6}{section.5}%
+\contentsline {subsection}{\numberline {4.1}Kennlinienschar einer Hochvakuumdiode}{7}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\nonumberline Literatur}{6}{section*.6}%
+\contentsline {subsection}{\numberline {4.2}Gültigkeitsbereich des Langmuir-Schottkyschen Raumladungsgesetzes}{7}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Anlaufstromgebiet der Kathode}{8}{subsection.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}Kathodentemperatur T und Austrittsarbeit für Wolfram}{9}{subsection.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Diskussion}{10}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Diskussion}{10}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Literaturverzeichnis}{10}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Anhang}{11}{section.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\nonumberline Literatur}{13}{section*.18}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
