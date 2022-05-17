@@ -1,0 +1,113 @@
+\documentclass[a4paper]{scrartcl}
+
+% input encoding
+\usepackage[utf8]{inputenc}
+
+% new german spelling
+\usepackage[ngerman]{babel}
+
+% choose font
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{dsfont}
+
+% KOMA-Script options
+\KOMAoptions{%
+  parskip=full,%
+  fontsize=12pt,%
+  DIV=calc}
+
+% color and images
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\captionsetup{compatibility=false}
+
+% SI units 
+\usepackage{siunitx} 
+
+% quotes
+\usepackage[german=guillemets]{csquotes}
+
+% math
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts} 
+
+% set special behaviour for hyperlinks in pdfs
+\usepackage[breaklinks=true]{hyperref}
+
+% tables don't appear anywhere
+\usepackage{float}
+
+
+% other useful packages 
+\usepackage{enumitem} 
+\usepackage{cancel} 
+
+\begin{document}
+\title{V503: Der Millikan-Öltröpfchenversuch}
+\author{Tim Alexewicz (tim.alexewicz@udo.edu), \and Sadiah Azeem (sadiah.azeem@udo.edu)}
+\date{Versuchsdurchführung: 19.04.2022}
+
+\maketitle
+\thispagestyle{empty}
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+
+\section{Ziel}
+Das Ziel des Versuches ist es, die Elementarladung $e$ und die Avogadro-Zahl $N_A$ experimentell zu ermitteln.
+
+\section{Theorie}
+Um die Elementarladung $e$ zu bestimmen, kann die Öltröpfchen-Methode von Millikan genutzt werden. Dabei wird ein Öltröpfchen durch einen Zerstäuber in das elektrische Feld eine Plattenkondesators getropft. Das Terstäuben führt dazu, dass die Öltropfen Ladungen erhalten. Beim Fallen des Öltröpfchens mit Masse m wirkt die Gravitationskraft $\vec F=m\vec g$, wobei $\vec g$ die Gravitationsbeschleunigung ist. Dadurch, dass das Öl durch die Luft fallen muss, wirkt die Viskosität $\eta_L$ auf das Tröpfchen mit Radius r, sodass die Stokesche Reibungskraft $\vec F_R=-6\pi r\eta_L\vec v$ gegen den Fall wirkt. Es gilt also 
+\begin{equation*}
+  \frac{4\pi}{3}r^3(\rho_{Öl}-\rho_{L})g=6\pi\eta_{L} r v_{0},
+\end{equation*}
+mit $m=V\cdot\rho$. Wird die Gleichung nach r umgestellt, ergibt sich
+\begin{equation*}
+  r=\sqrt{\frac{9\eta_{L} v_{0}}{2g(\rho_{Öl}-\rho_{L})}}
+\end{equation*}
+für den Radius des Öltröpfchens.\\
+Wirkt eine positive Spannung auf die untere Kondensatorplatte, wirkt die elektrostatische Kraft $\vec F_el=q\vec E$ in Richtung der Gravitationskraft und die Öltropfen sinken mit einer gleichförmigen Geschwindigkeit $\vec v_ab$ nach unten, die größer als die feldfreie Geschwindigkeit $\vec v_0$ ist. Die Kräftegleichung korrigiert sich zu
+\begin{equation*}
+  \frac{4\pi}{3}r^3(\rho_{Öl}-\rho_{L})g-6\pi\eta_{L}v_{ab}=-qE
+\end{equation*}
+mit der Ladung q und dem Betrag des elektrischen Feldes E. Bei einer negativ angelegten Spannung an der unteren Kondensatorplatte, steigen die Tropfen ab einer bestimmten elektrischen Feldstärke mit der Geschwindigkeit $\vec v_auf$. Die Kraft ändert sich zu:
+\begin{equation*}
+  \frac{4\pi}{3}r^3(\rho_{Öl}+\rho_{L})g+6\pi\eta_{L}v_{ab}=+qE
+\end{equation*}
+Aus den modifizierten Kräftegleichungen ergibt sich die Gleichung
+\begin{equation*}
+  q=3\pi\eta_{L}\sqrt{\frac{9}{4}\frac{\eta_{L}}{g}\frac{(v_{ab}-v_{auf})}{(\rho_{Öl}-\rho_{L})}}\cdot\frac{(v_{ab}+v_{auf})}{E}
+\end{equation*}
+und der neue Radius
+\begin{equation*}
+  r=\sqrt{\frac{9}{4}\frac{\eta_{L}}{g}\frac{(v_{ab}-v_{auf})}{(\rho_{Öl}-\rho_{L})}}
+\end{equation*}
+für die Tröpfchen.\\
+Da die Stokessche Reibung nur für Tröpfchen gilt, die größer als die mittlere freie Weglänge $\bar l$ der Luft sind, muss die Viskosität $\eta_{L}$ durch
+\begin{equation*}
+  \eta_{eff}=\eta_{L}\left(\frac{1}{1+A\frac{1}{r}}\right)==\eta_{L}\left(\frac{1}{1+B\frac{1}{pr}}\right),
+\end{equation*}
+dem sogenannten Cunningham-Korrekturterm mit $B_6.17\cdot10^{-3}\ \mathrm{Torr}\cdot\mathrm{cm}$, angepasst werden. Die Anpassung führt dazu, dass sich die Ladung mit
+\begin{equation*}
+  q^{\frac{2}{3}}=q_{0}^{\frac{2}{3}}(1+\frac{B}{pr})
+\end{equation*}
+berechnen lässt.
+
+\section{Durchführung}
+In \autoref{t1} wird das Experimentiergerät skizziert:
+\begin{figure}
+  \centering
+  \includegraphics[width=9cm]{a}
+  \caption{Skizze des Gerätes, mit dem das Experiment durchgeführt wird.}
+  \label{t1}
+\end{figure}
+Punkt 3 aus der Skizze beinhaltet einen Plattenkondensator, dessen Platten einen Abstand von $d=(7.6250 \pm 0.0051)\ mm$ haben. Die obere Seite der Kammer hat eine Öffnung, an der der Zerstäuber, in dem sich das Öl mit einer Dichte von $\rho_{Öl}=886\ \frac{\mathrm{kg}}{\mathrm{m}^3}$ befindet, zum Zerstäuben angebracht werden kann. Zum erkennen der Tropfen, leuchtet eine Halogenleuchte in die Kammer. Die Plattenkondensatoren können mit einem Schalter den Spannungspol ändern.\\
+Durchgeführt wird der Versuch, indem durch die Kammer das Öl eingesetzt, dass sich durch den Kondensator orientiert bewegt. Dabei soll die Weglänge eines Öltropfens zu fünf Spannungen bei einer plus-, minusorientierten unteren Platte und ohne gepolte Platte gemessen werden. Das soll fünf mal wiederholt werden. 
+
+
