@@ -1,0 +1,51 @@
+\section{Ziel}
+Das Ziel des Versuches ist es, die Bragg Bedingung zu überprüfen, das Emissionsspektrum einer Cu-Röntgenröhre sowie das Absorptionsspektrum, bzw. die K-Kante und Abschirmungskonstante von fünf verschiedenen Materialien zu ermitteln.
+
+\section{Theorie}
+
+\subsection{Röntgenstrahlung}
+Röntgenstrahlung entsteht, wenn ein freies Elektron auf eine Anode einschlägt. Ein freies Elektron entsteht durch das Erhitzen einer Glühkathode. Die Röntgenstrahlung eines Anodenmaterials ist durch ihre charakteristische Röntgenstrahlung sowie dem kontinuierlichen Bremsspektrum dessen charakterisiert. Bremsstrahlung entsteht durch das Beschleunigen eines Elektrons. Diese Beschleunigung kann durch die elektromagnetische Wechselwirkung zwischen Elektron und Atom verursacht werden. Dabei wird ein Photon, auch Röntgenquant genannt, vom Elektron emittiert. Da das Elektron seine ganze Energie abgeben kann, ist das Bremsspektrum kontinuierlich. Wenn das Elektron vollständig gebremst wird, wandelt sich die kinetische Energie $E_{\textrm{Kin}}=eU$ in Strahlungsenergie $E=h\nu$ um. Die maximale Energie des Elektrons ergibt sich dann aus 
+\begin{equation}
+  \lambda_{min}=\frac{h\cdot c}{E},
+  \label{1}
+\end{equation}
+der minimalen Wellenlänge.\\
+
+\subsection{Charakteristisches Spektrum}
+Das charakteristische Spektrum ergibt sich daraus, dass das Anodenmaterial ionisiert wird und dann ein Elektron einer äußeren Schale in die innere Schale wandert, also in einen energetisch niedrigeren Zustand wechselt. Dadurch muss wieder ein Röntgenquant emittiert werden, dessen Energie sich aus der Energiedifferenz 
+\begin{equation}
+  h\nu=E_{m}-E_{n}
+  \label{2}
+\end{equation}
+der beiden Energieniveaus ermitteln lässt. Diese signifikanten Sprünge ergeben das charakteristische Spektrum des Anodenmaterials, die als scharfe Linien dargestellt werden können. Diese Linien werden mit $K_{\alpha}, K_{\beta}, L_{\alpha}, ...$ bezeichnet, wobei $K,L,M,...$ für die jeweilige Schale steht. Dabei stehen griechische Buchstaben für die Herkunft des äußeren Elektrons, dass in die innere Schale wechselt. In einem Mehrelektronenatom schirmen die Hüllenelektronen die Elektronen der unteren Schalen ab. Dadurch wechselwirkt das äußere Elektron schwächer mit dem Kern und die Bindungsenergie, also die Energie, die überwunden werden muss, um das Elektron von der $n$-ten Schale des Atoms zu lösen beträgt
+\begin{equation}
+  E_{n}=-R_{\infty}z_{eff}^2\cdot\frac{1}{n^2},
+  \label{3}
+\end{equation}
+wobei die Abschirmung in der effektiven Kernladung $z_{eff}=z-\sigma$ enthalten ist, mit der Abschirmkonstante $\sigma$ und der Rydbergenergie $R_{\infty}=13.6\ \si{\eV}$.\\
+Zusätzlich können noch der Bahndrehimpuls und der Spin der äußeren Elektronen betrachtet werden. Dabei spaltet sich die charakteristische Kennlinie auf. Diese neue Struktur wird Feinstruktur genannt. Diese kann durch die Sommerfeldsche Feinstrukturformel 
+\begin{equation}
+  E_{n,j}=-R_{\infty}\left(z^2_{eff,1}\cdot \frac{1}{n^2}+\alpha^2 z^4_{eff,2}\cdot\frac{1}{n^3}\left(\frac{1}{j+\frac{1}{2}}-\frac{3}{4n}\right)\right)
+  \label{4}
+\end{equation}
+berechnet werden, mit der Rydbergenergie $R_{\infty}$, der Feinstrukturkonstante $\alpha$, der effektiven Kernladungszahl $z_{eff}$, der Energiequantenzahl $n$ und dem Gesamtdrehimpuls $j$ des Elektrons.
+Bei einer Röntgenstrahlung unter $1\ \si{\MeV}$ sind bei der Absorption der Comptoneffekt und der Photoeffekt relevant. Der Absorptionskoeffizient nimmt mit steigender Energie ab und springt, wenn die Photonenergie größer als die Bindungsenergie des Elektrons der nächsten inneren Schale ist. Das wird auch als Kante bezeichnet. Die Energien der Elektronen 
+\begin{equation}
+  h\nu_{abs}=E_{n}-E_{\infty},
+  \label{5}
+\end{equation}
+die aus den Schalen $K,L,M,...$ stammen, werden Absorptionskanten genannt. Bei der K-Kante gibt es nur eine Kante, bei L jedoch mehr. In der K-Schale ist $n=1$ und aus der Sommerfeldschen Feinstrukturformel lässt sich die Abschirmkonstante 
+\begin{equation}
+  \sigma_{K}=Z-\sqrt{\frac{E_{K}}{R_{\infty}}-\frac{\alpha^2 Z^4}{4}}
+  \label{6}
+\end{equation}
+berechnen.\\
+
+\subsection{Bragg-Bedingung}
+Die Wellenlänge der Röntgenstrahlung lässt sich aus der Bragg-Bedingung
+\begin{equation}
+  2d\textrm{sin}\theta=n\lambda
+  \label{7}
+\end{equation}
+bestimmen, mit dem Glanzwinkel $\theta$, der gebeugten Wellenlänge $\lambda$ und der Beugungsordnung $n$. Das funktioniert, weil das Röntgenlicht an der Netzebene des Kristalls beugt, aber nur mit dem selben Wellenvektor $\vec k$ austreten kann, wenn es konstruktiv interferieren soll, heißt $\vec p=\hbar\vec k=\hbar\vec k'=\vec p'$, mit $\vec p$ Impuls der einlaufenden Welle und $\vec p'$ Impuls der auslaufenden Welle. 
+

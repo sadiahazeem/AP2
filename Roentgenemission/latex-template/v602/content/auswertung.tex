@@ -1,0 +1,228 @@
+\section{Auswertung}
+\label{sec:Auswertung}
+
+
+
+\subsection{Überprüfung der Bragg-Bedingung}
+\label{subsec:bragg}
+Nach der Bragg-Bedingung ist das gemessene Intensitätsmaximum beim Glanzwinkel von $\theta_{theo} = 11,26°$ zu erwarten. \\
+Der experimentiell bestimmte Glanzwinkel liegt bei dem verwendeten KBr-Kristall bei $\theta_{exp}=11,25°$ , so wird durch die in \autoref{tab:Tab_bragg} aufgeführten Werte 
+der Sollwinkel verifiziert. \\
+
+\begin{table}[H]
+  \centering
+  \caption{Die Werte für die Messung zur Verifikation der Bragg-Bedingung.}
+  \begin{tabular}{cc}
+    \toprule
+    {$ 2 \cdot \theta \mathbin{/} \unit{\degree}$} &
+    {$ N \mathbin{/} Imp / \unit{\second}$} \\
+    \midrule
+    21,8 &  219,0 \\
+    21,9 &  233,0 \\
+    22,0 &  249,0 \\
+    22,1 &  247,0 \\
+    22,2 &  258,0 \\
+    22,3 &  259,0 \\
+    22,4 &  275,0 \\
+    22,5 &  295,0 \\
+    22,6 &  289,0 \\
+    22,7 &  282,0 \\
+    22,8 &  288,0 \\
+    22,9 &  287,0 \\
+    23,0 &  266,0 \\
+    23,1 &  257,0 \\
+    23,2 &  266,0 \\
+    23,3 &  267,0 \\
+    23,4 &  258,0 \\
+    23,5 &  244,0 \\
+
+
+    \bottomrule
+  \end{tabular}
+  \label{tab:Tab_bragg}
+\end{table}
+
+
+
+
+\subsection{Emissionsspektrum}
+\label{subsec:emissionsspektrum}
+
+
+\subsubsection*{Maximale Energie und minimale Wellenlänge}
+
+\begin{figure}
+  \centering
+  \includegraphics{build/plot_cu.pdf}
+  \caption{Emissionsspektrum der Kupfer-Röntgenröhre.}
+  \label{fig:cu}
+\end{figure}
+
+
+Das charakteristische Spektrum der Kupfer-Röntgenröhre ist in \autoref{fig:cu} zu sehen.\\
+Mit zunehmendem Winkel ist der Grenzwinkel bei  $K_{\alpha}$ und $K_{\beta}$ erkennbar. \\ 
+Aus dem Grenzwinkel 
+\begin{equation*}
+  \theta_{min} = 7,9°
+\end{equation*}
+lassen sich die maximale Energie und die minimale Wellenlänge 
+\begin{equation*}
+  E_{max} = 9,137\ \mathrm{keV}
+\end{equation*}
+\begin{equation*}
+  \lambda_{min} = 137.5\ \si{\pico\m}
+\end{equation*} 
+berechnen.
+
+
+\subsubsection*{Auflösungsvermögen der Apparatur}
+
+Mit Hilfe der Halbwertsbreite lässt sich auch das Auflösungsvermögen der Apparatur bestimmen. \\
+Die Halbwertsbreite berechnet sich aus den Winkeln $\theta_\beta = 11,9°$ und $\theta_\alpha = 13,2°$.\\
+So ergeben sich die Energien zu $E_\alpha = 9,145$ keV und $E_\beta = 8,255$ keV. Aus einem Gaußschen Fit mit Matlab mit der Funktion
+\begin{equation*}
+  f(x)=a\cdot exp(-((x-b)/c)^2)
+\end{equation*} 
+ergeben sich mit
+\begin{equation*}
+  FWHM=2\sqrt{\ln(2)}\cdot c
+\end{equation*} 
+die Halbwertesbreiten für die jeweiligen K-Linien
+\begin{equation*}
+  FWHM_{\alpha}=0.4587\ \si{\keV}
+\end{equation*}
+\begin{equation*}
+  FWHM_{\beta}=0.5107\ \si{\keV}
+\end{equation*} 
+mit denen sich folgende Auflösungsvermögen durch
+\begin{equation*}
+  A=\frac{E_{\alpha/\beta}}{FWHM_{\alpha/\beta}}
+\end{equation*}
+berechnet werden können.
+Es ergeben sich die Ausflösungsvermögen $A_\alpha=17.9836$ und $A_\beta=17.6305$.\\
+
+
+\subsubsection*{Abschirmkonstanten}
+
+Aus den berechneten Energien $E_{K \alpha}$ und $E_{K \beta}$ und dem Literaturwert $E_{K,\;abs} = 8980.476 \; \mathrm{eV}$ können die 
+Abschirmkonstanten $\sigma_1$, $\sigma_2$ und $\sigma_3$ von Kupfer wie folgt bestimmt werden. Die Ordnungszahl lautet $Z = 29$, $n=1$, $m=2$ und $l=3$. \\
+Aus 
+\begin{equation*}
+  \sigma_1=Z-\sqrt{\frac{E_{Kabs}}{R_\infty}}
+  \label{eq:sigma}
+\end{equation*}
+  
+\begin{equation*}
+  \sigma_2=Z-\sqrt{ \frac{m^2}{n^2}(Z-\sigma_1)^2 - \frac{m^2}{R_\infty} E_{K\alpha}}
+\end{equation*}
+  
+\begin{equation*}
+      \sigma_3=Z-\sqrt{ \frac{l^2}{n^2}(Z-\sigma_1)^2 - \frac{l^2}{R_\infty} E_{K\beta}}
+\end{equation*}
+ergeben sie sich zu $\sigma_1 = 3,30$, $\sigma_2 = 13,57$. 
+$\sigma_3$ kann nicht korrekt bestimmt werden, da sich ein komplexer Wert ergibt.
+
+
+
+
+\subsection{Absorptionsspektren}
+\label{subsec:absorptionsspektrum}
+
+
+\subsubsection*{Absorptionsspektrum von Brom}
+\label{brom}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{content/Br.png}
+  \caption{Absorptionsspektrum der Röntgenstrahlung von Brom.}
+  \label{fig:br}
+\end{figure}
+In \autoref{fig:br} ist das gemessene Absorptionsspektrum von Brom abgebildet.\\
+Sei das niedrige Plateau bei $7.6^\circ$ und das hohe Plateau bei $8.2^\circ$ erreicht. Dann ergibt sich mittels 
+\begin{equation*}
+  f(\theta_{\frac{1}{2}})=\frac{y_1 +y_2}{2}
+\end{equation*}
+die Intensität des Glanzwinkels. Durch lienare Regression mit der Formel
+\begin{equation}
+  f(\theta)=a\cdot\theta + b
+  \label{reg}
+\end{equation}
+kann dann der Glanzwinkel bestimmt werden. Dieser ergibt sich zu $\theta_{\frac{1}{2}}=7.86^\circ$ mit $a=30\ \textrm{Imp/°s}$ und $b=-213.3\ \textrm{Imp/s}$.
+Jetzt lässt sich mit dem Lösen von $f(\theta_{\frac{1}{2}})=a\cdot\theta + b$ der Glanzwinkel $\theta_{\frac{1}{2}}=7.86^\circ$ bestimmen. Dann kann mit Hilfe der Bragg Bedingung die Wellenlänge $\lambda$ und daraus die Absorptionskante $E_{Br}=13.789\ \textrm{keV}$ berechnet werden.
+Setzt man die Absorptionskante in \eqref{6} ein, ergibt sich für die Abschirmkonstante 
+\begin{equation*}
+  \sigma_{Br}=3.47
+\end{equation*}
+
+
+
+\subsubsection*{Absorptionsspektrum von Gallium}
+\begin{figure}[H]
+  \centering
+  \includegraphics{content/Ga.png}
+  \caption{Absorptionsspektrum der Röntgenstrahlung von Gallium.}
+  \label{fig:ga}
+\end{figure}
+Das berechnen der Werte für Gallium funktioniert wie bei \autoref{brom}. Das untere Plateau liegt bei $10.1^\circ$, das Obere bei $11^\circ$. Damit ergibt sich $f(\theta_{\frac{1}{2}})=68\ \textrm{Imp/s}$. Des weiteren ist $a=29.88\ \textrm{Imp/°s}$ und $b=-213.7\ \textrm{Imp/°s}$ und damit der Glanzwinkel $\theta_{frac{1}{2}}=9.4^\circ$. Damit lässt sich die Absorptionskante bei $E_{Ga}=11.6\ \textrm{keV}$ bestimmen. Mit Hilfe von \eqref{6} ergibt sich 
+\begin{equation*}
+  \sigma_{Ga}=2.01,
+\end{equation*}
+die Absorptionskonstante von Gallium.
+
+\subsubsection*{Absorptionsspektrum von Strontium}
+\begin{figure}[H]
+  \centering
+  \includegraphics{content/Sr.png}
+  \caption{Absorptionsspektrum der Röntgenstrahlung von Strontium.}
+  \label{fig:sr}
+\end{figure}
+Das untere Plateau wird bei $\theta=6.4^\circ$ und das Obere bei $\theta=7.1^\circ$ gewählt. Damit ergibt sich $f(\theta_{\frac{1}{2}})=57\ \textrm{Imp/s}$ und der Glanzwinkel lässt sich mit $a=57.86\ \textrm{Imp/°s}$ und $b=-321\ \textrm{Imp/s}$ zu $\theta_{\frac{1}{2}}=6.53^\circ$ bestimmen. Daraus ergibt sich die Absorptionskante $E_{Sr}=16.58\ \textrm{keV}$ und damit die Absorptionskonstante
+\begin{equation*}
+  \sigma_{Sr}=3.48
+\end{equation*}
+von Strontium.
+  
+
+\subsubsection*{Absorptionsspektrum von Zink}
+\begin{figure}[H]
+  \centering
+  \includegraphics{content/Zn.png}
+  \caption{Absorptionsspektrum der Röntgenstrahlung von Zink.}
+  \label{fig:zn}
+\end{figure}
+Das untere Plateau sitzt bei $\theta=10.8^\circ$, das Obere bei $\theta=11.8^\circ$. Dadurch wird $f(\theta_{\frac{1}{2}})=682.5\ \textrm{Imp/s}$ und durch $a=695.8\ \textrm{Imp/°s}$ und $b=-7573\ \textrm{Imp/s}$ ergibt sich der Glanzwinkel $\theta_{\frac{1}{2}}=11.86^\circ$ und damit die Absorptionskante $E_{Zn}=9.175\ \textrm{keV}$. Aus der Absorptionskante bestimmt sich die Absorptionskonstante
+\begin{equation*}
+  \sigma_{Zn}=4.23
+\end{equation*}
+von Zink.
+
+\subsubsection*{Absorptionsspektrum von Zirkonium}
+\begin{figure}[H]
+  \centering
+  \includegraphics{content/Zr.png}
+  \caption{Absorptionsspektrum der Röntgenstrahlung von Zirkonium.}
+  \label{fig:zr}
+\end{figure}
+Das untere Plateau liegt bei $\theta=5.8^\circ$, das Obere bei $\theta=6.2^\circ$. Es ergibt sich $f(\theta_{\frac{1}{2}})=102.5\ \textrm{Imp/s}$ und mit $a=107\ \textrm{Imp/°s}$ und $b=-532.4\ \textrm{Imp/s}$ der Glanzwinkel $\theta_{frac{1}{2}}=5.93^\circ$ und mit diesem die Absorptionskante $E_{Zr}=18.25\ \textrm{keV}$. Aus der Absorptionskante bestimmt sich die Absorptionskonstante
+\begin{equation*}
+  \sigma_{Zr}=3.84
+\end{equation*}
+von Zirkonium.
+
+
+
+
+\subsubsection*{Moseleysches Gesetz}
+Nach dem Moseleyschen-Gesetz ist die Absorptionskante proportional zum Ordnungszahlquadrat und zur Rydbergkonstante. Nach dem Moseleyschen Gesetz kann die Rydbergkonstante als Steigung eines $\sqrt{E_{K}}-Z$ Diagramms betrachtet werden, die hier mittels linearer Regression bestimmt wird. 
+Die lineare Ausgleichsrechnung ergibt für die Ausgleichsgerade $y = ax + b$ die Parameter $a = 3,443 \pm 0,2283$ keV und $b = -5,864 \pm 7,9946$ keV.\\
+So ergibt sich für die experimentiell bestimmte Rydbergkonstante $R_{exp} = 9,56 \cdot 10^6 \mathrm{\frac{1}{m}}$. 
+
+\begin{figure}
+  \centering
+  \includegraphics{plot_moseley.pdf}
+  \caption{Die Quadratwurzel der Absorptionsenergie in Abhängigkeit von der Ordnungszahl Z mit Ausgleichsgeraden.}
+  \label{fig:moseley}
+\end{figure}
+
+
