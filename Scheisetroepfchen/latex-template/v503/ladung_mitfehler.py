@@ -202,27 +202,56 @@ plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 
 
 
-############################ ggT ermitteln und ausgeben ############################  -> irgendwo ist ein potenzfehler?
+############################ ggT ermitteln und ausgeben ############################  
 
-def GCD(q,maxi):            # was ist maxi?
-    gcd=q[0]
-    for i in range(1,len(q)):
-        n=0
-        while abs(gcd-q[i])>1e-19 and n <= maxi:
-            if gcd > q[i]:
-                gcd = gcd - q[i]
-            else:
-                q[i] = q[i] - gcd
-            n = n+1
-    return gcd
 
-e_0 = GCD(q,10)
-e_0 = unp.nominal_values(e_0)
-print("-------------- ermittelte unkorrigierte elementarladung: ", e_0)
-e_rel = abs(e_0-1.6021766208*10**(-19))/(1.6021766208*10**(-19))*100
-print("-------------- prozentuale abweichung von der unkorrigierten elementarladung: ", e_rel)
-e_0_neu = GCD(q_neu,10)
-e_0_neu = unp.nominal_values(e_0_neu)
-print("-------------- ermittelte korrigierte elementarladung: ", e_0_neu)
-e_neu_rel = abs(e_0_neu-1.6021766208*10**(-19))/(1.6021766208*10**(-19))*100
-print("-------------- prozentuale abweichung von der korrigierten elementarladung: ", e_neu_rel)
+
+#def find_gcd(arr):
+#    if len(arr) <= 1:
+#        return arr
+#    else:
+#        for i in range(len(arr)-1):
+#            a = arr[i]
+#            b = arr[i+1]
+#            while b:
+#                a, b = b, a%b
+#            arr[i+1] = a
+#        return a
+
+
+
+# q_arr = np.array([-2.66e-17, -1.6e-17, -2.89e-17, -1.59e-17, -3.2e-17])
+
+
+def float_gcd(a, b, rtol = 1e-11, atol = 1e-19):
+    t = min(abs(a), abs(b))
+    while abs(b) > rtol * t + atol:
+        a, b = b, a % b
+    return a
+
+runde1 = float_gcd(-2.66e-17, -1.6e-17)         # das wäre natürlich sexier mit einer funktion mit schleife zu lösen
+print("---------------- runde 1:", runde1)
+runde2 = float_gcd(runde1, -2.89e-17)
+print("---------------- runde 2:", runde2)
+runde3 = float_gcd(runde2, -1.59e-17)
+print("---------------- runde 3:", runde3)
+runde4 = float_gcd(runde3, -3.2e-17)
+print("---------------- runde 4:", runde4)
+e_rel = abs(runde4-1.6021766208*10**(-19))/(1.6021766208*10**(-19))*100
+print("---------------- abweichung a in %:", e_rel)
+
+
+
+runde1 = float_gcd(-2.49e-17, -1.4e-17)         
+print("---------------- runde 1b:", runde1)
+runde2 = float_gcd(runde1, -2.75e-17)
+print("---------------- runde 2b:", runde2)
+runde3 = float_gcd(runde2, -1.43e-17)
+print("---------------- runde 3b:", runde3)
+runde4 = float_gcd(runde3, -3.03e-17)
+print("---------------- runde 4b:", runde4)
+e_rel_b = abs(runde4-1.6021766208*10**(-19))/(1.6021766208*10**(-19))*100
+print("---------------- abweichung b in %:", e_rel_b)
+
+
+
