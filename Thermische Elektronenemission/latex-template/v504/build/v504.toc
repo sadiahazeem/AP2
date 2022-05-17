@@ -29,12 +29,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Diskussion}{10}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Diskussion}{10}{section.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Literaturverzeichnis}{10}{section.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Anhang}{11}{section.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\nonumberline Literatur}{13}{section*.18}%
+\contentsline {section}{\nonumberline Literatur}{10}{section*.13}%
 \defcounter {refsection}{0}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

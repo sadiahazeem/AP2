@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'build/v504.blg'
-[115] biber-darwin:340> INFO - === Fr Mai 13, 2022, 15:53:58
-[142] Biber.pm:415> INFO - Reading 'build/v504.bcf'
-[301] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
-[321] Biber.pm:4340> INFO - Processing section 0
-[337] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[537] bibtex.pm:1689> INFO - LaTeX decoding ...
-[542] bibtex.pm:1494> INFO - Found BibTeX data source '../lit.bib'
-[558] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[558] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[558] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[559] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
-[562] bbl.pm:654> INFO - Writing 'build/v504.bbl' with encoding 'UTF-8'
-[563] bbl.pm:757> INFO - Output to build/v504.bbl
+[172] biber-darwin:340> INFO - === Di Mai 17, 2022, 18:21:36
+[194] Biber.pm:415> INFO - Reading 'build/v504.bcf'
+[344] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
+[364] Biber.pm:4340> INFO - Processing section 0
+[380] Biber.pm:4531> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[610] bibtex.pm:1689> INFO - LaTeX decoding ...
+[613] bibtex.pm:1494> INFO - Found BibTeX data source '../lit.bib'
+[626] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[626] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[626] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[626] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[629] bbl.pm:654> INFO - Writing 'build/v504.bbl' with encoding 'UTF-8'
+[630] bbl.pm:757> INFO - Output to build/v504.bbl
