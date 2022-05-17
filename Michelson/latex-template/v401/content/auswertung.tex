@@ -1,0 +1,72 @@
+\section{Auswertung}
+\label{sec:Auswertung}
+
+\subsection{Bestimmung der Wellenlänge}
+
+Die Wellenlänge des Lasers wird mit Gleichung \autoref{{eq:deltad}} bestimmt. 
+Dabei wird der Wert für die Verschiebung wie folgt um die Hebelübersetzung $C_{Hü} = 5,046$ korrigiert 
+\begin{equation*}
+  \Delta d_ü = \frac{\Delta d}{C_{Hü}} .
+\end{equation*}
+
+Die Messwerte sowie die daraus bestimmten Wellenlängen sind in \autoref{tab:wellenl} aufgelistet.\\
+
+\begin{table}
+    \centering
+    \caption{Die aufgenommenen Messwerte und daraus bestimmten Wellenlängen.}
+    \label{tab:wellenl}
+    \begin{tabular}{c c c}
+      \toprule
+      {$\increment d$ mm} & {$N$} & {$\lambda$ nm} \\
+      \midrule
+      5,0     &       3100 $\pm$ 5    &   639,280 $\pm$ 1,031\\
+      5,0     &       3120 $\pm$ 5    &   635,182 $\pm$ 1,018\\
+      5,0     &       3100 $\pm$ 5    &   639,280 $\pm$ 1,031\\
+      5,0     &       3070 $\pm$ 5    &   645,527 $\pm$ 1,051\\
+      5,0     &       3090 $\pm$ 5    &   641,349 $\pm$ 1,038\\
+      5,0     &       3080 $\pm$ 5    &   643,431 $\pm$ 1,045\\
+      5,0     &       3010 $\pm$ 5    &   658,395 $\pm$ 1,093\\
+      5,0     &       3090 $\pm$ 5    &   641,349 $\pm$ 1,038\\
+      5,0     &       3030 $\pm$ 5    &   654,049 $\pm$ 1,079\\
+      5,0     &       3050 $\pm$ 5    &   649,760 $\pm$ 1,065\\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+  \noindent
+
+  Durch die Mittelwertberechnung mithilfe von python \cite{uncertainties} ergibt sich für die Wellenlänge des Lasers
+\begin{equation*}
+  \lambda = \SI{644,76 \pm 0,33}{\nano\metre}.
+\end{equation*}
+
+
+
+\subsection{Bestimmung des Brechungsindices von Luft}
+
+Zur Berechnung wird die \autoref{eq:brechin} genutzt. Die Länge der Messkammer beträgt $b = 50 \cdot 10^-3$ m.\\
+Die Druckdifferenz, die gemessene Impulsanzahl $N$ sowie der daraus bestimmte Brechungsindex sind in \autoref{tab:Brechungsindex} aufgelistet.\\
+Es wurde abwechselnd der Druck in der Messkammer um die angegebene Druckdifferenz $\increment p$ erniedrigt und erhöht.\\
+
+  \begin{table}[h]
+    \centering
+    \caption{Die aufgenommenen Messwerte und daraus bestimmten Brechungsindices.}
+    \label{tab:Brechungsindex}
+    \begin{tabular}{c c c}
+      \toprule
+      {$\increment p$ [$\si{\bar}$]} & {$N$} & {Brechungsindex $n$} \\
+      \midrule
+      0,8    &   48  &  1,000 \\
+      0,8    &   47  &  1,000 \\
+      0,8    &   60  &  1,000 \\
+      0,8    &   45  &  1,000 \\
+      0,8    &   44  &  1,000 \\
+      0,8    &   41  &  1,000 \\
+      
+      \bottomrule
+    \end{tabular}
+  \end{table}
+  \noindent
+  Durch die Berechnung des Mittelwerts ergibt sich für den Brechungsindex von Luft
+  \begin{equation*}
+    n = 1,0000000280 \pm 0,0000000012.
+  \end{equation*}
