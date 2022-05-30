@@ -36,7 +36,7 @@ Richtung des Strahls geändert und der Brechungswinkel $\beta < \alpha$ tritt au
   \end{figure}
 Aus der Energieerhaltung folgt 
 \begin{equation*}
-    (\vec{E_e}^2 - \vec{E_r}^2)  \cdot cos(\alpha) =  \mathrm{n} \cdot \vec{E_d}^2 \cdot cos(\beta),
+    (\vec{E_e}^2 - \vec{E_r}^2)  \cdot \cos(\alpha) =  \mathrm{n} \cdot \vec{E_d}^2 \cdot \cos(\beta),
 \end{equation*}
 sodass in konkreteren Berechnungen zwischen senkrechter und paralleler Polarisationsrichtung 
 unterschieden werden muss.
@@ -50,11 +50,11 @@ Da ein Linienintegral von $\vec{E}$ über eine geschlossene Kurve sich zu Null e
 die tangentiale Komponente die Grenzfläche stetig passiert.\\›
 Durch die Stetigkeit bedingt gilt
 \begin{equation*}
-    \vec{E_r}_\bot = -\vec{E_e}_\bot \cdot \frac{n cos(\beta)-cos(\alpha)}{n cos(\beta)+cos(\alpha)}
+    \vec{E_r}_\bot = -\vec{E_e}_\bot \cdot \frac{n \cos(\beta)-\cos(\alpha)}{n \cos(\beta)+\cos(\alpha)}
 \end{equation*}
-und mit Hilfe des Snelliusschen Brechungsgesetzes $n = \frac{sin(\alpha)}{sin(\beta)}$ folgt 
+und mit Hilfe des Snelliusschen Brechungsgesetzes $n = \frac{\sin(\alpha)}{\sin(\beta)}$ folgt 
 \begin{equation}
-    \vec{E_r}_\bot = -\vec{E_e}_\bot \cdot \frac{(\sqrt{\mathrm{n^2} - sin^2(\alpha)} - cos(\alpha))^2}{n^2 - 1}
+    \vec{E_r}_\bot = -\vec{E_e}_\bot \cdot \frac{(\sqrt{\mathrm{n^2} - \sin^2(\alpha)} - \cos(\alpha))^2}{n^2 - 1}
     \label{eq:1}
 \end{equation}
 
@@ -62,12 +62,12 @@ und mit Hilfe des Snelliusschen Brechungsgesetzes $n = \frac{sin(\alpha)}{sin(\b
 Bei senkrecht polarisiertem Licht schwingt der $\vec{E_\bot}$ Vektor in zur Einfallsebene.\\
 Analog zur senkrechten Polarisation folgt hier
 \begin{equation*}
-    \vec{E_r}_\shortparallel  = \vec{E_e}_\shortparallel  \cdot \frac{n cos(\alpha)-cos(\beta)}{n cos(\alpha)+cos(\beta)}
+    \vec{E_r}_\shortparallel  = \vec{E_e}_\shortparallel  \cdot \frac{n \cos(\alpha)-\cos(\beta)}{n \cos(\alpha)+\cos(\beta)}
 \end{equation*}
 aus der Stetigkeitsbedingung.\\
 Mit Snellius ergibt sich  
 \begin{equation}
-    \vec{E_r}_\shortparallel  = \vec{E_e}_\shortparallel  \cdot \frac{n^2 cos(\alpha) - \sqrt{\mathrm{n^2} - sin^2(\alpha)}}{n^2 cos(\alpha) - \sqrt{\mathrm{n^2} + sin^2(\alpha)}}
+    \vec{E_r}_\shortparallel  = \vec{E_e}_\shortparallel  \cdot \frac{n^2 \cos(\alpha) - \sqrt{\mathrm{n^2} - \sin^2(\alpha)}}{n^2 \cos(\alpha) - \sqrt{\mathrm{n^2} + \sin^2(\alpha)}}
     \label{eq:2}
 \end{equation}
 für die Winkelabhängigkeit.\\
@@ -75,7 +75,7 @@ Im Falle $\alpha + \beta = 90°$ verschwindet die reflektierte Komponente des pa
 vollständig in das Medium ein.\\
 Nach Snellius lässt sich die Gleichung für den Brechungsindex zu 
 \begin{equation}
-    n = tan(\alpha)
+    n = \tan(\alpha)
     \label{eq:3}
 \end{equation}
 vereinfachen. \\
