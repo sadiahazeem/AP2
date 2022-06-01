@@ -4,7 +4,7 @@
 
 Es wird eine Thallium-Quelle verwendet. \\
 Bei Aufnahme der Messwerte für die Charakteristik des Zählrohres wird 
-die anliegende Spannung in $10$V-Schritten erhöht und bei einer Integrationszeit
+die anliegende Spannung in $10\mathrm{V-Schritten}$ erhöht und bei einer Integrationszeit
 von $120$s gemessen.\\
 Ungewöhnlich weit abweichende Werte wurden in der Auswertung nicht berücksichtigt. In \autoref{tab:charak} 
 sind die einbezogenen Messwerte zu finden. Der gesamte Satz an Messwerten ist in 
@@ -61,7 +61,7 @@ ergibt.\\
 Die Charakteristik ist in \autoref{fig:charakteristik} graphisch dargestellt.
 Der Plateaubereich umfasst das Intervall von 410V bis 670V.\\
 Die lineare Regression wird mithilfe von python (\cite{numpy}, \cite{uncertainties}) durchgeführt und ergibt
-für die Ausgleichsgerade die Parameter $a = 0,73 \frac{\%}{100 V}$ für die Steigung und $b = 1376 \: Imp$ für den y-Achsenabschnitt.\\
+für die Ausgleichsgerade die Parameter $a = 0,73 \mathrm{\frac{\%}{100 V}}$ für die Steigung und $b = 1376 \: \mathrm{Imp}$ für den y-Achsenabschnitt.\\
 
 \begin{figure}[H]
   \centering
@@ -73,8 +73,8 @@ für die Ausgleichsgerade die Parameter $a = 0,73 \frac{\%}{100 V}$ für die Ste
 
 \subsection{Bestimmung der Totzeit}
 \subsubsection{Mit Oszilloskop}
-Aus dem aufgenommenen Oszillogramm \autoref{fig:totzeit} kann zufolge xxx eine Totzeit von 
-$T_1 = 150 \mu$s abgelesen werden..\\
+Aus dem aufgenommenen Oszillogramm \autoref{fig:totzeit} kann eine Totzeit von 
+$T_1 = 150 \mu$s abgelesen werden.\\
 \begin{figure}[H]
   \centering
   \includegraphics[width = \textwidth]{content/totzeit.jpg}
@@ -86,14 +86,14 @@ $T_1 = 150 \mu$s abgelesen werden..\\
  Für die Zwei-Quellen-Methode ergeben sich die Messwerte unter Einbezug des 
  Poisson-Fehlers und der Integrationszeit von $120$s zu $N1 = \frac{21844 \pm 148}{120s}$, $N2 = \frac{39105 \pm 198}{120s}$ 
  und $N12 = \frac{17594 \pm 133}{120s}$.\\
- Mit autoref{xxx} berechnet sich die Totzeit zu $T_2 = 253,8 \pm 0,001 \mu$s.
+ Mit \autoref{eq:2} berechnet sich die Totzeit zu $T_2 = 253,8 \pm 0,001 \mu$s.
 
 
 
 
 \subsection{Freigesetzte Ladungsmenge}
 
-Die freigesetze Ladungsmenge wird nach autoref{xxx} aus dem mittleren Zählrohrstrom
+Die freigesetze Ladungsmenge wird nach \autoref{eq:5} aus dem mittleren Zählrohrstrom
 bestimmt.\\
 Sie ist in Abhängigkeit von der Zählrohrspannung in \autoref{fig:lad} graphisch dargestellt.\\
 \begin{figure}[H]
