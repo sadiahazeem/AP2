@@ -1,0 +1,43 @@
+\section{Ziel}
+Bei diesem Versuch sollen mit einem A- und B-Scan die Störstellen eines Acrylblocks sowie die axiale Auflösung zweier benachbarter Fehlstellen untersucht werden. Des Weiteren sollen die Lage und die Größe zweier Tumoren in einem Brustmodell bestimmt werden. 
+
+\section{Theorie}
+\label{sec:Theorie}
+\subsection{Ultraschall}
+Ultraschall befindet sich in einem Frequenzbereich von 20 kHz bis 1 GHz und wird in der zerstörungsfreien Werkstoffprüfung und in der Medizin verwendet. Schall an sich ist eine longitudinale Welle
+\begin{equation*}
+  p(x,t)=p_0+v_0 Z \cos(\omega t-kx)
+\end{equation*}
+die sich wegen Druckschwankungen ausbreitet, mit der akustischen Impedanz $Z=c\rho$, die aus der Dichte $\rho$ des Materials und der Schallgeschwindigkeit $c$ des Materials zusammensetzt. Die Schallwelle ist materialabhängig, wegen ihrer Druck- und Dichteänderung innerhalb eines Materials. Ansonsten verhält sie sich wie eine elektromagnetische Welle. In Gasen und Flüssigkeiten bewegt sich der Schall longitudinal, in Festkörpern kann es allerdings durch Schubspannungen auch zu transversallem Schall kommen, weshalb hier die Schwallwelle richtungsabhängig ist. Hier berechnet sich die Schallgeschwindigkeit über
+\begin{equation*}
+  c_{Fe}=\sqrt{\frac{E}{\rho}},
+\end{equation*}
+wobei $E$ das Elastiziztätsmodul ist.\\
+Während der Schallausbreitung wird ein Teil der Energie absorbiert, weshalb die Intensität
+\begin{equation*}
+  I(x)=I_0 \textrm{e}^{\alpha x}
+\end{equation*} 
+exponentiell mit der Strecke $x$ abfällt, mit der Absorptionskonstante $\alpha$ der Schallamplitude. Deswegen wird in der Medizin ein Kontaktmittel genutzt, um diesen Verlust zu minimieren.\\
+Trifft die Schallwelle auf eine Grenzfläche, dann wird sie reflektiert. Der Reflektionskoeffizient
+\begin{equation*}
+  R=\left(\frac{Z_1-Z_2}{Z_1+Z_2}\right)^2
+\end{equation*}
+besteht aus den akustischen Impedanzen der zwei angrenzenden Materialien. Der Transmissionkoeffizient T berechnet sich aus $T=1-R$.\\
+Ultraschall kann dadurch erzeugt werden, indem ein piezoelektrischer Kristall in ein elektrisches Wechselfeld gelegt wird, dadurch der Kristall in Schwingung versetzt wird und dann die Ultraschallwelle abstrahlt. Der Kristall kann aber auch als Empfänger für Schallwellen benutzt werden, indem dieser durch die Welle angeregt wird \cite{1}.
+
+\subsection{Ultraschall in der Medizin}
+In der Medizin werden Ultraschallwellen benutzt, um Informationen über das Innere des Körpers zu erhalten. Bei diesen Untersuchungen benutzt man Laufzeitmessungen, bei denen ein kurzer Schallimpuls in den Körper gesendet wird und dann wieder mit einem Empfänger gemessen wird. Dabei gibt es zwei Verfahren:\\
+% \begin{enumerate}[nosep,label=\textsc{\arabic*},leftmargin=*]
+% \item Beim Durschallungs-Verfahren wird ein kurzer Schallimpuls in einen Körper gesendet und mit einem Empfänger am anderen Ende gesondert. Ist eine Fehlstelle in der Probe, misst der Empfänger einen kurzen Impuls. Allerdings ist eine genaue Lokalisierung der Fehlstelle nicht möglich.
+% \item Beim Impuls-Echo-Verfahren wird der Ultraschallsender auch als Empfänger verwendet. Über die Größe der Fehlstelle kann durch die Höhe des Echos  eine Aussage getroffen werden. Bei einer gegeben Schallgeschwindigkeit kann aus der Laufzeit $t$ die Lage
+% \begin{equation*}
+%   s=\frac{1}{2}ct
+% \end{equation*}
+% der Fehlstelle ermittelt werden. Die Laufzeitdiagramme können über einen A-, B-, oder TM-Scan abgebildet werden.
+% \end{enumerate}
+Diese Scans lassen sich wie folgt beschreiben:
+% \begin{enumerate}[nosep,label=\textsc{\arabic*},leftmargin=*]
+% \item Der A(mplituden)-Scan ist eindimensional und kann zum Abtasten von Strukturen verwendet werden. Die Echoamplituden werden als Funktion der Laufzeit abgebildet.
+% \item Der B(rightness)-Scan wird durch die Bewegungsmöglichkeit zweidimensional dargestellt. Die Echoamplituden werden durch Helligkeitsamplituden abgebildet, weshalb ein zweidimensionales Schnittbild entsteht. 
+% \item Der T(ime)-M(otion)-Scan kann durch schnelles Abtasten eine zeitliche Bildfolge dartstellen, sodass die Bewegung eines Organs abgebildet wird \cite{1}. 
+% \end{enumerate}

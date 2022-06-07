@@ -179,7 +179,7 @@ print("----------- die korrigierten ladungen der gültigen messungen: ", q_neu)
 ############################ plotten ############################
 ############ zuerst die unkorrigierten ladungen ############
 plt.xlim(0.5, 5.5)
-#plt.plot(n, unp.nominal_values(q)*10**(19), 'rx', label='Messdaten')
+plt.plot(n, unp.nominal_values(q)*10**(19), 'rx', label='Messdaten')
 plt.errorbar(n, unp.nominal_values(q)*10**18, fmt='rx', yerr=unp.std_devs(q)*10**18, label='unkorrigierte Messdaten')
 #plt.xlabel(r'$\text{Messung}$')
 #plt.ylabel(r'$q \:/\: 10^{-18}\si{\coulomb}$')
@@ -190,7 +190,7 @@ plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 
 
 ############ die korrigierten ladungen ############
-plt.clf()
+#plt.clf()
 plt.xlim(0.5, 5.5)
 plt.errorbar(n, unp.nominal_values(q_neu)*10**18, fmt='rx', yerr=unp.std_devs(q_neu)*10**18, label='korrigierte Messdaten')
 #plt.xlabel(r'$\text{Messung}$')
@@ -198,7 +198,7 @@ plt.errorbar(n, unp.nominal_values(q_neu)*10**18, fmt='rx', yerr=unp.std_devs(q_
 plt.legend(loc='best')
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 #plt.savefig('build/ladungen_neu.pdf')
-#plt.show()
+plt.show()
 
 
 
