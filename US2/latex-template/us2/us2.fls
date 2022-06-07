@@ -1,0 +1,6 @@
+PWD /Users/sadi/Desktop/AP2.git/US2/latex-template/us2
+INPUT /usr/local/texlive/2022/texmf.cnf
+INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/sadi/Desktop/AP2.git/US2/latex-template/us2/us2.tex
+OUTPUT us2.log

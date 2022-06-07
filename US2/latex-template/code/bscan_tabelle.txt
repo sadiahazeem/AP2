@@ -1,0 +1,2 @@
+# bscan: abstand von oben, abstand von unten, lochdurchmesser
+ 
