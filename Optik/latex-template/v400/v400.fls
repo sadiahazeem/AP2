@@ -1,0 +1,6 @@
+PWD /Users/sadi/Desktop/AP2.git/Optik/latex-template/v400
+INPUT /usr/local/texlive/2022/texmf.cnf
+INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/sadi/Desktop/AP2.git/Optik/latex-template/v400/v400.tex
+OUTPUT v400.log
