@@ -5,9 +5,15 @@
 \subsubsection*{Mittlere Reichweite}
 Es wurde eine Messung bei einem Abstand von $30$mm sowie eine zweite bei $36$mm zwischen 
 Strahlungsquelle und Halbleiter-Detektor durchgeführt. 
-Die aufgenommenen Werte sind in xxx einzusehen.
+Die aufgenommenen Werte sind im Anhang einzusehen.
 Wie in \autoref{fig:reichweite} dargestellt, werden die Zählraten gegen die effektive Länge 
 aufgetragen.\\
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = \textwidth]{content/kackqualität.png}
+  \caption{Die Zählraten als Funktion der effektiven Länge aufgetragen.}
+  \label{fig:reichweite}
+\end{figure}
 Die horizontalen Geraden schneiden die jweiligen Kurven auf Höhe ihres halben
 Maximums. Zudem wird durch den nahezu linear absteigenden Teil der Messwerte eine 
 Ausgleichsgerade gelegt. Dafür wird eine lineare Regression durch \cite{numpy} durchgeführt. Die 
@@ -28,30 +34,41 @@ Die x-Koordinate des Schnittpunkts der Horizontalen und der Ausgleichsgerade mar
 mittlere Reichweite der $\alpha$-Teilchen. 
 Sie werden zu 
 \begin{eqnarray}
-  x_{\mathrm{30mm}} &=&   \nonumber  \\
-  x_{\mathrm{36mm}} &=&    \nonumber  
+  x_{\mathrm{30mm}} &=& 23,56 \mathrm{mm} \nonumber  \\
+  x_{\mathrm{36mm}} &=& 23,76 \mathrm{mm} \nonumber  
 \end{eqnarray}
 ermittelt.
-Wird diese mittlere Reichweite in xxx eingesetzt, können die Energien 
+Wird diese mittlere Reichweite in eq:xxx eingesetzt, können die Energien 
 \begin{eqnarray}
-  E_{\mathrm{30mm}} &=&   \nonumber  \\
-  E_{\mathrm{36mm}} &=&    \nonumber  
+  E_{\mathrm{30mm}} &=& 20,96 \; \mathrm{MeV} \nonumber  \\
+  E_{\mathrm{36mm}} &=& 21,22 \; \mathrm{MeV} \nonumber  
 \end{eqnarray}
 der Teilchen berechnet werden. 
+
 
 
 \subsubsection*{Energieverlust}
 Wird die Energie der $\alpha$-Teilchen als Funktion der effektiven Länge 
 graphisch aufgetragen und eine lineare Regression wie in \autoref{eq:linreg} durchgeführt,
 ist die Steigung der Ausgleichsgerade gleich dem Energieverlust $-\frac{dE}{dx}$.
-Mit Hilfe von python ergebn sich die Geradenparameter zu \autoref{fig:xxx} und \autoref{fig:xxx}
-zu
+Mit Hilfe von python ergeben sich die Geradensteigungen zu \autoref{fig:en30} und \autoref{fig:en36} zu
 \begin{eqnarray}
-  m_{\mathrm{30mm}} &=&   \nonumber  \\
-  b_{\mathrm{30mm}} &=&   \nonumber  \\
-  m_{\mathrm{36mm}} &=&   \nonumber  \\
-  b_{\mathrm{36mm}} &=&  . \nonumber
+ - \frac{dE_{30}}{dx} &=& 40,88 \mathrm{\frac{MeV}{m}} \nonumber  \\
+ - \frac{dE_{36}}{dx} &=& 54,0 \mathrm{\frac{MeV}{m}}. \nonumber  
 \end{eqnarray}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = \textwidth]{content/energie30mm.png}
+  \caption{Die Energie gegen die effektive Länge aufgetragen. Gemessen in 30mm Distanz.}
+  \label{fig:en30}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = \textwidth]{content/energie36mm.png}
+  \caption{Die Energie gegen die effektive Länge aufgetragen. Gemessen in 36mm Distanz.}
+  \label{fig:en36}
+\end{figure}
 
 
 \subsection{Statistik des radioaktiven Zerfalls}
@@ -61,12 +78,11 @@ Von diesen Werten ausgehend können dann die vergleichbaren Poisson- und Gaußve
 bestimmt werden.\\
 Diese sind zusammen mit den gemessenen Werten in \autoref{fig:hist} aufgetragen.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
-  \includegraphics{content/histogramm.png}
+  \includegraphics[width = \textwidth]{content/histogramm.png}
   \caption{Die Zerfallsraten im Histogramm aufgetragen im Vergleich zu einer
   Poisson- und einer Gaußverteilung.}
   \label{fig:hist}
 \end{figure}
-
 

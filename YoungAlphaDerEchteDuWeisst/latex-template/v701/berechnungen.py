@@ -9,6 +9,8 @@ from scipy import stats
 from scipy.optimize import curve_fit
 import pandas as pd
 from scipy.stats import norm
+from sympy.solvers import solve
+from sympy import Symbol
 
 
 
@@ -51,31 +53,73 @@ print("parameter 36mm: ", params36)
 xlin = np.linspace(15, 28, 40)
 plt.plot(xlin, (params30[0]*xlin + params30[1]), "m-", alpha = 0.4)
 plt.plot(xlin, (params36[0]*xlin + params36[1]), "y-", alpha = 0.6)
-
+plt.xlabel("effektive Länge in mm")
+plt.ylabel("Zählrate N")
 plt.plot()
-plt.legend()
+plt.legend(prop={'size': 8})
 plt.grid()
-plt.show()
+#plt.show()
 plt.close()
+
+
+############## SCHNITTPUNKTE BERECHNEN ############## 
+x = Symbol('x')
+print("schnittpunkt 30 mm: ", solve(params30[0]*x + params30[1] - np.max(n30)/2))
+print("schnittpunkt 36 mm: ", solve(params36[0]*x + params36[1] - np.max(n36)/2))
+
 
 
 
 ############## ENERGIEN ##############
 
-# mit R = 3.1 * E^3/2??
+def energieausR(r):              # mit R = 3.1 * E^3/2??
+    E = ((r)/3.1)**(3/2)         # r in mm einsetzen
+    return E
+
+E30 = energieausR(23.5626305123838)
+E36 = energieausR(23.7616497760509)
+
+print("Energie aus R bei 30mm: ", E30)
+print("Energie aus R bei 36mm: ", E36)
 
 
-def ChInE(ch, ch_list):
+
+def ChInE(ch, ch_list):         # mit channel
     channel_max = np.max(ch_list)
     channel_min = 0
     m = 4/(channel_max - channel_min)
-    d = 4 - (channel_max*d)
+    d = 4 - (channel_max*m)
     return m * ch + d
 
+e30 = ChInE(ch30, ch30)
+print("e30: ", e30)
+e36 = ChInE(ch36, ch36)
+
+plt.figure(dpi = 150)
+plt.plot(x30[:-1], e30[:-1], "mx", label = "Messwerte")
+pm30, cov30 = np.polyfit(x30[:-1], e30[:-1], cov = True, deg = 1)
+pm36, cov36 = np.polyfit(x36[:-1], e36[:-1], cov = True, deg = 1)
+plt.plot(x30[:-1], (x30[:-1]*pm30[0] + pm30[1]), "m-", alpha = 0.4, label = "lineare Regression")
+plt.legend(loc="best")
+plt.xlabel("effektive Länge in mm")
+plt.ylabel("Energie in MeV")
+plt.grid()
+plt.show()
+plt.close()
 
 
+plt.figure(dpi = 150)
+plt.plot(x36[:-1], e36[:-1], "yx", label = "Messwerte")
+plt.plot(x36[:-1], (x36[:-1]*pm36[0] + pm36[1]), "y-", alpha = 0.6, label = "lineare Regression")
+plt.legend(loc="best")
+plt.xlabel("effektive Länge in mm")
+plt.ylabel("Energie in MeV")
+plt.grid()
+plt.show()
+plt.close()
 
-
+print("Energieverlust 30mm: ", pm30[0])
+print("Energieverlust 36mm: ", pm36[0])
 
 ############## STATISTIK ##############
 
@@ -91,12 +135,21 @@ p_n= np.random.normal(nu, sigma, 10000)
 p_p= np.random.poisson(nu, 10000)
 print('Sigma der Gaußglocke: ', sigma)
 
-# plotten
-#plt.figure()
-#plt.hist(n100,  bins=26, color = 'k',  alpha=0.5, density=True, label='Messwerte')
-#plt.hist(p_p, bins=26, color='g', alpha=0.5, density=True, label='Poissonverteilung')
-#plt.hist(p_n, bins=26, color='y', alpha=0.5, density=True, label='Gaußverteilung')
-#plt.legend(loc="best")
-#plt.xlabel("Zählrate N")
-#plt.ylabel("P(N")
-#plt.show()
+##plotten
+plt.figure(dpi = 150)
+plt.hist(n100,  bins=26, color = 'k',  alpha=0.5, density=True, label='Messwerte')
+plt.hist(p_p, bins=26, color='g', alpha=0.5, density=True, label='Poissonverteilung')
+plt.hist(p_n, bins=26, color='y', alpha=0.5, density=True, label='Gaußverteilung')
+plt.legend(loc="best")
+plt.xlabel("Zählrate N")
+plt.ylabel("P(N)")
+plt.show()
+
+
+
+def abw(lit, exp):
+    proz = (lit - exp)/lit * 100
+    return proz
+
+print("Prozentuale Abweichung E: ", abw(21.22, 20.96))
+print("Prozentuale Abweichung x: ", abw(23.76, 23.56))
