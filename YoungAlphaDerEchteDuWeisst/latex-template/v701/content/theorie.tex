@@ -1,4 +1,27 @@
-\section{Theorie}
-\label{sec:Theorie}
+\section{Ziel}
+Es soll die Reichweite von $\alpha$-Strahlung in Luft bestimmt und die Statistik des radioaktiven Zerfalls abgebildet werden. 
 
-\cite{sample}
+\section{Theorie}
+Über das Messen der Reichweite, kann die Energie der $\alpha$-Strahlung bestimmt werden. Die $\alpha$-Teilchen können hierbei ihre Energie durch Ionisationsprozesse oder durch Anregung beziehungsweise Dissoziation von Molekülen verlieren. Der Energieverlust lässt sich durch die Bethe-Bloch-Formel
+\begin{equation}
+  -\dv{E_{\alpha}}{x}=\frac{z^2 e^2}{4\pi\epsilon_0 m_e}\frac{nZ}{v^2}\ln{\left(\frac{2m_e v^2}{I}\right)}
+  \label{eq:1}
+\end{equation}
+beschreiben, die den Energieverlust pro Weglängeneinheit angibt, wobei $z$ die Ladung und $v$ die Geschwindigkeit des $\alpha$-Teilchens ist und $Z$ die Ordnungszahl, $n$ die Teilchendichte und $I$ die Ionisierungsenergie des Targetgases darstellt. Der Energieverlust hängt von von der Energie der $\alpha$-Stahlung und der Dichte des Targets ab. Diese Gleichung gilt nicht für kleine Energien, da dann Ladungsaustauschsprozesse stattfinden.\\
+Die Reichweite des $\alpha$-Teilchens wird durch
+\begin{equation}
+  R=\int_{0}^{E_{\alpha}} \dv{x}{E_{\alpha}} dE_{\alpha}
+  \label{eq:2}
+\end{equation}
+berechnet. Da bei geringer Energie Ladungsaustauschsprozesse stattfinden, wird die mittlere Reichweite aus der ermittelt Kurve entnommen. Bei einer $\alpha$-Strahlung in Luft kann bei Energien von $E_\alpha \leq 2.5$ MeV auch 
+\begin{equation}
+  R_m=3.1\cdot E_\alpha^{3/2}
+  \label{eq:3}
+\end{equation}
+verwendet werden. Hierbei sind die Einheiten $[R_m]=\textrm{mm}$ und $[E_\alpha]=MeV$.\\
+Bei konstanter Temperatur und konstantem Volumen ist die Reichweite von $\alpha$-Teilchen in Gasen proportional zum Druck $p$, weshalb zur Ermittlung der Reichweite eine Absorptionsmessung bei varriertem Druck möglich ist. Dabei kann die Reichweite durch
+\begin{equation}
+  x=x_0 \frac{p}{p_0}
+  \label{eq:4}
+\end{equation}
+berechnet werden, wobei $x$ die Reichweite, $x_0$ die effektive Länge zwischen Detektor und $\alpha$-Strahler und $p_0=1013$ mbar der Normaldruck ist \cite{1}.
