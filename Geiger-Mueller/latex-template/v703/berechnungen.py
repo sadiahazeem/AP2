@@ -1,5 +1,6 @@
-import matplotlib.pyplot as plt
-import numpy as np
+import matplotlib
+matplotlib.use('MacOSX', force=True)
+import matplotlib.pyplot as pltimport numpy as np
 from scipy.optimize import curve_fit
 import uncertainties.unumpy as unp
 from uncertainties import ufloat
@@ -15,8 +16,12 @@ from uncertainties.unumpy import (
 
 uchar, nchar, ichar = np.genfromtxt(fname = "charakteristik.txt", unpack = True)
 fehlerN = np.sqrt(nchar)
+uchar = uchar[1:]
+nchar = nchar[1:]
+fehlerN=fehlerN[1:]
+ichar = ichar[1:]
 nchar_f = unp.uarray(nchar, fehlerN)        # wegen Poissonverteilung
-print(nchar_f)
+print("Zählrate N mit Fehler", nchar_f)
 
 ######################### FUNKTIONEN DEFINIEREN #########################
 
@@ -26,8 +31,8 @@ print(nchar_f)
 
 # Bereich beschränken auf Plateau
 
-u_pl = uchar[8:-3]
-n_pl = nchar[8:-3]
+u_pl = uchar[7:-3]
+n_pl = nchar[7:-3]
 print("Länge des Plateaus: ", u_pl[0], "V bis ", u_pl[17], "V")
 print("Länge u_pl: ", u_pl.size)
 print("Länge n_pl: ", n_pl.size)
@@ -35,32 +40,29 @@ print("Länge n_pl: ", n_pl.size)
 
 params, covariance_matrix = np.polyfit(u_pl, n_pl, deg = 1 , cov = True)
 print("parameter: ", params)
-
 errors = np.sqrt(np.diag(covariance_matrix))
-x = np.linspace(u_pl[0], u_pl[-1])
+print("FEHLER parameter: ", errors)
 
-#print(f'a = {params[0]} +- {errors[0]}')
-#print(f'b = {params[1]} +- {errors[1]}')
-#print(f'Steigung in Prozent pro 100V: {((params[0] * 500 + params[1]) - (params[0] * 400 + params[1])) / 100}')
+
+x = np.linspace(u_pl[0], u_pl[-1])
 
 
 ######################### ZÄHLROHRCHARAKTERISTIK PLOT #########################
 
 # N gegen U auftragen, Steigung des Plateaus berechnen (lin Regression)
 # und daran Ausgleichsgerade einzeichnen
+#print('Steigung in Prozent pro 100V: ', ((params[0] * 600 + params[1]) - (params[0] * 500 + params[1])) / 100)
 
 
 plt.figure()
 plt.errorbar(uchar, unp.nominal_values(nchar_f), label = "Messdaten", fmt='yx', yerr=fehlerN)
-plt.plot(x, params[0] * x + params[1], label = 'Plateau-Ausgleichsgerade', color = 'green')
-plt.xlabel(r'Spannung U in V')
-plt.ylabel(r'Zählrate N')
+plt.plot(x, (params[0] * x + params[1]), label = 'Plateau-Ausgleichsgerade', color = 'green')
+plt.xlabel('Spannung U in V')
+plt.ylabel('Zählrate N')
 plt.legend(loc = 'best')
-plt.tight_layout()
-#plt.show()
+plt.show()
 plt.close()
 
-print('Steigung in Prozent pro 100V: ', ((params[0] * 600 + params[1]) - (params[0] * 500 + params[1])) / 100)
 
 
 
@@ -79,7 +81,7 @@ n21 = ufloat(N21, np.sqrt(N21))
 
 T = (n1 + n2 - n21) / (2 * n1 * n2)
 
-print(f'Totzeit T = {T}')
+print('Totzeit T = ', T)
 
 U2 = np.array([500,500,500])
 N2_ohne = np.array([21844, 39105, 17594])
@@ -115,8 +117,8 @@ print("freigesetzte Ladungsmenge in Coulomb: ", Z*10**-9)
 plt.figure()
 plt.errorbar(uchar, unp.nominal_values(Z*10**10), label = "Messdaten", fmt='yx', yerr=unp.std_devs(Z))
 #plt.plot(x, params[0] * x + params[1], label = 'Plateau-Ausgleichsgerade', color = 'green')
-plt.xlabel(r'Spannung U in V')
-plt.ylabel(r'Freigesetzte Ladungen in $e_0$')
+plt.xlabel('Spannung U in V')
+plt.ylabel('Freigesetzte Ladungen in $e_0$')
 plt.legend(loc = 'best')
 plt.tight_layout()
 #plt.show()
