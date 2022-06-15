@@ -78,7 +78,7 @@ deren Fehler dementsprechend aus
 
 \begin{figure}[H]
   \centering
-  \includegraphics{content/hobelneu.png}
+  \includegraphics{content/fml.png}
   \caption{Die Charakteristik des Geiger-Müller-Zählrohrs.}
   \label{fig:charakteristik}
 \end{figure}
@@ -87,13 +87,18 @@ deren Fehler dementsprechend aus
 \subsection{Bestimmung der Totzeit}
 \subsubsection{Mit Oszilloskop}
 Aus dem aufgenommenen Oszillogramm \autoref{fig:totzeit} kann eine Totzeit von 
-$T_1 = 130 \mu$s abgelesen werden.\\
+$T_1 \approx 130 \mu$s abgelesen werden.\\
 \begin{figure}[H]
   \centering
-  \includegraphics[width = \textwidth]{content/totzeit.jpg}
+  \includegraphics[width = 6cm]{content/totzeit.jpg}
   \caption{Oszillogramm zur Bestimmung der Totzeit des Geiger-Müller-Zählrohres.}
   \label{fig:totzeit}
 \end{figure}
+Die Nachentladungszeit lässt sich aus ebendiesem Oszillogramm als Intervall zwischen erstem und zweiten Peak zu
+\begin{equation*}
+  T_2 \approx 3,5 \cdot 50 \; \mathrm{\mu s} = 175 \; \mathrm{\mu s}
+\end{equation*}
+bestimmen.\\
 
 \subsubsection{Zwei-Quellen-Methode}
  Für die Zwei-Quellen-Methode ergeben sich die Messwerte unter Einbezug des 
@@ -101,7 +106,7 @@ $T_1 = 130 \mu$s abgelesen werden.\\
  und $N12 = \frac{39105 \pm 198}{120s}$.
  Es wird für den Strom $I$ eine Ableseungenauigkeit von $\Delta I = 0,05 \mu$A angenommen, für die Zählrate 
  gilt das Vertrauensintervall $\pm \frac{\sqrt{N}}{t}$.\\
- Mit \autoref{eq:2} berechnet sich die Totzeit zu $T_2 = 100 \pm 500 \mu$s.
+ Mit \autoref{eq:2} berechnet sich die Totzeit zu $T_2 = 50 \pm 40 \mu \;$s.
 
 
 
@@ -117,7 +122,7 @@ Der Fehler dieser Formel lässt sich zu % Delta Z = ( (∂z/∂i)^2 * ∆i^2 +  
 Sie ist in Abhängigkeit von der Zählrohrspannung in \autoref{fig:lad} graphisch dargestellt.\\
 \begin{figure}[H]
   \centering
-  \includegraphics{content/figure_2.png}
+  \includegraphics{content/hobelneu.png}
   \caption{Die freigesetze Ladungsmenge je einfallendem Teilchen in Abhängigkeit von der Zählrohrspannung.}
   \label{fig:lad}
 \end{figure}

@@ -57,7 +57,7 @@ nchar = nchar[1:]
 fehlerN=fehlerN[1:]
 ichar = ichar[1:]
 nchar_f = unp.uarray(nchar, fehlerN)        # wegen Poissonverteilung
-print("Zählrate N mit Fehler", nchar_f)
+#print("Zählrate N mit Fehler", nchar_f)
 
 ######################### FUNKTIONEN DEFINIEREN #########################
 
@@ -69,9 +69,9 @@ print("Zählrate N mit Fehler", nchar_f)
 
 u_pl = uchar[7:-3]
 n_pl = nchar[7:-3]
-print("Länge des Plateaus: ", u_pl[0], "V bis ", u_pl[17], "V")
-print("Länge u_pl: ", u_pl.size)
-print("Länge n_pl: ", n_pl.size)
+#print("Länge des Plateaus: ", u_pl[0], "V bis ", u_pl[17], "V")
+#print("Länge u_pl: ", u_pl.size)
+#print("Länge n_pl: ", n_pl.size)
 
 
 params, covariance_matrix = np.polyfit(u_pl, n_pl, deg = 1 , cov = True)
@@ -110,7 +110,7 @@ plt.close()
 N3=unp.uarray(21844,np.sqrt(21844))
 N34=unp.uarray(39105,np.sqrt(39105))           # hier wird in der rechung erst durch 120s geteilt
 N4=unp.uarray(17594,np.sqrt(17594))             # nach der fehlerrechnung
-T=((N3/120)+(N4/120)-(N34/120))/(1/60*N3*N4)   
+T=((N3/120)+(N4/120)-(N34/120))/(2*((N3/120)*(N4/120)))  
 #print("N3, N34 und N4 mit Fehler: ", N2)
 print("----Totzeit 2 Quellen Methode: ", T)
 T_abgelesen = 130e-6
@@ -123,6 +123,7 @@ I = ichar
 I *= 10**(-6) # I in A 
 nchar /= 120 
 
+
 def Z3(i, n):
     z = i/(const.elementary_charge * n)
     return z
@@ -134,29 +135,27 @@ def fehlerZ(i, n, deltai, deltan):
 
 Nerr = unp.uarray(nchar, np.sqrt(nchar))
 Ierr = unp.uarray(I, 0.05 * 10**(-6))
-Z = Ierr / (const.elementary_charge * Nerr)
+Ierr *= 1*10**6
+Z = Ierr*10**-6 / (const.elementary_charge * Nerr)
 #I *= 10**6 # I in µA
 print("--------- Z mit Fehler: ", Z)
 print("fehler Z: ", fehlerZ(I, nchar, 0.05 * 10**(-6), np.sqrt(nchar))) # gibt realistische ergebnisse ?
-
-def f(x):
-    y = m*x + b
-    return y
 
 
 pm, cov = np.polyfit(x = unp.nominal_values(Ierr), y = unp.nominal_values(Z), deg = 1, cov = True)
 err = np.sqrt(np.diag(cov))
 print("geradenparameter Z und deren fehler : ", pm, err)
 
-
+x = np.linspace(0, 0.6, 20)
 plt.figure()
 plt.errorbar(I*10**6, unp.nominal_values(Z), label = "Messdaten", fmt='yx', yerr=unp.std_devs(Z))
-#plt.plot(x,(pm[0] * x + pm[1]), label = 'Ausgleichsgerade', color = 'green')
+plt.plot(x,(pm[0] * x + pm[1]), label = 'Ausgleichsgerade', color = 'k', alpha = 0.4)
 plt.xlabel('Strom I in µA')
 plt.ylabel('Freigesetzte Elementarladungen')
 plt.legend(loc = 'best')
 plt.show()
 plt.close()
+
 
 
 ######################### ABWEICHUNGEN #########################

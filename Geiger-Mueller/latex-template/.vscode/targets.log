@@ -8,11 +8,12 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Sun Jun 12 18:13:38 2022
+# Make data base, printed on Wed Jun 15 15:04:31 2022
 
 # Variables
 
 # automatic
+ 
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
@@ -39,7 +40,7 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/gd/wrgdkqfs1yn1346ccc_jb4c00000gn/T/vscode-ipc-873f5f23-964c-4875-aafa-3bc644e00805.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/gd/wrgdkqfs1yn1346ccc_jb4c00000gn/T/vscode-ipc-8b9a5a4b-5116-4f9d-bf25-5974999bd382.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -50,6 +51,7 @@ VSCODE_LOG_STACK = false
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+ 
 # environment
 SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.mRo2GXsFlC/Listeners
 # automatic
@@ -69,7 +71,7 @@ HOME = /Users/sadi
 # default
 MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/sadi/Library/Application Support/Code/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+VSCODE_CODE_CACHE_PATH = /Users/sadi/Library/Application Support/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
 # environment
 LOGNAME = sadi
 # environment
@@ -109,7 +111,7 @@ TMPDIR = /var/folders/gd/wrgdkqfs1yn1346ccc_jb4c00000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/sadi/Library/Application Support/Code/1.67.1-main.sock
+VSCODE_IPC_HOOK = /Users/sadi/Library/Application Support/Code/1.68.0-main.sock
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -117,7 +119,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.307049.307055
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.2582507.2582513
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -145,7 +147,7 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /opt/anaconda3
 # environment
-VSCODE_PID = 1156
+VSCODE_PID = 21832
 # environment
 _CE_CONDA = 
 # environment
@@ -159,9 +161,9 @@ LANG = C
 
 # Directories
 
-# . (device 16777229, inode 1851170): 12 files, no impossibilities.
+# . (device 16777229, inode 1851170): 13 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -247,6 +249,6 @@ clean:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sun Jun 12 18:13:38 2022
+# Finished Make data base on Wed Jun 15 15:04:31 2022
 
  

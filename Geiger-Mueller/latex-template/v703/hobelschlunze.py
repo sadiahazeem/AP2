@@ -97,7 +97,7 @@ plt.plot(x, (params[0] * x + params[1]), label = "Plateau-Ausgleichsgerade", col
 plt.xlabel('Spannung U in V')
 plt.ylabel('Zählrate N')
 plt.legend(loc = 'best')
-#plt.show()
+plt.show()
 plt.close()
 
 
@@ -167,7 +167,7 @@ plt.errorbar(I*10**6, unp.nominal_values(Z), label = "Messdaten", fmt='yx', yerr
 plt.xlabel('Strom I in µA')
 plt.ylabel('Freigesetzte Elementarladungen')
 plt.legend(loc = 'best')
-plt.show()
+#plt.show()
 plt.close()
 
 
