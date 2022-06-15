@@ -11,6 +11,7 @@ from struct import unpack
 from uncertainties.unumpy import (
     nominal_values as noms,
     std_devs as stds,
+    uarray
 )
 
 
@@ -103,27 +104,16 @@ plt.close()
 
 ######################### TOTZEIT #########################
 
-
-# 2. zwei-quellen-methode 
-
-#N1 = 21844.0 / 120.0
-#N2 = 17594.0 / 120.0
-#N21 = 39105.0 / 120.0           # hier wird erst durch 120s geteilt
-#n1 =  ufloat(N1, np.sqrt(N1))   # also vor der fehlerrechnung
-#n2 =  ufloat(N2, np.sqrt(N2))   # ----> falschimalschi
-#n21 = ufloat(N21, np.sqrt(N21))
-#
-#T = ((n1 + n2 - n21) / (2 * n1 * n2))*10**6
-#print('----( mit ufloat, in µs) Totzeit T = ', T)
+# 2-Quellen-Methode
 
 
 N3=unp.uarray(21844,np.sqrt(21844))
 N34=unp.uarray(39105,np.sqrt(39105))           # hier wird in der rechung erst durch 120s geteilt
 N4=unp.uarray(17594,np.sqrt(17594))             # nach der fehlerrechnung
-T=((N3/120)+(N4/120)-(N34/120))/(1/60*N3*N4)   # --> richtig
+T=((N3/120)+(N4/120)-(N34/120))/(1/60*N3*N4)   
 #print("N3, N34 und N4 mit Fehler: ", N2)
 print("----Totzeit 2 Quellen Methode: ", T)
-T_abgelesen = 150e-6
+T_abgelesen = 130e-6
 
 
 
@@ -147,7 +137,7 @@ Ierr = unp.uarray(I, 0.05 * 10**(-6))
 Z = Ierr / (const.elementary_charge * Nerr)
 #I *= 10**6 # I in µA
 print("--------- Z mit Fehler: ", Z)
-print("fehler Z: ", fehlerZ(I, nchar, 0.05 * 10**(-6), np.sqrt(nchar))) # gibt realistische ergebnisse 
+print("fehler Z: ", fehlerZ(I, nchar, 0.05 * 10**(-6), np.sqrt(nchar))) # gibt realistische ergebnisse ?
 
 def f(x):
     y = m*x + b

@@ -1,0 +1,4 @@
+# d in mm, t in s, N in Imp
+1   1   20
+2   2   30
+3   3   50
