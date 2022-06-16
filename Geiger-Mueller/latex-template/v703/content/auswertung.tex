@@ -53,13 +53,13 @@ sind die einbezogenen Messwerte zu finden. Der gesamte Satz an Messwerten ist in
   \label{tab:charak}
 \end{table}
 
-Die Zählraten entsprechen einer Poisson-Verteilung, sodass sich ihr Fehler zu 
+Die Zählraten entsprechen einer Poisson-Verteilung, sodass sich ihr Fehler aus 
 \begin{equation*}
   \Delta N = \sqrt{N}
 \end{equation*}
 ergibt.\\
 Die Charakteristik ist in \autoref{fig:charakteristik} graphisch dargestellt.
-Der Plateaubereich umfasst das Intervall von 410V bis 670V.\\
+Der Plateaubereich umfasst das Intervall von 410 V bis 670 V.\\
 Die lineare Regression wird mithilfe von python (\cite{numpy}, \cite{uncertainties}) durchgeführt und ergibt
 für die Ausgleichsgerade der Parameter $b = (13762 \pm 250)  \: \mathrm{Imp}$ für den y-Achsenabschnitt.
 Als Geradengleichung, an die gefitted wird, wird 
@@ -71,10 +71,11 @@ Die prozentuale Steigung $m_{\%} = (0,73 \pm 0,45) \mathrm{\frac{\%}{100 V}}$ er
 \begin{equation*}
   m_{\%} = 100\% \cdot \frac{N_{\mathrm{600V}} - N_{\mathrm{500V}}}{N_{\mathrm{500V}}},
 \end{equation*}
-deren Fehler dementsprechend aus
+deren Fehler mit
 \begin{equation*}
   \Delta m_{\%} = \frac{100\%}{N_{\mathrm{500V}}} \sqrt{(1 - \frac{N_{\mathrm{600V}} - N_{\mathrm{500V}}}{N_{\mathrm{600V}}})^2 (\Delta N_{\mathrm{500V}})^2 + (\frac{\Delta N_{\mathrm{500V}}}{N_{\mathrm{600V}}})^2}
 \end{equation*}
+berechnet wird.
 
 \begin{figure}[H]
   \centering
@@ -99,9 +100,9 @@ $T_1 = 130 \mu$s abgelesen werden.\\
  Für die Zwei-Quellen-Methode ergeben sich die Messwerte unter Einbezug des 
  Poisson-Fehlers und der Integrationszeit von $120$s zu $N1 = \frac{21844 \pm 148}{120s}$, $N2 = \frac{17594 \pm 133}{120s}$ 
  und $N12 = \frac{39105 \pm 198}{120s}$.
- Es wird für den Strom $I$ eine Ableseungenauigkeit von $\Delta I = 0,05 \mu$A angenommen, für die Zählrate 
+ Es wird für den Strom $I$ eine Ableseungenauigkeit von $\Delta I = 0,05 \mu$ A angenommen, für die Zählrate 
  gilt das Vertrauensintervall $\pm \frac{\sqrt{N}}{t}$.\\
- Mit \autoref{eq:2} berechnet sich die Totzeit zu $T_2 = 100 \pm 500 \mu$s.
+ Mit \autoref{eq:2} berechnet sich die Totzeit zu $T_2 = 100 \pm 500 \mu$ s.
 
 
 
@@ -110,10 +111,11 @@ $T_1 = 130 \mu$s abgelesen werden.\\
 
 Die freigesetze Ladungsmenge wird nach \autoref{eq:5} aus dem mittleren Zählrohrstrom
 bestimmt.\\
-Der Fehler dieser Formel lässt sich zu % Delta Z = ( (∂z/∂i)^2 * ∆i^2 +  (∂z/∂n)^2 * ∆n^2 )^1/2
+Der Fehler dieser Formel lässt sich aus % Delta Z = ( (∂z/∂i)^2 * ∆i^2 +  (∂z/∂n)^2 * ∆n^2 )^1/2
 \begin{equation*}
   \Delta Z = \sqrt{ ( \frac{1}{e_0 \cdot N} )^2 \cdot (\Delta I)^2 + (- \frac{I}{e_0 \cdot N^2})^2 \cdot (\Delta N)^2}
 \end{equation*}
+bestimmen.
 Sie ist in Abhängigkeit von der Zählrohrspannung in \autoref{fig:lad} graphisch dargestellt.\\
 \begin{figure}[H]
   \centering
