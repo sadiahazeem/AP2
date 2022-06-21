@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.5.17)  7 JUN 2022 09:03
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.5.17)  21 JUN 2022 20:11
  restricted system commands enabled.
 **us2.tex
 (./us2.tex
@@ -871,6 +871,8 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count320
 \@lastruleclass=\count321
 \@thisrulewidth=\dimen256
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2022/03/14 v3.0d Micro-typographical refinements (RS)
 \MT@toks=\toks27
@@ -1130,7 +1132,7 @@ Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
 ))
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 128.
+(scrhack)             need that hack, on input line 130.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2022-05-16 v7.00p Hypertext links for LaTeX
  (/usr/local/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
@@ -1376,7 +1378,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
  [2
 
 ] (./content/theorie.tex
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
@@ -1386,54 +1388,69 @@ File: content/block.png Graphic file (type png)
 <use content/block.png>
 Package luatex.def Info: content/block.png  used on input line 10.
 (luatex.def)             Requested size: 256.0748pt x 134.03831pt.
- [4]) (./content/auswertung.tex [5<./content/block.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+ [4]) (./content/auswertung.tex
+<content/korrektur_fit.png, id=81, 462.528pt x 346.896pt>
+File: content/korrektur_fit.png Graphic file (type png)
+<use content/korrektur_fit.png>
+Package luatex.def Info: content/korrektur_fit.png  used on input line 15.
+(luatex.def)             Requested size: 312.9803pt x 234.74811pt.
+ [5<./content/block.png>]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.4.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.4.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.4.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.4.1'
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-<content/1mhz_aufl_plot.png, id=92, 646.0938pt x 346.896pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<content/1mhz_aufl_plot.png, id=94, 646.0938pt x 346.896pt>
 File: content/1mhz_aufl_plot.png Graphic file (type png)
 <use content/1mhz_aufl_plot.png>
-Package luatex.def Info: content/1mhz_aufl_plot.png  used on input line 83.
+Package luatex.def Info: content/1mhz_aufl_plot.png  used on input line 88.
 (luatex.def)             Requested size: 418.25555pt x 224.57458pt.
-[6
-warning  (pdf backend): ignoring duplicate destination with the name 'equation.4.1'
-]
+[6<./content/korrektur_fit.png>] [7<./content/1mhz_aufl_plot.png>]
 warning  (file content/2Mhz.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
-<content/2Mhz.pdf, id=101, 145.2899pt x 179.93353pt>
+<content/2Mhz.pdf, id=112, 145.2899pt x 179.93353pt>
 File: content/2Mhz.pdf Graphic file (type pdf)
 <use content/2Mhz.pdf>
-Package luatex.def Info: content/2Mhz.pdf  used on input line 95.
+Package luatex.def Info: content/2Mhz.pdf  used on input line 100.
 (luatex.def)             Requested size: 199.16928pt x 246.67218pt.
-[7<./content/1mhz_aufl_plot.png>]
+
 warning  (file content/bscan_oben.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
-<content/bscan_oben.pdf, id=114, 346.63638pt x 311.44154pt>
+<content/bscan_oben.pdf, id=116, 346.63638pt x 311.44154pt>
 File: content/bscan_oben.pdf Graphic file (type pdf)
 <use content/bscan_oben.pdf>
-Package luatex.def Info: content/bscan_oben.pdf  used on input line 111.
+Package luatex.def Info: content/bscan_oben.pdf  used on input line 116.
 (luatex.def)             Requested size: 199.16928pt x 178.94917pt.
-
+[8<./content/2Mhz.pdf>]
 warning  (file content/bscan_unten.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
-<content/bscan_unten.pdf, id=115, 343.25421pt x 308.31255pt>
+<content/bscan_unten.pdf, id=129, 343.25421pt x 308.31255pt>
 File: content/bscan_unten.pdf Graphic file (type pdf)
 <use content/bscan_unten.pdf>
-Package luatex.def Info: content/bscan_unten.pdf  used on input line 118.
+Package luatex.def Info: content/bscan_unten.pdf  used on input line 123.
 (luatex.def)             Requested size: 199.16928pt x 178.89195pt.
-[8<./content/2Mhz.pdf><./content/bscan_oben.pdf>]
+[9<./content/bscan_oben.pdf><./content/bscan_unten.pdf>]
 warning  (file content/festtumor.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
-<content/festtumor.pdf, id=128, 367.31995pt x 328.4024pt>
+<content/festtumor.pdf, id=138, 367.31995pt x 328.4024pt>
 File: content/festtumor.pdf Graphic file (type pdf)
 <use content/festtumor.pdf>
-Package luatex.def Info: content/festtumor.pdf  used on input line 158.
+Package luatex.def Info: content/festtumor.pdf  used on input line 163.
 (luatex.def)             Requested size: 227.62204pt x 203.50716pt.
 
 warning  (file content/wassertumor.pdf) (pdf inclusion): PDF inclusion: found PDF version '1.7', but at most version '1.5' allowed
-<content/wassertumor.pdf, id=129, 346.524pt x 312.09348pt>
+<content/wassertumor.pdf, id=139, 346.524pt x 312.09348pt>
 File: content/wassertumor.pdf Graphic file (type pdf)
 <use content/wassertumor.pdf>
-Package luatex.def Info: content/wassertumor.pdf  used on input line 164.
+Package luatex.def Info: content/wassertumor.pdf  used on input line 169.
 (luatex.def)             Requested size: 227.62204pt x 205.00609pt.
-[9<./content/bscan_unten.pdf>]) (./content/diskussion.tex [10<./content/festtumor.pdf><./content/wassertumor.pdf>]
+[10<./content/festtumor.pdf>]) (./content/diskussion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--13
 
  []
@@ -1442,51 +1459,52 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 5.00053pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 31.
-
+[11<./content/wassertumor.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 54--60
 
  []
 
-) [11] (./content/anhang.tex
-<content/mess1.jpg, id=159, 1606.0pt x 1212.53pt>
+) (./content/anhang.tex
+<content/mess1.jpg, id=161, 1606.0pt x 1212.53pt>
 File: content/mess1.jpg Graphic file (type jpg)
 <use content/mess1.jpg>
 Package luatex.def Info: content/mess1.jpg  used on input line 6.
 (luatex.def)             Requested size: 199.16928pt x 150.36327pt.
-<content/mess2.jpg, id=160, 1604.99625pt x 902.37125pt>
+<content/mess2.jpg, id=162, 1604.99625pt x 902.37125pt>
 File: content/mess2.jpg Graphic file (type jpg)
 <use content/mess2.jpg>
 Package luatex.def Info: content/mess2.jpg  used on input line 14.
 (luatex.def)             Requested size: 199.16928pt x 111.96999pt.
-<content/mess3.jpg, id=161, 1604.99625pt x 902.37125pt>
+ [12<./content/mess1.jpg>]
+<content/mess3.jpg, id=172, 1604.99625pt x 902.37125pt>
 File: content/mess3.jpg Graphic file (type jpg)
 <use content/mess3.jpg>
 Package luatex.def Info: content/mess3.jpg  used on input line 22.
 (luatex.def)             Requested size: 199.16928pt x 111.96999pt.
-) [12<./content/mess1.jpg><./content/mess2.jpg>] [13<./content/mess3.jpg>] (./build/us2.aux)
+) [13<./content/mess2.jpg><./content/mess3.jpg>] (./build/us2.aux)
 Package rerunfilecheck Info: File `us2.aux' has not changed.
-(rerunfilecheck)             Checksum: 4C074A30EDBDDB145C0A4F706DE18E04;15335.
+(rerunfilecheck)             Checksum: 6C285EB83E9D09BF9D45AC1541B5E049;15633.
 Package rerunfilecheck Info: File `us2.toc' has not changed.
-(rerunfilecheck)             Checksum: DC0B5C0013D370109D036F197809558A;1624.
+(rerunfilecheck)             Checksum: 337248CE4051300D07613D902750A3F3;1625.
 Package logreq Info: Writing requests to 'us2.run.xml'.
 
 \openout1 = us2.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 38544 strings out of 477742
+ 38588 strings out of 477742
  100000,1977958 words of node,token memory allocated
  755 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 7 glue, 4 kern, 1 penalty, 3 glyph, 30 attribute, 77 glue_spec, 17 attribute_list, 1 write nodes
-   avail lists: 1:4,2:970,3:248,4:110,5:395,6:53,7:5587,8:39,9:427,10:14,11:607,12:1
- 58035 multiletter control sequences out of 65536+600000
- 97 fonts using 37343367 bytes
+   avail lists: 1:4,2:1650,3:248,4:110,5:403,6:53,7:5534,8:39,9:601,10:14,11:609,12:1
+ 58063 multiletter control sequences out of 65536+600000
+ 97 fonts using 37343203 bytes
  113i,11n,117p,10616b,2933s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on us2.pdf (13 pages, 8664338 bytes).
+Output written on us2.pdf (13 pages, 8685015 bytes).
 
-PDF statistics: 295 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 131072)
+PDF statistics: 299 PDF objects out of 1000 (max. 8388607)
+ 226 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 131072)
  137 words of extra memory for PDF output out of 10000 (max. 100000000)
 

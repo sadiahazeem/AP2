@@ -103,3 +103,7 @@ print("5: Abweichung B Durchmesser: ",  abw(2.8, 2.07))
 
 c_s = unp.ufloat(2714, 30)
 print("Abweichung Schallgeschwindigkeit: ",  abw(2730, c_s))
+
+
+print("anpassungsschicht in mm: ", 0.05601347899463367*1e-2*2730)
+print("Laufzeitkorrektur soll: ", 4*1e-3/2730)

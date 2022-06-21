@@ -7,37 +7,42 @@ Für den Block wurden mit der Schieblehre die Maße
 \begin{eqnarray}
     h &=& 8,04 \mathrm{cm} \nonumber \\
     b &=& 15,04 \mathrm{cm} \nonumber \\
-    t &=& 4 \mathrm{cm} \nonumber 
+    t &=& 4,00 \mathrm{cm} \nonumber 
 \end{eqnarray}
 aufgenommen, wobei $h$ die Höhe, $b$ die Länge und $t$ die Breite des Acrylblocks darstellen. 
-
-Die bei der Regression ermittelten Parameter für Schallgeschwindigkeit $c$ und Anpassungsschichtdicke $d$ lauten
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = 11cm]{content/korrektur_fit.png}
+  \caption{Der lineare Fit der durchlaufenen Strecke an die Laufzeit.}
+  \label{fig:lelele}
+\end{figure}
+Die bei der Regression in \autoref{fig:lelele} ermittelten Parameter für Schallgeschwindigkeit $c$ und Anpassungsschichtdicke $d$ lauten
 \begin{eqnarray}
-    c &=& (2714 \pm 30) \mathrm{m/s} \nonumber \\
+    c &=& (2654 \pm 194) \mathrm{m/s} \nonumber \\
     d &=& (4 \pm 1 )\mathrm{mm.} \nonumber 
 \end{eqnarray}
 
 Die errechneten Durchmesser der Störstellen sind in \autoref{tab:lochd} zu finden.\\
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \caption{Die errechneten Durchmesser der Störstellen.}
-    \begin{tabular}{cc}
+    \begin{tabular}{D{,}{,}{2.0} D{,}{,}{2.2}}
       \toprule
-      {Lochnummer} & 
-      {Durchmesser $d$ in mm }\\
+      \multicolumn{1}{c}{Lochnummer} & 
+      \multicolumn{1}{c}{Durchmesser $d$ in mm }\\
       \midrule
-      8  &  6,41    \\
-      7  &  5,59    \\
-      6  &  4,23    \\
-      5  &  3,41    \\
-      4  &  3,55    \\
-      3  &  3,68    \\
-      2  &  3,41    \\
-      1  &  30,44   \\
-      K1 &  2,18    \\
-      K2 &  1,91    \\   
-      G  &  10,24   \\
+              8  &  6,41  \\
+              7  &  5,59  \\
+              6  &  4,23  \\
+              5  &  3,41  \\
+              4  &  3,55  \\
+              3  &  3,68  \\
+              2  &  3,41  \\
+              1  &  30,44 \\
+      \mathrm{K1} &  2,18 \\
+      \mathrm{K2} &  1,91 \\   
+      \mathrm{G} &  10,24 \\
       \bottomrule
     \end{tabular}
     \label{tab:lochd}
@@ -48,11 +53,11 @@ Die errechneten Durchmesser der Störstellen sind in \autoref{tab:lochd} zu find
 \begin{table}[h]
     \centering
     \caption{Die errechneten Tiefen der Störstellen, von unten und von oben.}
-    \begin{tabular}{ccc}
+    \begin{tabular}{D{,}{,}{2.0} D{,}{,}{1.2} D{,}{,}{1.2}}
       \toprule
-      {Lochnummer} & 
-      {$s_{unten}$ in cm} &
-      {$s_{oben}$ Tiefe in cm} \\
+      \multicolumn{1}{c}{Lochnummer} & 
+      \multicolumn{1}{c}{$s_{unten}$ in cm} &
+      \multicolumn{1}{c}{$s_{oben}$ Tiefe in cm} \\
       \midrule
       8  &  6,22  & 1,47  \\
       7  &  5,49  & 2,29  \\
@@ -62,9 +67,9 @@ Die errechneten Durchmesser der Störstellen sind in \autoref{tab:lochd} zu find
       3  &  2,42  & 5,56  \\
       2  &  1,62  & 6,37  \\
       1  &  0,83  & 4,46  \\
-      K1 &  2,07  & 6,05  \\
-      K2 &  1,92  & 6,22  \\   
-      G  &  5,65  & 1,67  \\
+      \mathrm{K1} &  2,07  & 6,05  \\
+      \mathrm{K2} &  1,92  & 6,22  \\   
+      \mathrm{G} &  5,65  & 1,67  \\
       \bottomrule
     \end{tabular}
  \label{tab:tiefe}
@@ -73,25 +78,11 @@ Die errechneten Durchmesser der Störstellen sind in \autoref{tab:lochd} zu find
 
 
 \subsection{Untersuchung des Auflösungsvermögens}
-<<<<<<< HEAD
 Die beiden benachbarten kleinsten Störstellen K1 und K2 wurden mit beiden verfügbaren
 Sonden (1MHz und 2MHz) untersucht. Die mit der 1MHz-Sonde aufgenommenen Messdaten sind in \autoref{fig:1mhz} zu sehen.\\
 Mit der 2MHz-Sonde wurden auch Messwerte aufgenommen, die aber bei der Datenexportation verloren gegangen sind. 
 Bei der Aufnahme der Messwerte war zu beobachten, dass die mit der 2MHz-Sonde erstellte Grafik eher höhere 
-Amplituden zeigt, die allerdings schneller ab- und zunehmen, sodass das Signal insgesamt etwas "flackernd"  $\; $wirkt.
-||||||| 83cd5b2
-Die beiden benachbarten kleinsten Störstellen $K1$ und $K2$ wurden mit beiden verfügbaren
-Sonden (1MHz und 2MHz) untersucht. Die mit der 1MHz-Sonde aufgenommenen Messdaten sind in \autoref{fig:1mhz} zu sehen.\\
-Mit der 2MHz-Sonde wurden auch Messwerte aufgenommen, die aber bei der Datenexportation verloren gegangen sind. 
-Bei der Aufnahme der Messwerte war zu beobachten, dass die mit der 2MHz-Sonde erstellte Grafik eher höhere 
-Amplituden zeigt, die allerdings schneller ab- und zunehmen, sodass das Signal insgesamt etwas "flackernd"  wirkt.
-=======
-Die beiden benachbarten kleinsten Störstellen $K1$ und $K2$ wurden mit beiden verfügbaren
-Sonden (1-MHz und 2-MHz) untersucht. Die mit der 1-MHz-Sonde aufgenommenen Messdaten sind in \autoref{fig:1mhz} zu sehen.\\
-Mit der 2-MHz-Sonde wurden auch Messwerte aufgenommen, die aber bei der Datenexportation verloren gegangen sind. 
-Bei der Aufnahme der Messwerte war zu beobachten, dass die mit der 2-MHz-Sonde erstellte Grafik eher höhere 
-Amplituden zeigt, die allerdings schneller ab- und zunehmen, sodass das Signal insgesamt etwas "flackernd"  wirkt.
->>>>>>> origin/doppelscheisediesewoche
+Amplituden zeigt, die allerdings schneller ab- und zunehmen, sodass das Signal insgesamt etwas instabil wirkt.
 \begin{figure}[H]
   \centering
   \includegraphics[width = \textwidth]{content/1mhz_aufl_plot.png}
@@ -137,15 +128,15 @@ in \autoref{tab:bscan_tiefen} aufgeführt sind.
 
 \begin{table}[H]
     \centering
-    \caption{Die im B-Scan gemessenen Tiefen der Störstellen, von unten und von oben. Außerdem die Durchmesser.}
-    \begin{tabular}{cccc}
+    \caption{Die im B-Scan gemessenen Tiefen der Störstellen, von unten und von oben sowie die Durchmesser.}
+    \begin{tabular}{D{,}{,}{2.0} D{,}{,}{2.2} D{,}{,}{2.2} D{,}{,}{1.2}}
       \toprule
-      {Lochnummer} & 
-      {$s_{oben}$ in mm} &
-      {$s_{unten}$ Tiefe in mm} &
-      {$d$ in mm} \\
+      \multicolumn{1}{c}{Lochnummer} & 
+      \multicolumn{1}{c}{$s_{oben}$ in mm} &
+      \multicolumn{1}{c}{$s_{unten}$ Tiefe in mm} &
+      \multicolumn{1}{c}{$d$ in mm} \\
       \midrule 
-      8  &  58,65  &  8,28  &  4,14   \\
+      8  &  58,65  &  \;8,28  &  4,14   \\
       7  &  51,06  & 16,56  &  2,76   \\
       6  &  41,40  & 26,22  &  2,48   \\
       5  &  24,84  & 31,74  &  2,07   \\
@@ -153,9 +144,9 @@ in \autoref{tab:bscan_tiefen} aufgeführt sind.
       3  &  24,84  & 48,30  &  1,10   \\
       2  &  17,25  & 56,58  &  1,38   \\
       1  &   9,66  & 63,48  &  1,38   \\
-      K1 &  12,42  & 53,82  &  0,97   \\
-      K2 &  11,04  & 55,20  &  0,97   \\   
-      G  &  56,58  & 15,18  &  3,45   \\
+      \mathrm{K1} &  12,42  & 53,82  &  0,97   \\
+      \mathrm{K2} &  11,04  & 55,20  &  0,97   \\   
+      \mathrm{G}  &  56,58  & 15,18  &  3,45   \\
       \bottomrule
     \end{tabular}
  \label{tab:bscan_tiefen}

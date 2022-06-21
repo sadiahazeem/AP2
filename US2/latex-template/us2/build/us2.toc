@@ -10,10 +10,10 @@
 \contentsline {subsection}{\numberline {3.4}Untersuchung eines Brustmodells mit einem B-Scan}{5}{subsection.3.4}%
 \contentsline {section}{\numberline {4}Auswertung}{5}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Untersuchung eines Acrylblocks mit dem A-Scan}{5}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Untersuchung des Auflösungsvermögens}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Untersuchung des Auflösungsvermögens}{7}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Untersuchung eines Acrylblocks mit einem B-Scan}{8}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Untersuchung eines Brustmodells mit einem B-Scan}{9}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Untersuchung eines Brustmodells mit einem B-Scan}{10}{subsection.4.4}%
 \contentsline {section}{\numberline {5}Diskussion}{11}{section.5}%
-\contentsline {section}{\nonumberline Literatur}{12}{section*.14}%
+\contentsline {section}{\nonumberline Literatur}{12}{section*.15}%
 \contentsline {section}{\numberline {6}Anhang: Die Originalmessdaten}{12}{section.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
