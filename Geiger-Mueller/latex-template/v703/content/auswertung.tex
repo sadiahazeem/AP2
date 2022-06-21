@@ -14,11 +14,11 @@ sind die einbezogenen Messwerte zu finden. Der gesamte Satz an Messwerten ist in
   \centering
   \caption{Die ausgewerteten Messwerte.}
   \begin{tabular}{ccc}
-    \toprule
+    \hline
     {$U  \mathbin{/} \unit{\volt}$} &
     {$N \mathbin{/} \mathbin{Imp}$} &
     {$I \mathbin{/} \unit{\micro\ampere}$} \\
-    \midrule
+    \hline
     330  &  12435  $\pm$ 111   &  0,1   \\
     340  &  13454  $\pm$ 116   &  0,1   \\
     350  &  13651  $\pm$ 117   &  0,1   \\
@@ -48,7 +48,7 @@ sind die einbezogenen Messwerte zu finden. Der gesamte Satz an Messwerten ist in
     680  &  14589  $\pm$ 121   &  0,52  \\
     690  &  14653  $\pm$ 121   &  0,6   \\
     700  &  14715  $\pm$ 121   &  0,6   \\
-    \bottomrule
+    \hline
   \end{tabular}
   \label{tab:charak}
 \end{table}
@@ -60,7 +60,7 @@ Die Zählraten entsprechen einer Poisson-Verteilung, sodass sich ihr Fehler aus
 ergibt.\\
 Die Charakteristik ist in \autoref{fig:charakteristik} graphisch dargestellt.
 Der Plateaubereich umfasst das Intervall von 410 V bis 670 V.\\
-Die lineare Regression wird mithilfe von python (\cite{numpy}, \cite{uncertainties}) durchgeführt und ergibt
+Die lineare Regression wird mithilfe von Python ([2], [3]) durchgeführt und ergibt
 für die Ausgleichsgerade der Parameter $b = (13762 \pm 250)  \: \mathrm{Imp}$ für den y-Achsenabschnitt.
 Als Geradengleichung, an die gefitted wird, wird 
 \begin{equation*}
@@ -85,7 +85,7 @@ berechnet wird.
 \end{figure}
 
 
-\subsection{Bestimmung der Totzeit}
+\subsection{Bestimmung der Nachentladungs- und Totzeit}
 \subsubsection{Mit Oszilloskop}
 Aus dem aufgenommenen Oszillogramm \autoref{fig:totzeit} kann eine Totzeit von 
 $T_1 = 130 \mu$s abgelesen werden.\\
@@ -95,6 +95,11 @@ $T_1 = 130 \mu$s abgelesen werden.\\
   \caption{Oszillogramm zur Bestimmung der Totzeit des Geiger-Müller-Zählrohres.}
   \label{fig:totzeit}
 \end{figure}
+Die Nachentladungszeit lässt sich aus dem Abstand zwischen des Maximums des ersten Peaks bis zum Maximum des zweiten Peaks ablesen. Es kann die Zeit
+\begin{equation*}
+  T_n=3.6\cdot 50\ \mu s=180\ \mu s
+\end{equation*}
+abgelesen werden. 
 
 \subsubsection{Zwei-Quellen-Methode}
  Für die Zwei-Quellen-Methode ergeben sich die Messwerte unter Einbezug des 
@@ -119,9 +124,7 @@ bestimmen.
 Sie ist in Abhängigkeit von der Zählrohrspannung in \autoref{fig:lad} graphisch dargestellt.\\
 \begin{figure}[H]
   \centering
-  \includegraphics{content/figure_2.png}
+  \includegraphics[width=12cm]{content/ladung.pdf}
   \caption{Die freigesetze Ladungsmenge je einfallendem Teilchen in Abhängigkeit von der Zählrohrspannung.}
   \label{fig:lad}
 \end{figure}
-
-
