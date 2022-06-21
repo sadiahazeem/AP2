@@ -6,14 +6,12 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
 
-# Make data base, printed on Wed Jun 15 15:04:31 2022
+# Make data base, printed on Wed Jun 22 14:04:28 2022
 
 # Variables
 
 # automatic
- 
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
@@ -40,7 +38,7 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/gd/wrgdkqfs1yn1346ccc_jb4c00000gn/T/vscode-ipc-8b9a5a4b-5116-4f9d-bf25-5974999bd382.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/gd/wrgdkqfs1yn1346ccc_jb4c00000gn/T/vscode-ipc-79055e68-f19c-4f48-84e8-b1e0ce2a772b.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -51,9 +49,8 @@ VSCODE_LOG_STACK = false
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
- 
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.mRo2GXsFlC/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Mu43s6rG3j/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -92,6 +89,8 @@ MAKE = $(MAKE_COMMAND)
 MAKECMDGOALS := all
 # environment
 SHLVL = 1
+# environment
+LATEXWORKSHOP_DOCKER_LATEX = 
 # default
 MAKE_VERSION := 3.81
 # environment
@@ -147,13 +146,13 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /opt/anaconda3
 # environment
-VSCODE_PID = 21832
+VSCODE_PID = 1124
 # environment
 _CE_CONDA = 
 # environment
 LANG = C
 # variable set hash-table stats:
-# Load=69/1024=7%, Rehash=0, Collisions=2/94=2%
+# Load=70/1024=7%, Rehash=0, Collisions=2/95=2%
 
 # Pattern-specific Variable Values
 
@@ -249,6 +248,6 @@ clean:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Jun 15 15:04:31 2022
+# Finished Make data base on Wed Jun 22 14:04:28 2022
 
  

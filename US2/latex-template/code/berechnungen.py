@@ -116,6 +116,18 @@ plt.ylim(0, 7.5)
 plt.xlim(0, 25)
 plt.legend()
 plt.grid()
-plt.show()
+#plt.show()
 print("parameter c und anpassungsschichtdicke d, fehler von c in µs: ", pm_k[0], pm_k[1], errors[0])
 
+
+def abw(lit, exp):
+    proz = (lit - exp)/lit * 100
+    return proz
+
+sascan = np.array([80.04-24.2-55.6, 80.04-54.9-22.9, 80.04-16.7-56.5])
+sbscan = np.array([80.04-24.8-48.3, 80.04-51.1-16.6, 80.04-15.2-56.6])
+gemessen = np.array([2.75, 4.55, 9.95])
+print("Berechnete Durchmesser A-Scan: ", sascan)
+print("Berechnete Durchmesser B-Scan: ", sbscan)
+print("Abweichungen a-scan: ", abw(gemessen, sascan))
+print("Abweichungen b-scan: ", abw(gemessen, sbscan))
