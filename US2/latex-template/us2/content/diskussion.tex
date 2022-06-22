@@ -9,7 +9,7 @@ Die Abweichung der experimentiell bestimmten Schallgeschwindigkeit in Acryl von 
 
 ab. Mögliche Fehlerquellen sind hier vor allem in der Aufnahme der Messwerte zu finden. 
 Der Umgang mit den Ultraschallsonden erfordert etwas Erfahrung, die Messreihe zur experimentiellen Bestimmung der Schallgeschwindigkeit
-war jedoch die erste durchgeführte Arbeit mit der Messgerätschaft.\\
+war jedoch die erste durchgeführte Arbeit mit dem Messgerät.\\
 
 Im Vergleich zwischen A- und B-Scan zeigen sich deutlich höhere Abweichungen, insbesondere bei der Bestimmung der Durchmesser der 
 Störstellen. Beispielsweise weicht der im A-Scan bestimmte Durchmesser der Störstelle 5 mit $d_A = 3,4$ mm um 
@@ -25,28 +25,22 @@ um
 \end{equation*}
 
 von $d_{Schieblehre}$ ab.\\
-Die Abweichungen in der Lagebestimmung drei zufällig ausgewählter Störstellen sind in \autoref{tab:abw} aufgelistet
+Die Abweichungen der experimentiell bestimmten Durchmesser drei zufällig ausgewählter Störstellen sind in \autoref{tab:abw} aufgelistet
 \begin{table}[H]
     \centering
-    \caption{Die errechneten Tiefen $s$ der Störstellen und ihre Abweichungen $\eta$, von unten und von oben. Alle Strecken in mm und Abweichungen in Prozent.}
-    \begin{tabular}{ccccccccccc}
+    \caption{Die errechneten Durchmesser $d$ der Störstellen und ihre Abweichungen $\eta$. Alle Strecken in mm und Abweichungen in Prozent.}
+    \begin{tabular}{D{,}{,}{1.0} D{,}{,}{1.2} D{,}{,}{1.2} D{,}{,}{1.2} D{,}{,}{2.2} D{,}{,}{3.2}}
       \toprule
-      {Lochnummer} & 
-      {$s_{u}$} &
-      {$s_{o}$} &
-      {$s_{u, \; A}$} &
-      {$\eta_{u, \; A}$} &
-      {$s_{o, \; A}$} &      
-      {$\eta_{o, \; A}$} &
-      {$s_{u, \; B}$} &
-      {$\eta_{u, \; B}$} &
-      {$s_{o, \; B}$} &      
-      {$\eta_{o, \; B}$} \\
+      \multicolumn{1}{c}{Lochnummer} & 
+      \multicolumn{1}{c}{$d_{\mathrm{Soll}}$} &
+      \multicolumn{1}{c}{$d_{A}$} &
+      \multicolumn{1}{c}{$\eta_{A}$} &
+      \multicolumn{1}{c}{$d_{B}$} &
+      \multicolumn{1}{c}{$\eta_{B}$} \\
       \midrule
-      %     unten  oben     a unten          a oben          b unten          b oben      
-      3  &  23,4  & 55,1  &  24,2   &  3,4  & 55,6  &  0,9  &  24,8 &  6,2   &  48,3 &  12,3  \\
-      7  &  54,2  & 22,1  &  54,9   &  1,3  & 22,9  &  3,6  &  51,1 &  5,7   &  16,6 &  24,9  \\
-      G  &  16,4  & 55,5  &  16,7   &  1,8  & 56,5  &  1,8  &  15,2 &  7,3   &  56,6 &   2,0  \\
+      3  & 2,75   & 0,24  &  91,27   &  6,94   & 152,36   \\
+      7  & 4,55   & 2,24  &  50,77   &  12,34  & 171,21   \\
+      \mathrm{G}  & 9,95   & 6,84  &  31,26   &  8,24   &  17,19   \\
       \bottomrule
     \end{tabular}
  \label{tab:abw}

@@ -26,6 +26,7 @@ s_obens *= 2*10**-3
 s_untens *= 2*10**-3
 t_a = np.append(t_oben, t_unten) 
 s_a = np.append(s_obens, s_untens) 
+s_schieb = np.append(s_oben, s_unten) 
 print(s_a)
 
 ############################# MITTELUNG ZU C UND ANPASSUNGSSCHICHT #############################
@@ -52,8 +53,8 @@ for name, value, error in zip('ab', params, errors):
 x_plot = np.linspace(0, 45)
 
 plt.figure()
-plt.plot(t_a*10**(6), s_a*10**(2), 'mx', label='Messwerte der Laufzeiten')
-plt.plot(x_plot, (params[0] * x_plot + params[1]), label='Lineare Regression', color = "tab:purple")
+plt.plot(t_a*10**(6), (s_a*10**(2)+0.372), 'mx', label='Messwerte der Laufzeiten')
+plt.plot(x_plot, (params[0] * x_plot + params[1]+0.372), label='Lineare Regression', color = "tab:purple")
 plt.xlabel('t / µs')
 plt.ylabel('s / cm')
 plt.xlim(0, 45)
@@ -66,7 +67,7 @@ plt.grid()
 #plt.savefig('build/plot.pdf')
 #plt.show()
 plt.close()
-print("paramteter c und d, fehler von d: ", params[0], params[1], errors[1])
+#print("paramteter c und anpassungsschichtdicke d, fehler von d: ", params[0], params[1], errors[1])
 
 
 ############################# LÖCHER TIEFE UND MAßE #############################
@@ -102,4 +103,31 @@ zwei_o, zwei_u, ein_o, ein_u = np.genfromtxt("aufloesung.txt", unpack = True)
 
 
 
-############################# TUMOR #############################
+# KORREKTUR: FIT STRECKE/LAUFZEIT
+x_fit = np.linspace(0, 25, 20) 
+pm_k, cov_k = np.polyfit(0.5*(t_a*10**(6)), ((t_a*2730)*10**(2)-(0.5*s_schieb*10**(2))), deg = 1, cov = True)    # x in s und y in m
+errors = np.sqrt(np.diag(cov_k))
+plt.figure()
+plt.plot(0.5*t_a*10**(6), ((t_a*2730)*10**(2)-(0.5*s_schieb*10**(2))-0.36), 'mx', label='Messwerte der Laufzeiten')
+plt.plot(x_fit, (pm_k[0]*x_fit + pm_k[1]-0.36), "m-", alpha = 0.5, label = "Ausgleichsgerade")
+plt.ylabel('Tiefe s / cm')
+plt.xlabel('Laufzeit t / µs')
+plt.ylim(0, 7.5)
+plt.xlim(0, 25)
+plt.legend()
+plt.grid()
+#plt.show()
+print("parameter c und anpassungsschichtdicke d, fehler von c in µs: ", pm_k[0], pm_k[1], errors[0])
+
+
+def abw(lit, exp):
+    proz = (lit - exp)/lit * 100
+    return proz
+
+sascan = np.array([80.04-24.2-55.6, 80.04-54.9-22.9, 80.04-16.7-56.5])
+sbscan = np.array([80.04-24.8-48.3, 80.04-51.1-16.6, 80.04-15.2-56.6])
+gemessen = np.array([2.75, 4.55, 9.95])
+print("Berechnete Durchmesser A-Scan: ", sascan)
+print("Berechnete Durchmesser B-Scan: ", sbscan)
+print("Abweichungen a-scan: ", abw(gemessen, sascan))
+print("Abweichungen b-scan: ", abw(gemessen, sbscan))
