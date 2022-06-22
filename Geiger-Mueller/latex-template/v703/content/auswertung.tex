@@ -69,11 +69,11 @@ Als Geradengleichung, an die gefitted wird, wird
 gewählt.\\
 Die prozentuale Steigung $m_{\%} = (0,73 \pm 0,45) \mathrm{\frac{\%}{100 V}}$ ergibt sich aus 
 \begin{equation*}
-  m_{\%} = 100\% \cdot \frac{N_{\mathrm{600V}} - N_{\mathrm{500V}}}{N_{\mathrm{500V}}},
+  m_{\%} = 100\% \cdot ( \frac{N_{\mathrm{600V}}}{N_{\mathrm{500V}}} - 1 ) ,
 \end{equation*}
 deren Fehler mit
 \begin{equation*}
-  \Delta m_{\%} = \frac{100\%}{N_{\mathrm{500V}}} \sqrt{(1 - \frac{N_{\mathrm{600V}} - N_{\mathrm{500V}}}{N_{\mathrm{600V}}})^2 (\Delta N_{\mathrm{500V}})^2 + (\frac{\Delta N_{\mathrm{500V}}}{N_{\mathrm{600V}}})^2}
+  \Delta m_{\%} = \frac{100\%}{N_{\mathrm{500V}}} \sqrt{ \frac{N_{\mathrm{600V}}}{N_{\mathrm{500V}}}^2 (\Delta N_{500})^2 +  (\Delta N_{600})^2}
 \end{equation*}
 berechnet wird.
 
@@ -105,27 +105,28 @@ abgelesen werden.
  Für die Zwei-Quellen-Methode ergeben sich die Messwerte unter Einbezug des 
  Poisson-Fehlers und der Integrationszeit von $120$s zu $N1 = \frac{21844 \pm 148}{120s}$, $N2 = \frac{17594 \pm 133}{120s}$ 
  und $N12 = \frac{39105 \pm 198}{120s}$.
- Es wird für den Strom $I$ eine Ableseungenauigkeit von $\Delta I = 0,05 \mu$ A angenommen, für die Zählrate 
+ Es wird für den Strom $I$ eine Ableseungenauigkeit von $\Delta I = 0,05 \mu$A angenommen, für die Zählrate 
  gilt das Vertrauensintervall $\pm \frac{\sqrt{N}}{t}$.\\
- Mit \autoref{eq:2} berechnet sich die Totzeit zu $T_2 = 100 \pm 500 \mu$ s.
-
-
-
+ Mit \autoref{eq:2} berechnet sich die Totzeit zu $T_2 = 50 \pm 40 \mu \;$s.
+Der Fehler nach Gauß ergibt sich hier durch 
+\begin{equation*}
+\Delta T = \sqrt{(- \frac{1}{2 N_1^2 N_2})^2(\Delta N_1)^2+(- \frac{1}{2 N_2^2 N_1})^2(\Delta N_2)^2+(- \frac{1}{2 N_1 N_2})^2(\Delta N_{12})^2}
+\end{equation*}
 
 \subsection{Freigesetzte Ladungsmenge}
 
-Die freigesetze Ladungsmenge wird nach \autoref{eq:5} aus dem mittleren Zählrohrstrom
+Die freigesetze Ladungsmenge wird nach \autoref{eq:5} aus dem Zählrohrstrom
 bestimmt.\\
 Der Fehler dieser Formel lässt sich aus % Delta Z = ( (∂z/∂i)^2 * ∆i^2 +  (∂z/∂n)^2 * ∆n^2 )^1/2
 \begin{equation*}
   \Delta Z = \sqrt{ ( \frac{1}{e_0 \cdot N} )^2 \cdot (\Delta I)^2 + (- \frac{I}{e_0 \cdot N^2})^2 \cdot (\Delta N)^2}
 \end{equation*}
 bestimmen.
-Sie ist in Abhängigkeit von der Zählrohrspannung in \autoref{fig:lad} graphisch dargestellt.\\
+Sie ist in Abhängigkeit vom Strom in \autoref{fig:lad} graphisch dargestellt.\\
 \begin{figure}[H]
   \centering
-  \includegraphics[width=12cm]{content/ladung.pdf}
-  \caption{Die freigesetze Ladungsmenge je einfallendem Teilchen in Abhängigkeit von der Zählrohrspannung.}
+  \includegraphics[width=12cm]{content/hobelneu.png}
+  \caption{Die freigesetze Ladungsmenge je einfallendem Teilchen in Abhängigkeit vom Strom.}
   \label{fig:lad}
 \end{figure}
 
